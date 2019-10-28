@@ -4,7 +4,7 @@
     <Name value="MeanCloud's Med Stack Sizes"/>
     <Description value="Slightly increases various med stack sizes to be more reasonable."/>
     <Author value="Mean.Cloud"/>
-    <Version value="A18.1 1.00"/>
+    <Version value="A18.1 1.01"/>
 		<Website value="http://mean.cloud/" />
   </ModInfo>
 </xml>
