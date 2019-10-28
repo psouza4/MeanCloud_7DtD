@@ -1,0 +1,25 @@
+Key,Source,Context,Changes,English
+plantedPumpkin1,blocks,Farming,New,Pumpkin (Seed)
+plantedPumpkin1Desc,blocks,Farming,New,Plant Pumpkin seeds in fertilized dirt to grow Pumpkin plants.
+plantedPumpkin1Schematic,blocks,Farming,New,Pumpkin (Seed) Recipe
+plantedPumpkin2,blocks,Farming,New,Pumpkin (Growing)
+plantedPumpkin3Harvest,blocks,Farming,New,Pumpkin Plant 3 (POI)
+plantedPumpkin3HarvestDesc,blocks,Farming,New,Pumpkin Plant
+plantedPumpkin3HarvestPlayerDesc,blocks,Farming,New,Pumpkin Plant
+plantedPumpkin3HarvestRandomHelper,blocks,Farming,New,= Pumpkin = Random Helper
+foodCropPumpkin,items,Farming,New,Pumpkin
+foodCropPumpkinDesc,items,Farming,New,Many don't know what to do with a pumpkin in the kitchen but it is indispensable for Helloween decorations.
+decoPumpkinJackOLantern,blocks,Block,New,Jack o' Lantern
+decoPumpkinJackOLanternDesc,blocks,Block,New,A must-have for scaring those zombies right back.
+foodPumpkinPie,items,Food,New,Pumpkin Pie
+foodPumpkinPieDesc,items,Food,New,Pumpkin pie is a delicious seasonal treat.
+foodPumpkinCheesecake,items,Food,New,Pumpkin Cheesecake
+foodPumpkinCheesecakeDesc,items,Food,New,Pumpkin cheesecake is a delicious seasonal treat.
+foodPumpkinBread,items,Food,New,Pumpkin Bread
+foodPumpkinBreadDesc,items,Food,New,Pumpkin bread is a delicious seasonal treat.
+foodPumpkinPieSchematic,items,Food,New,Pumpkin Pie Recipe
+foodPumpkinCheesecakeSchematic,items,Food,New,Pumpkin Cheesecake Recipe
+foodPumpkinBreadSchematic,items,Food,New,Pumpkin Bread Recipe
+drinkJarPumpkinSpiceLatte,items,Food,New,Pumpkin Spice Latte
+drinkJarPumpkinSpiceLatteDesc,items,Food,New,Pumpkin spice latte is a delicious seasonal treat.
+drinkJarPumpkinSpiceLatteSchematic,items,Food,New,Pumpkin Spice Latte Recipe

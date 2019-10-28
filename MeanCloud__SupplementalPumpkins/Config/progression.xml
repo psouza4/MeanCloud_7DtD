@@ -1,0 +1,18 @@
+<MeanCloud_Pumpkins>
+
+  <remove xpath="/Ignore_Warnings_In_This_Modelet[@modname='MeanCloud_Pumpkins'][@filename='\Config\progression.xml']" />
+
+  <append xpath="/progression/perks/perk[@name='perkMasterChef']">
+    <effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="drinkJarPumpkinSpiceLatte"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1" tags="foodPumpkinPie,foodPumpkinCheesecake,foodPumpkinBread"/>
+		</effect_group>
+  </append>
+
+  <append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']">
+    <effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="plantedPumpkin1"/>
+		</effect_group>
+  </append>
+
+</MeanCloud_Pumpkins>

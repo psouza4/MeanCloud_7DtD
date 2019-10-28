@@ -1,0 +1,55 @@
+<MeanCloud_Pumpkins>
+
+  <remove xpath="/Ignore_Warnings_In_This_Modelet[@modname='MeanCloud_Pumpkins'][@filename='\Config\recipes.xml']" />
+  <remove xpath="/recipes/recipe[@name='foodPumpkinPie']" />
+  <remove xpath="/recipes/recipe[@name='foodPumpkinCheesecake']" />
+  <remove xpath="/recipes/recipe[@name='foodPumpkinBread']" />
+  <remove xpath="/recipes/recipe[@name='plantedPumpkin1']" />
+  <remove xpath="/recipes/recipe[@name='decoPumpkinJackOLantern']" />
+
+  <append xpath="/recipes">
+
+    <recipe name="foodPumpkinPie" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+      <ingredient name="foodCropPumpkin" count="5"/>
+      <ingredient name="foodEgg" count="1"/>
+      <ingredient name="foodCornMeal" count="1"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <recipe name="foodPumpkinCheesecake" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+      <ingredient name="foodCropPumpkin" count="5"/>
+      <ingredient name="foodEgg" count="1"/>
+      <ingredient name="foodCornMeal" count="1"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="drinkJarGrainAlcohol" count="1"/>
+    </recipe>
+
+    <recipe name="foodPumpkinBread" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+      <ingredient name="foodCropPumpkin" count="5"/>
+      <ingredient name="foodCornMeal" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <recipe name="plantedPumpkin1" count="1" craft_time="1" tags="learnable">
+      <ingredient name="foodCropPumpkin" count="5"/>
+    </recipe>
+
+    <recipe name="decoPumpkinJackOLantern" count="1" craft_time="1" >
+      <ingredient name="foodCropPumpkin" count="1"/>
+      <ingredient name="candle" count="1"/>
+    </recipe>
+
+  </append>
+
+  <append xpath="/recipes">
+
+    <recipe name="drinkJarPumpkinSpiceLatte" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+      <ingredient name="foodCropPumpkin" count="5"/>
+      <ingredient name="resourceCropCoffeeBeans" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+  </append>
+
+</MeanCloud_Pumpkins>
