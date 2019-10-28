@@ -1,0 +1,21 @@
+<MeanCloud_MedStackSizes>
+
+  <set xpath="/items/item[@name='medicalBandage']/property[@name='Stacknumber']/@value">15</set>
+  <set xpath="/items/item[@name='drugPainkillers']/property[@name='Stacknumber']/@value">15</set>
+  <set xpath="/items/item[@name='drinkJarGrainAlcohol']/property[@name='Stacknumber']/@value">15</set>
+  <set xpath="/items/item[@name='drugVitamins']/property[@name='Stacknumber']/@value">15</set>
+  <set xpath="/items/item[@name='drugAntibiotics']/property[@name='Stacknumber']/@value">15</set>
+  <set xpath="/items/item[@name='drugHerbalAntibiotics']/property[@name='Stacknumber']/@value">15</set>
+  <set xpath="/items/item[@name='drugSteroids']/property[@name='Stacknumber']/@value">15</set>
+  <set xpath="/items/item[@name='drugRecog']/property[@name='Stacknumber']/@value">15</set>
+  <set xpath="/items/item[@name='foodMoldyBread']/property[@name='Stacknumber']/@value">15</set>
+  <set xpath="/items/item[@name='foodShamSandwich']/property[@name='Stacknumber']/@value">15</set>
+  <set xpath="/items/item[@name='drugFortBites']/property[@name='Stacknumber']/@value">15</set>
+
+  <set xpath="/items/item[@name='medicalFirstAidBandage']/property[@name='Stacknumber']/@value">10</set>
+  <set xpath="/items/item[@name='medicalSplint']/property[@name='Stacknumber']/@value">10</set>
+  <set xpath="/items/item[@name='medicalPlasterCast']/property[@name='Stacknumber']/@value">10</set>
+  <set xpath="/items/item[@name='medicalBloodBag']/property[@name='Stacknumber']/@value">10</set>
+  <set xpath="/items/item[@name='medicalFirstAidKit']/property[@name='Stacknumber']/@value">10</set>
+
+</MeanCloud_MedStackSizes>

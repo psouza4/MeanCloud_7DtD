@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <ModInfo>
+    <Name value="MeanCloud's Forges Hold 1M"/>
+    <Description value="Changes the maximum capacity for forge resources to hold 1,000,000 units instead of the base 30,000 units."/>
+    <Author value="Mean.Cloud"/>
+    <Version value="A18 1.00"/>
+		<Website value="http://mean.cloud/" />
+  </ModInfo>
+</xml>

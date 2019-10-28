@@ -1,0 +1,63 @@
+<MeanCloud_Mining>
+  
+  <!-- updating the forge_category (and adding a weight to the block) makes it smeltable in the forge -->
+  <append xpath="/materials/material[@id='Msand']"><property name="forge_category" value="glass"/></append>
+  <append xpath="/materials/material[@id='Mdirt']"><property name="forge_category" value="clay"/></append>
+  <append xpath="/materials/material[@id='MforestGround']"><property name="forge_category" value="clay"/></append>
+  <append xpath="/materials/material[@id='MDesertGround']"><property name="forge_category" value="glass"/></append>
+
+  <append xpath="/materials">
+
+    <material id="McopperNoGlue">
+      <property name="damage_category" value="metal"/>
+      <property name="surface_category" value="metal"/>
+      <property name="forge_category" value="copper"/>
+      <property name="Hardness" type="float" value="1"/>
+      <property name="stepsound" value="metal"/>
+      <property name="stability_glue" value="0"/>
+      <property name="Mass" type="int" value="1"/>
+      <property name="MaxDamage" value="500"/>
+      <property name="Experience" value="2"/>
+    </material>
+
+    <material id="MresourceCopperFragment">
+      <property name="damage_category" value="metal"/>
+      <property name="surface_category" value="metal"/>
+      <property name="forge_category" value="copper"/>
+      <property name="Experience" value="4"/>
+    </material>
+
+    <material id="Mcopper">
+      <property name="damage_category" value="metal"/>
+      <property name="surface_category" value="metal"/>
+      <property name="forge_category" value="copper"/>
+      <property name="Hardness" type="float" value="1"/>
+      <property name="stepsound" value="metal"/>
+      <property name="stability_glue" value="300"/>
+      <property name="Mass" type="int" value="10"/>
+      <property name="MaxDamage" value="300"/>
+      <property name="Experience" value="4"/>
+    </material>
+
+    <material id="MresourceZincFragment">
+      <property name="damage_category" value="stone"/>
+      <property name="surface_category" value="stone"/>
+      <property name="forge_category" value="zinc"/>
+      <property name="Experience" value="4"/>
+    </material>
+
+    <material id="Mzinc">
+      <property name="damage_category" value="stone"/>
+      <property name="surface_category" value="stone"/>
+      <property name="forge_category" value="zinc"/>
+      <property name="Hardness" type="float" value="1"/>
+      <property name="stepsound" value="metal"/>
+      <property name="stability_glue" value="300"/>
+      <property name="Mass" type="int" value="10"/>
+      <property name="MaxDamage" value="300"/>
+      <property name="Experience" value="4"/>
+    </material>
+
+  </append>
+
+</MeanCloud_Mining>

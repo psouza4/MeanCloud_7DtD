@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <ModInfo>
+    <Name value="MeanCloud's Fishing for A18"/>
+    <Description value="Adds fishing to the world using a fishing tools.  Also includes recipes to cook and prepare fish and other seafood."/>
+    <Author value="Mean.Cloud"/> <!-- Shout out to Clockwork Orange for his A16 fishing modlet, where I drew some inspiration from -->
+    <Version value="A18 1.04"/>
+		<Website value="http://mean.cloud/" />
+  </ModInfo>
+</xml>

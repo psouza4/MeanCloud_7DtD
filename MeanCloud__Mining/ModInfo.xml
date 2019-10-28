@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <ModInfo>
+    <Name value="MeanCloud's Mining for A18"/>
+    <Description value="Adds copper and zinc to the world as a supplemental source of brass as well as automated mining machines."/>
+    <Author value="Mean.Cloud"/> <!-- Original credit to stallionsden for A17 version (just the basic mining machine concept) -->
+    <Version value="A18 1.01"/>
+		<Website value="http://mean.cloud/" /> <!-- stallionsden's mining machine: https://github.com/stallionsden/StallionModlets/ -->
+  </ModInfo>
+</xml>

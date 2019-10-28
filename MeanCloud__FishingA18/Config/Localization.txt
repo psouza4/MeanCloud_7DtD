@@ -1,0 +1,89 @@
+Key,Source,Context,Changes,English
+perkLivingOffTheLandDesc,progression,Perk,New,"Specialize in harvesting more crops using your hands or a tool. Learn to fish and create fishing tools."
+perkLivingOffTheLandRank2LongDesc,progression,Perk,New,"You can craft seeds for flowers and decorative plants like goldenrod, chrysanthemum, aloe, and yucca as well as fishing rods."
+perkLivingOffTheLandRank4LongDesc,progression,Perk,New,"Harvest 3 items from wild or planted crops.  Craft fine fishing rods."
+perkLivingOffTheLandRank5LongDesc,progression,Perk,New,"You can craft mutated seeds and fishing traps."
+perkMasterChefRank1LongDesc,progression,Perk,New,"Cooking is not your thing but you know some basics. Unlocks basic recipes such as bacon and eggs, boiled and grilled meats and fish, baked potatoes, cornbread, teas and coffee. Cook 10% faster."
+perkMasterChefRank2LongDesc,progression,Perk,New,"Just like grandma used to make, tasty hearty meals that fill you up for days. Craft steak and potatoes, prepared sushi, fish soup, meat stew, vegetable stew and blueberry pie. Cook 20% faster."
+perkMasterChefRank4LongDesc,progression,Perk,New,"Serve chili dogs with a nice cold beer or with a yucca juice smoothie on those really cold days. Ferment vinegar and make pickled fish. Cook 40% faster."
+perkMasterChefRank5LongDesc,progression,Perk,New,"Grandpa's ass kicking recipes. Learn grandpa's\nsecret recipes that boost stats and attributes! Make a mean fish-and-chips dish. Cook 50% faster."
+foodFishTacos,items,Food,New,Fish Tacos [ccba8b](Canned)[-]
+foodFishTacosDesc,items,Food,"New,Made from canned salmon. Who wants to live off the land when it's taco Tuesday? Or is this Thursday?"
+foodFishTacosSchematic,items,Food,New,Fish Tacos [ccba8b](Canned)[-] Recipe
+Fishing Spear,items,Tool,KgNone,Fishing Spear
+fishingSpearDesc,items,Tool,KgNone,"This fishing spear is crude, but will get the job done.  Right-click on natural water to fish."
+#NOTE#,,,KgNone,FISHING SPEAR FULL -- unused now
+Fishing Spear Full,items,Tool,KgNone,Fishing Spear
+fishingSpearFullDesc,items,Tool,KgNone,"You caught something!  Right-click the ground to place it into a block and take a look (destroy the block once you place it)."
+#NOTE#,,,KgNone,FISHING SPEAR FULL -- unused now
+Fishing Rod,items,Tool,KgNone,Fishing Rod
+fishingRodDesc,items,Tool,KgNone,"This fishing rod is a long, flexible pole used to catch fish.  Right-click on natural water to fish."
+Fishing Rod Full,items,Tool,KgNone,Fishing Rod
+fishingRodFullDesc,items,Tool,KgNone,"You caught something!  Right-click the ground to place it into a block and take a look (destroy the block once you place it)."
+Fine Fishing Rod,items,Tool,KgNone,Fine Fishing Rod
+fineFishingRodDesc,items,Tool,KgNone,"This fine fishing rod is a long, flexible pole used to catch lots of fish.  Right-click on natural water to fish."
+Fine Fishing Rod Full,items,Tool,KgNone,Fine Fishing Rod
+fineFishingRodFullDesc,items,Tool,KgNone,"You caught something!  Right-click the ground to place it into a block and take a look (destroy the block once you place it)."
+Raw Fish,items,Item Food,KgNone,Raw Fish
+rawFishDesc,items,Item Food,KgNone,"Fish can be eaten raw or cut into prepared sushi, but is better when cooked at campfire or pickled in vinegar."
+Prawn,items,Item Food,KgNone,Prawn
+prawnDesc,items,Item Food,KgNone,"Prawn are large, meaty shrimp found in freshwater and can be eaten raw but are better when cooked at a campfire."
+Rotten Fish,items,Food,New,Rotten Fish
+rottenFishDesc,items,Food,New,"It's disgusting, but you can scrap it into rotten flesh at least."
+Grilled Fish,items,Item Food,KgNone,Grilled Fish
+grilledFishDesc,items,Item Food,KgNone,"Tasty grilled fish, mmmm!"
+Boiled Fish,items,Item Food,KgNone,Boiled Fish
+boiledFishDesc,items,Item Food,KgNone,"Palatable boiled fish.  It's not great, but it's not horrible either."
+Charred Fish,items,Item Food,KgNone,Charred Fish
+charredFishDesc,items,Item Food,KgNone,"Not-so-tasty charred fish; it will do, I guess."
+Prepared Sushi,items,Item Food,KgNone,Prepared Sushi
+preparedSushiDesc,items,Item Food,KgNone,"There's some chance to get sick from raw sushi, but with careful preparation the chances are significantly lower."
+Charred Prawns,items,Item Food,KgNone,Charred Prawns
+charredPrawnsDesc,items,Item Food,KgNone,"Charred prawns.  You did your best, but they still burned a bit."
+Boiled Prawns,items,Item Food,KgNone,Boiled Prawns
+boiledPrawnsDesc,items,Item Food,KgNone,"Boiled prawns.  It's not great, but it's not horrible either."
+Grilled Prawns,items,Item Food,KgNone,Grilled Prawns
+grilledPrawnsDesc,items,Item Food,KgNone,"Tasty grilled prawns, mmmm!"
+Vinegar,items,Item Food,KgNone,Vinegar
+vinegarDesc,items,Item Food,KgNone,"This vinegar is ideal for serving with fish and chips or even pickling fish."
+Fish Tacos (Fresh),items,Item Food,KgNone,Fish Tacos [a0ff94](Fresh)[-]
+fishTacosFreshDesc,items,Item Food,KgNone,"Fresh fish tacos are a great meal, delicious and nutritious!"
+Surf and Turf,items,Item Food,KgNone,Surf and Turf
+surfAndTurfDesc,items,Item Food,KgNone,"A bit of red meat and seafood pair very well together."
+Pickled Fish,items,Item Food,KgNone,Pickled Fish
+pickledFishDesc,items,Item Food,KgNone,"Preserved and seasoned with vinegar, this makes for a terrific meal."
+Fish Soup,items,Item Food,KgNone,Fish Soup
+fishSoupDesc,items,Item Food,KgNone,"Delectable fish soup, mmmm!"
+Fish and Chips,items,Item Food,KgNone,Fish and Chips
+fishAndChipsDesc,items,Item Food,KgNone,"Some fried fish and potatoes served with vinegar.  Very nice!"
+fishTrapItemSchematic,items,Tool,New,Fish Trap Schematic
+fishingRodSchematic,items,Tool,New,Fishing Rod Schematic
+fineFishingRodSchematic,items,Tool,New,Fine Fishing Rod Schematic
+foodVinegarSchematic,items,Food,New,Vinegar Recipe
+foodFishTacosFreshSchematic,items,Food,New,Fish Tacos [a0ff94](Fresh)[-] Recipe
+foodFishSoupSchematic,items,Food,New,Fish Soup Recipe
+foodPickledFishSchematic,items,Food,New,Pickled Fish Recipe
+foodFishAndChipsSchematic,items,Food,New,Fish and Chips Recipe
+fishTrapItem,items,Tool,kgNone,Fish Trap
+fishTrapItemDesc,items,Tool,kgNone,"Right-click to place near water.  You need to be standing in natural water and place the trap on the shore (not over the water).  Will occasionally trap fish and other debris."
+itemFishingCacheT1,items,Tool,kgNone,Fish Cache
+itemFishingCacheT2,items,Tool,kgNone,Fish Cache
+itemFishingCacheT3,items,Tool,kgNone,Fish Cache
+itemFishingCacheAllDesc,items,Tool,kgNone,"Right-click to place anywhere.  Destroy the placed cache to discover what was caught!"
+fishTrap,blocks,Block,KgNone,Fish Trap
+fishTrapCaught,blocks,Block,KgNone,Fish Trap
+fishingWater,buffs,Buff,New,[94f7e5]Fishing[-]
+fishingWaterDesc,buffs,Buff,New,"You can fish as well as place fishing traps near the water's edge."
+fishingWaterTooltip,buffs,Buff,New,"You can fish as well as place fishing traps near the water's edge."
+fishingSpearCaught,buffs,Buff,New,[94f7e5]Check Spear Quickly![-]
+fishingSpearCaughtDesc,buffs,Buff,New,"You may have caught something with your spear.  Right-click with your spear equipped to investigate."
+fishingSpearCaughtTooltip,buffs,Buff,New,"You may have caught something with your spear."
+fishingSpearCaughtClear,buffs,Buff,New," "
+fishingSpearCaughtClearDesc,buffs,Buff,New," "
+fishingSpearCaughtClearTooltip,buffs,Buff,New," "
+fishingRodCaught,buffs,Buff,New,[94f7e5]Check Rod Quickly![-]
+fishingRodCaughtDesc,buffs,Buff,New,"You may have caught something with your fishing rod.  Right-click with your fishing rod equipped to investigate."
+fishingRodCaughtTooltip,buffs,Buff,New,"You may have caught something with your fishing rod."
+fishingRodCaughtClear,buffs,Buff,New," "
+fishingRodCaughtClearDesc,buffs,Buff,New," "
+fishingRodCaughtClearTooltip,buffs,Buff,New," "

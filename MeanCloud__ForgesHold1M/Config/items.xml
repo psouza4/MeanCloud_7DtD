@@ -1,0 +1,5 @@
+<MeanCloud_ForgesHold1M>
+
+  <set xpath="/items/item[@name='unit_iron']/property[@name='Stacknumber']/@value">1000000</set>
+
+</MeanCloud_ForgesHold1M>

@@ -1,0 +1,5 @@
+<MeanCloud_DontUseUpWater>
+  
+  <remove xpath="/items/item[@name='drinkJarEmpty']/property[@class='Action1']/property[@name='Do_block_action']"/>
+  
+</MeanCloud_DontUseUpWater>

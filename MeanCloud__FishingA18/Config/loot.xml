@@ -1,0 +1,86 @@
+<MeanCloud_Fishing>
+
+	<append xpath="/lootcontainers/lootgroup[@name='cupboard']">
+		<item name="Vinegar" count="1,2" prob="0.2" />
+		<item name="Pickled Fish" count="1" prob="0.08" />
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='coldfood']">
+		<item name="Raw Fish" count="1,5" prob="0.7" />
+		<item name="Prawn" count="3,10" prob="0.42" />
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='tools']">
+		<item name="Fishing Rod" count="1" prob="0.3" />
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='rareTools']">
+		<item name="fishTrapItem" count="1" prob="0.85" />
+		<item name="Fine Fishing Rod" count="1" prob="1" />
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsCommon']">
+		<item name="fishTrapItemSchematic" prob="0.6" />
+		<item name="fishingRodSchematic" prob="0.8" />
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsRare']">
+		<item name="fishingRodSchematic" prob="1.2" />
+		<item name="fineFishingRodSchematic" />
+	</append>
+  
+	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipes']">
+		<item name="foodFishTacosFreshSchematic" />
+		<item name="foodFishSoupSchematic" />
+		<item name="foodPickledFishSchematic" />
+		<item name="foodFishAndChipsSchematic" />
+		<item name="foodSurfAndTurfSchematic" />
+	</append>
+
+  <!-- cardboard boxes -->
+	<append xpath="/lootcontainers/lootcontainer[@id='15']">
+		<item name="Fishing Rod" count="2" prob="0.04" />
+	</append>
+
+  <!-- cars -->
+	<append xpath="/lootcontainers/lootcontainer[@id='19']">
+		<item name="Fishing Rod" count="2" prob="0.03" />
+	</append>
+
+  <!-- garage stuff -->
+	<append xpath="/lootcontainers/lootcontainer[@id='22']">
+		<item name="Fishing Rod" count="2" prob="0.15" />
+	</append>
+
+  <append xpath="/lootcontainers">
+
+    <!-- fishing trap -->
+    <lootcontainer id="360" count="3,7" size="6,3" sound_open="bucketplace_water" sound_close="SlowSwoosh" destroy_on_close="true" loot_quality_template="qualBaseTemplate">
+      <item name="Raw Fish" count="1,2" prob="0.50"/>
+      <item name="Raw Fish" count="1,2" prob="0.15"/>
+      <item name="Prawn" count="1,4" prob="0.30"/>
+      <item name="Prawn" count="2,6" prob="0.09"/>
+      <item name="Rotten Fish" count="1,2" prob="0.25"/>
+      <item name="Rotten Fish" count="1" prob="0.10"/>
+      <item name="resourceCloth" count="1" prob="0.015"/>
+      <item name="resourceLeather" count="1" prob="0.01"/>
+      <item name="resourcePaper" count="1" prob="0.005"/>
+      <item name="oldCash" count="1" prob="0.0005"/>
+      <item name="resourceYuccaFibers" count="1,2" prob="0.025"/>
+      <item name="drinkCanEmpty" count="1" prob="0.005"/> 
+      <item name="resourceBone" count="1" prob="0.0025"/>
+      <item name="armorClothBoots" count="1" prob="0.0005"/>
+      <item name="armorLeatherBoots" count="1" prob="0.0003"/>
+      <item name="armorScrapBoots" count="1" prob="0.0002"/>
+      <item name="apparelWornBoots" count="1" prob="0.0005"/>
+      <item name="apparelRunningShoesRegular" count="1" prob="0.0005"/>
+      <item name="apparelRunningShoesHP" count="1" prob="0.0002"/>
+      <item name="apparelCowboyBoots" count="1" prob="0.0003"/>
+      <item name="apparelGothBoots" count="1" prob="0.0001"/>
+      <item name="apparelSuitDressShoes" count="1" prob="0.00007"/>
+      <item name="apparelPlantFiberShoes" count="1" prob="0.0003"/>
+      <item name="armorIronBoots" count="1" prob="0.0001"/>
+    </lootcontainer>
+  </append>
+  
+</MeanCloud_Fishing>

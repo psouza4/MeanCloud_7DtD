@@ -1,0 +1,55 @@
+<MeanCloud_RegeneratingBoulders_CaZ>
+
+	<append xpath="/blocks">
+    
+    <block name="Mini Boulder Master CaZ">
+    	<property name="CreativeMode" value="None"/>
+      <property name="Material" value="Mconcrete"/>                 <!-- Sets the base hardness of the mini-boulder to concrete, making it obvious you're not supposed to destroy it unless you really want to clear the area. -->
+      <property name="CustomIcon" value="rockResourceBroke2"/>
+      <property name="Shape" value="New"/>
+      <property name="Texture" value="175"/>
+      <property name="Mesh" value="cutoutmoveable"/>
+      <property name="Model" value="rock01"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="Collide" value="melee,bullet,arrow,rocket"/>
+      <drop event="Destroy" name="resourceRockSmall" count="1"/>    <!-- Mini-boulders can be destroyed if you want and give a single 'small stone' resource. -->
+      <property name="Map.Color" value="120,120,120"/>
+      <property name="FilterTags" value="foutdoor"/>
+      <property name="Class" value="PlantGrowing"/>
+      <property name="PlantGrowing.Next" value="rockResource"/>     <!-- Grow into 'rockResource', the default boulder. -->
+      <property name="PlantGrowing.GrowthRate" value="120"/>        <!-- Mini-boulders respawn after 120 real-life minutes (2 hours). -->
+      <property name="PlantGrowing.IsRandom" value="false"/>        <!-- If IsRandom is true, the time will be randomized between 0 and GrowthRate.  No way to make it between X and Y, only 0 and Y. -->
+      <property name="PlantGrowing.FertileLevel" value="0"/>        <!-- Allow mini-boulders to 'grow' even when there's not fertile ground beneath it, such as in the wasteland. -->
+      <property name="PlantGrowing.LightLevelGrow" value="0"/>      <!-- Mini-boulders shouldn't need light to 'grow'. -->
+      <property name="PlantGrowing.LightLevelStay" value="0"/>      <!-- Mini-boulders won't despawn because of a lack of light. -->
+    </block>
+    
+    <block name="Mini Copper Boulder">
+      <property name="CreativeMode" value="Dev"/>
+    	<property name="Extends" value="Mini Boulder Master CaZ"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="PlantGrowing.Next" value="oreCopperBoulder"/> <!-- Grow into 'oreCopperBoulder', a copper boulder added by MeanCloud's Mining modlet. -->
+      <property name="CustomIcon" value="oreCopperBoulder"/>
+    </block>
+    
+    <block name="Mini Zinc Boulder">
+      <property name="CreativeMode" value="Dev"/>
+    	<property name="Extends" value="Mini Boulder Master CaZ"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="PlantGrowing.Next" value="oreZincBoulder"/>   <!-- Grow into 'oreZincBoulder', a zinc boulder added by MeanCloud's Mining modlet. -->
+      <property name="CustomIcon" value="oreZincBoulder"/>
+    </block>
+    
+  </append>
+	
+  <!-- Use these entries to: degrade into a single stone with high durability and 'regrow' from that -->
+	<append xpath="/blocks/block[@name='oreCopperBoulder']">          <!-- Modify 'oreCopperBoulder', the copper boulder added by MeanCloud's Mining modlet being harvested. -->
+    <property name="DowngradeBlock" value="Mini Copper Boulder"/>   <!-- Instead of breaking entirely, let's downgrade the block into our mini-copper boulder instead. -->
+	</append>
+	<append xpath="/blocks/block[@name='oreZincBoulder']">            <!-- Modify 'oreZincBoulder', the zinc boulder added by MeanCloud's Mining modlet being harvested. -->
+    <property name="DowngradeBlock" value="Mini Zinc Boulder"/>     <!-- Instead of breaking entirely, let's downgrade the block into our mini-zinc boulder instead. -->
+	</append>
+  
+</MeanCloud_RegeneratingBoulders_CaZ>

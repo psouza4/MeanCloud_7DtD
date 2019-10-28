@@ -1,0 +1,11 @@
+<MeanCloud_BarbedWireA18>
+
+  <append xpath="/recipes">
+
+    <recipe name="barbedWireSheet" count="1">
+      <ingredient name="resourceScrapIron" count="15"/>
+    </recipe>
+
+  </append>
+
+</MeanCloud_BarbedWireA18>

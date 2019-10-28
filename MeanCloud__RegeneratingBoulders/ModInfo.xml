@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="MeanCloud's Regenerating Boulders" />
+		<Description value="When boulders are destroyed, they leave behind a stone (you can't pick it up, but you can destroy it).  This stone will eventually regenerate back into a boulder." />
+		<Author value="Mean.Cloud" />
+		<Version value="A18 1.03" />
+		<Website value="http://mean.cloud/" />
+	</ModInfo>
+</xml>

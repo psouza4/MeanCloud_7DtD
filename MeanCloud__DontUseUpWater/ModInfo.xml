@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <ModInfo>
+    <Name value="MeanCloud's Don't Use Up Water!"/>
+    <Description value="Prevents source water blocks that the player has moved using a bucket from being used up/depleted when jars are filled.."/>
+    <Author value="Mean.Cloud"/>
+    <Version value="A18 1.00"/>
+		<Website value="http://mean.cloud/" />
+  </ModInfo>
+</xml>

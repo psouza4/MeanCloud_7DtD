@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <ModInfo>
+    <Name value="MeanCloud's Med Stack Sizes"/>
+    <Description value="Slightly increases various med stack sizes to be more reasonable."/>
+    <Author value="Mean.Cloud"/>
+    <Version value="A18.1 1.00"/>
+		<Website value="http://mean.cloud/" />
+  </ModInfo>
+</xml>

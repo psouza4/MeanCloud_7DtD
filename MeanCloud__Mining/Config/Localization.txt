@@ -1,0 +1,32 @@
+Key,Source,Context,Changes,English
+lblContextActionCrush,UI,Item Context Menu,New,Crush
+lbliron,UI,XUI,New,[A6A09E]Iron[-]
+lblbrass,UI,XUI,New,[EDD079]Brass[-]
+lbllead,UI,XUI,New,[AEACA8]Lead[-]
+lblglass,UI,XUI,New,[E5EDEC]Glass[-]
+lblstone,UI,XUI,New,[BBC2CB]Stone[-]
+lblclay,UI,XUI,New,[B8C5BE]Clay[-]
+lblcopper,UI,XUI,New,[E89267]Copper[-]
+lblzinc,UI,XUI,New,[B3B6BB]Zinc[-]
+forgeInputCopper,UI,Menu,KgNone,Copper
+forgeInputZinc,UI,Menu,KgNone,Zinc
+terrOreCopper,blocks,Terrain,New,Copper Ore
+terrOreZinc,blocks,Terrain,New,Zinc Ore
+terrOreStoneCopperRandom,blocks,Terrain,New,= Copper Vein = Helper
+terrOreStoneCopperRandomDesc,blocks,Terrain,New,Copper / Stone / Sandstone
+terrOreStoneZincRandom,blocks,Terrain,New,= Zinc Vein = Helper
+terrOreStoneZincRandomDesc,blocks,Terrain,New,Zinc / Stone / Sandstone
+oreCopperBoulder,blocks,Block,New,Copper Ore Boulder
+oreZincBoulder,blocks,Block,New,Zinc Ore Boulder
+scrapCopperPile,blocks,Block,KgNone,Scrap Copper Pile
+rockCrusher,blocks,Workstation,KgNone,Rock Crusher
+rockCrusherDesc,blocks,Workstation,EnChanged,"Processes ores into usable resources."
+Excavator,blocks,Block,KgNone,Excavator [ccba8b](Empty)[-]
+ExcavatorV2,blocks,Block,KgNone,Excavator [ccba8b](Mining)[-]
+MiningTruck,blocks,Block,KgNone,Excavator
+resourceCopper,items,Item,KgNone,Copper
+resourceCopperDesc,items,Item,KgNone,"Copper is a metal that can be combined with zinc in a forge to produce brass.  As a fantastic conductor of heat, it's often found in air conditioning parts, plumbing, electrical components, and various appliances."
+copperSpool,items,Item,KgNone,Copper Spool
+copperSpoolDesc,items,Item,KgNone,"A wound spool of unshielded copper wire."
+resourceZinc,items,Item,KgNone,Zinc
+resourceZincDesc,items,Item,KgNone,"Zinc is a metal that can be combined with copper in a forge to produce brass.  As galvanized protection against rusting metals, it's often found in air conditioning parts, vehicles, chainlink fences, washing machines, and street lights."

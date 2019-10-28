@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <ModInfo>
+    <Name value="Mean Cloud's Barbed Wire for A18"/>
+    <Description value="Adds the placeable barbed wire sheet back to Alpha 18."/>
+    <Author value="Mean.Cloud"/>
+    <Version value="A18 0.01"/>
+		<Website value="http://mean.cloud/" />
+  </ModInfo>
+</xml>
