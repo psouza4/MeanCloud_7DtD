@@ -1,0 +1,56 @@
+<MeanCloud_Cannabis>
+
+  <append xpath="/blocks">
+
+    <block name="plantedCannabis1">
+      <property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="UnlockedBy" value="perkLivingOffTheLand,plantedCannabis1Schematic"/>
+      <property name="Material" value="Mcorn"/>
+      <property name="Texture" value="447"/> <!-- borrowing from 'hops', stage 1 -->
+      <property name="Group" value="Food/Cooking"/>
+      <drop event="Destroy" name="plantedCannabis1" count="1"/>
+      <property name="PlantGrowing.Next" value="plantedCannabis2"/>
+      <property name="PlantGrowing.GrowthRate" value="32"/>
+      <property name="PlantGrowing.LightLevelGrow" value="4"/>
+      <property name="CustomIcon" value="plantedCannabis1"/>
+    </block>
+
+    <block name="plantedCannabis2">
+      <property name="Extends" value="cropsGrowingMaster"/>
+      <property name="CreativeMode" value="Dev"/>
+      <property name="CustomIcon" value="plantedCannabis1"/>
+      <property name="Texture" value="448"/> <!-- borrowing from 'hops', stage 2 -->
+      <property name="PlantGrowing.Next" value="plantedCannabis3HarvestPlayer"/>
+      <property name="PlantGrowing.GrowthRate" value="32"/>
+      <property name="PlantGrowing.LightLevelGrow" value="4"/>
+      <drop event="Destroy" name="plantedCannabis1" count="1"/>
+    </block>
+
+    <block name="plantedCannabis3Harvest">
+      <property name="Extends" value="cropsHarvestableMaster" param1="CustomIcon"/>
+      <property name="CustomIcon" value="plantedCannabis3Harvest"/>
+      <property name="Material" value="Mcorn"/>
+      <property name="Texture" value="449"/> <!-- borrowing from 'hops', stage 3 -->
+      <drop event="Harvest" name="resourceCropCannabisBud" count="1" tag="wildCropsHarvest"/>
+    </block>
+
+    <block name="plantedCannabisHarvestRandomHelper">
+      <property name="Extends" value="plantedCannabis3Harvest" param1="MultiBlockDim"/>
+      <property name="CreativeMode" value="Dev"/>
+      <property name="CustomIcon" value="plantedCannabis3Harvest"/> <property name="CustomIconTint" value="ff8080"/>
+      <property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+      <property name="DisplayInfo" value="Name"/>
+      <property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+    </block>
+
+    <block name="plantedCannabis3HarvestPlayer">
+      <property name="Extends" value="plantedCannabis3Harvest"/>
+      <property name="CreativeMode" value="Dev"/>
+      <drop event="Harvest" name="resourceCropCannabisBud" count="1" tag="cropHarvest"/>
+      <property name="DowngradeBlock" value="plantedCannabis1"/>
+    </block>
+
+  </append>
+
+</MeanCloud_Cannabis>

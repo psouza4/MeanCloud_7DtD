@@ -1,0 +1,28 @@
+Key,Source,Context,Changes,English
+perkYeahScienceRank3LongDesc,progression,Perk,New,"Your friends call you the chemist and your enemies go boom. Craft first aid kits, blood draw kits, bongs, steroids, military fiber and hub cap mines."
+plantedCannabis1,blocks,Farming,New,Cannabis (Seed)
+plantedCannabis1Desc,blocks,Farming,New,"Plant Cannabis seeds in fertilized dirt to grow Cannabis plants."
+plantedCannabis1Schematic,blocks,Farming,New,Cannabis (Seed) Recipe
+plantedCannabis2,blocks,Farming,New,Cannabis (Growing)
+plantedCannabis3Harvest,blocks,Farming,New,Cannabis Plant 3 (POI)
+plantedCannabis3HarvestDesc,blocks,Farming,New,"Cannabis Plant"
+plantedCannabis3HarvestPlayerDesc,blocks,Farming,New,"Cannabis Plant"
+plantedCannabisHarvestRandomHelper,blocks,Farming,New,= Cannabis = Random Helper
+buffDrugSmokedJointDesc,buffs,Buff,New,"You got high on cannabis and it made you feel better and also pretty hungry. Gained 15% damage reduction, +1 to Fortitude, and -1 to Perception."
+buffDrugSmokedJointName,buffs,Buff,New,[9acc8b]Smoked Joint[-]
+buffDrugSmokedJointTooltip,buffs,Buff,New,You got high.
+buffDrugRippedBongDesc,buffs,Buff,New,"You got really high on cannabis and it made you feel better and also really hungry. Gained 25% damage reduction, +2 to Fortitude, and -2 to Perception."
+buffDrugRippedBongName,buffs,Buff,New,[9acc8b]Ripped Bong[-]
+buffDrugRippedBongTooltip,buffs,Buff,New,You got really high.
+resourceCropCannabisBud,items,Farming,New,Cannabis Bud
+resourceCropCannabisBudDesc,items,Farming,New,"Useful in a variety of 'medicinal' applications from rolling joints to filling bongs."
+drugCannabisJointUnrolled,items,Medical,New,Cannabis Joint [ccba8b](Unrolled)[-]
+drugCannabisJointUnrolledDesc,items,Medical,New,"You'll need to spend some time rolling this into a smokable joint. Until then, it's going to take up some space so you don't ruin it."
+drugCannabisJointRolled,items,Medical,New,Cannabis Joint [9acc8b](Rolled)[-]
+drugCannabisJointRolledDesc,items,Medical,New,"Smoking this cannabis joint will immediately improve your health and allow you to ignore some pain, but you'll become unfocused and a hungry hungry."
+toolBong,items,Medical,New,Bong
+toolBongDesc,items,Medical,New,"You can combine this with some cannabis buds to fill it up."
+toolBongDirty,items,Medical,New,Bong [ccba8b](Dirty)[-]
+toolBongDirtyDesc,items,Medical,New,"Gross! This needs to be cleaned out before you can use it. Take it to a river or lake?"
+toolBongFilled,items,Medical,New,Bong [9acc8b](Filled)[-]
+toolBongFilledDesc,items,Medical,New,"Ripping this bong will immediately improve your health and allow you to ignore a lot of pain, but you'll become quite unfocused and really hungry."
