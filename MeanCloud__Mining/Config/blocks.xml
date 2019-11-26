@@ -243,13 +243,13 @@
     <block name="oreCopperBoulder">
       <property name="Extends" value="oreBoulderMaster"/>
       <property name="Material" value="MoreMetal"/>
-      <property name="Model" value="Entities/Resources/oreLeadBoulderPrefab"/> <!-- it'd be nice if we had a custom mesh and texture for copper boulders... they look like lead boulders right now -->
+      <property name="Model" value="#@modfolder:Resources/Metals.unity3d?Copper.prefab"/>
       <drop event="Harvest" name="resourceCopper" count="50" tag="oreWoodHarvest"/>
     </block>
 
     <block name="oreZincBoulder">
       <property name="Extends" value="oreBoulderMaster"/>
-      <property name="Model" value="Entities/Resources/oreNitrateBoulderPrefab"/> <!-- it'd be nice if we had a custom mesh and texture for zinc boulders... they look like nitrate powder boulders right now -->
+      <property name="Model" value="#@modfolder:Resources/Metals.unity3d?Zinc.prefab"/>
       <drop event="Harvest" name="resourceZinc" count="50" tag="oreWoodHarvest"/>
     </block>
   
