@@ -34,7 +34,7 @@
       <ingredient name="unit_zinc" count="3"/>
     </recipe>
 
-    <recipe name="resourceBulletCasing" count="1" material_based="true" craft_area="forge" tags="forgeCrafting">
+    <recipe name="resourceBulletCasing" count="1" material_based="true" craft_area="forge" craft_time="1" tags="forgeCrafting">
       <ingredient name="unit_copper" count="7"/>
       <ingredient name="unit_zinc" count="3"/>
       <ingredient name="unit_clay" count="1"/>

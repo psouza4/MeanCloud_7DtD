@@ -20,7 +20,7 @@ oreCopperBoulder,blocks,Block,New,Copper Ore Boulder
 oreZincBoulder,blocks,Block,New,Zinc Ore Boulder
 scrapCopperPile,blocks,Block,KgNone,Scrap Copper Pile
 rockCrusher,blocks,Workstation,KgNone,Rock Crusher
-rockCrusherDesc,blocks,Workstation,EnChanged,"Processes ores into usable resources."
+rockCrusherDesc,blocks,Workstation,EnChanged,"Made from an industrial washing machine, this can break up ores into usable resources."
 Excavator,blocks,Block,KgNone,Excavator [ccba8b](Empty)[-]
 ExcavatorV2,blocks,Block,KgNone,Excavator [ccba8b](Mining)[-]
 MiningTruck,blocks,Block,KgNone,Excavator
@@ -30,3 +30,6 @@ copperSpool,items,Item,KgNone,Copper Spool
 copperSpoolDesc,items,Item,KgNone,"A wound spool of unshielded copper wire."
 resourceZinc,items,Item,KgNone,Zinc
 resourceZincDesc,items,Item,KgNone,"Zinc is a metal that can be combined with copper in a forge to produce brass.  As galvanized protection against rusting metals, it's often found in air conditioning parts, vehicles, chainlink fences, washing machines, and street lights."
+terrOreSilver,blocks,Terrain,New,Silver Ore
+terrOreGold,blocks,Terrain,New,Gold Ore
+terrOreDiamond,blocks,Terrain,New,Diamond Ore
