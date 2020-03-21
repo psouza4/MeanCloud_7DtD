@@ -3,7 +3,7 @@
   <append xpath="/blocks">
 
     <block name="plantedCannabis1">
-      <property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+      <property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
       <property name="CreativeMode" value="Player"/>
       <property name="UnlockedBy" value="perkLivingOffTheLand,plantedCannabis1Schematic"/>
       <property name="Group" value="Food/Cooking"/>
