@@ -1,0 +1,118 @@
+<MeanCloud_Fishing>
+
+	<append xpath="/blocks">
+
+		<block name="fishTrap">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="UpgradeRated" />
+			<property name="Material" value="Mfishingnet"/>
+			<property name="Shape" value="New"/>
+			<property name="LightOpacity" value="0"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="Pole0.5m"/>
+			<property name="Mesh" value="cutout"/>
+			<property name="Frame"/>
+			<property name="Texture" value="49"/> <!-- texture 49 on all sides -->
+			<property name="ImposterExclude" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="67"/>
+			<property name="UseGlobalUV" value="Local"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UpgradeRated.ToBlock" value="fishTrapCaught" />
+			<property name="UpgradeRated.Rate" value="8" />
+			<property name="CustomIcon" value="rebarFramePillar100" />
+			<property name="CanPickup" value="true" param1="fishTrapItem"/>
+		</block>
+
+		<block name="fishTrapCaught">
+			<property name="CreativeMode" value="None"/>
+			<property name="Class" value="Loot" />
+			<property name="Material" value="Mfishingnet"/>
+			<property name="Shape" value="New"/>
+			<property name="LightOpacity" value="0"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="Pole1m"/>
+			<property name="Mesh" value="cutout"/>
+			<property name="Frame"/>
+			<property name="Texture" value="49,49,289"/> <!-- texture 49 on top and bottom, texture 289 around the center axis -->
+			<property name="ImposterExclude" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="67"/>
+			<property name="UseGlobalUV" value="Local"/>
+			<property name="Weight" value="216" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="LootList" value="456" /> <!-- Credit to doughphungus: Changed from 361 as it conflicts with White River Tools of Citizenship packs, in A19 -->
+			<drop event="Destroy" count="0"/>
+			<drop event="Harvest" count="0"/>
+			<property name="DowngradeBlock" value="fishTrap"/>
+			<property name="CustomIcon" value="rebarFramePillar100" />
+		</block>
+
+		<block name="Fishing Cache" randomrotation="true"> <!-- master cache -->
+			<property name="CreativeMode" value="None"/>
+			<property name="Class" value="UpgradeRated"/>
+			<property name="Material" value="Mfishingcache"/>
+			<property name="StabilitySupport" value="false"/>
+			<!-- <property name="CustomIcon" value="itemFishingCacheT1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#Entities/LootContainers?coolerPrefab.prefab"/>
+			<property name="IsTerrainDecoration" value="true"/> -->
+			<property name="CustomIcon" value="itemFishingCacheT1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Gore/animal_remainsPrefab"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Destroy" name="Raw Fish" count="1" prob="0.30"/>
+			<drop event="Destroy" name="Rotten Fish" count="1" prob="0.10"/>
+			<drop event="Destroy" name="resourceCloth" count="1" prob="0.03"/>
+			<drop event="Destroy" name="resourceLeather" count="1" prob="0.02"/>
+			<drop event="Destroy" name="resourcePaper" count="1" prob="0.01"/>
+			<drop event="Destroy" name="oldCash" count="1" prob="0.001"/>
+			<property name="Group" value="Food/Cooking"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="UpgradeRated.ToBlock" value="air"/>
+			<property name="UpgradeRated.Rate" value="4"/>
+		</block>
+
+		<block name="Fishing Cache (T1)">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Extends" value="Fishing Cache"/>
+		</block>
+
+		<block name="Fishing Cache (T2)">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Extends" value="Fishing Cache"/>
+			<property name="CustomIcon" value="itemFishingCacheT2"/>
+			<drop event="Destroy" name="Raw Fish" count="1" prob="0.50"/>
+			<drop event="Destroy" name="Prawn" count="1,2" prob="0.36"/>
+			<drop event="Destroy" name="resourceYuccaFibers" count="1,2" prob="0.15"/>
+			<drop event="Destroy" name="drinkCanEmpty" count="1" prob="0.03"/>
+			<drop event="Destroy" name="resourceBone" count="1" prob="0.015"/>
+			<drop event="Destroy" name="armorClothBoots" count="1" prob="0.015"/>
+			<drop event="Destroy" name="armorLeatherBoots" count="1" prob="0.009"/>
+			<drop event="Destroy" name="armorScrapBoots" count="1" prob="0.006"/>
+			<drop event="Destroy" name="apparelWornBoots" count="1" prob="0.015"/>
+			<drop event="Destroy" name="apparelRunningShoesRegular" count="1" prob="0.015"/>
+			<drop event="Destroy" name="apparelRunningShoesHP" count="1" prob="0.006"/>
+			<drop event="Destroy" name="apparelCowboyBoots" count="1" prob="0.009"/>
+			<drop event="Destroy" name="apparelGothBoots" count="1" prob="0.003"/>
+			<drop event="Destroy" name="apparelSuitDressShoes" count="1" prob="0.0021"/>
+			<drop event="Destroy" name="apparelPlantFiberShoes" count="1" prob="0.009"/>
+		</block>
+
+		<block name="Fishing Cache (T3)">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Extends" value="Fishing Cache (T2)"/>
+			<property name="CustomIcon" value="itemFishingCacheT3"/>
+			<drop event="Destroy" name="Raw Fish" count="1,2" prob="0.75"/>
+			<drop event="Destroy" name="Prawn" count="1,3" prob="0.45"/>
+			<drop event="Destroy" name="armorMilitaryBoots" count="1" prob="0.005"/>
+			<drop event="Destroy" name="armorMilitaryStealthBoots" count="1" prob="0.0025"/>
+			<drop event="Destroy" name="armorIronBoots" count="1" prob="0.005"/>
+			<drop event="Destroy" name="armorSteelBoots" count="1" prob="0.0025"/>
+			<drop event="Destroy" name="apparelHazmatBoots" count="1" prob="0.005"/>
+		</block>
+
+	</append>
+
+</MeanCloud_Fishing>
