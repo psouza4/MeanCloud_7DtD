@@ -1,67 +1,79 @@
 <MeanCloud_Cannabis>
 
-  <append xpath="/blocks">
+	<append xpath="/blocks">
 
-    <block name="plantedCannabis1">
-      <property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="UnlockedBy" value="perkLivingOffTheLand,plantedCannabis1Schematic"/>
-      <property name="Group" value="Food/Cooking"/>
-      <property name="CustomIcon" value="plantedCannabis1"/>
-      <property name="DisplayType" value="blockMulti"/>
-      <property name="Shape" value="ModelEntity"/>
-      <property name="ModelOffset" value="0,-0.25,0"/>
-      <property name="MultiBlockDim" value="1,1,1"/>
-      <property name="Model" value="#@modfolder:Resources/Cannabis.unity3d?CannabisPrefab_plant1.prefab"/>
-      <property name="PlantGrowing.Next" value="plantedCannabis2"/>
-      <property name="PlantGrowing.GrowthRate" value="32"/>
-      <property name="PlantGrowing.LightLevelGrow" value="4"/>
-      <drop event="Destroy" name="plantedCannabis1" count="1"/>
-    </block>
+		<block name="plantedCannabis1">
+			<property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="UnlockedBy" value="perkLivingOffTheLand,plantedCannabis1Schematic"/>
+			<property name="Group" value="Food/Cooking"/>
+			<property name="CustomIcon" value="plantedCannabis1"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,-0.25,0"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Model" value="#@modfolder:Resources/Cannabis.unity3d?CannabisPrefab_plant1.prefab"/>
+			<property name="PlantGrowing.Next" value="plantedCannabis2"/>
+			<property name="PlantGrowing.GrowthRate" value="32"/>
+			<property name="PlantGrowing.LightLevelGrow" value="4"/>
+			<drop event="Destroy" name="plantedCannabis1" count="1"/>
+		</block>
 
-    <block name="plantedCannabis2">
-      <property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
-      <property name="CreativeMode" value="Dev"/>
-      <property name="CustomIcon" value="plantedCannabis1"/>
-      <property name="DisplayType" value="blockMulti"/>
-      <property name="Shape" value="ModelEntity"/>
-      <property name="ModelOffset" value="0,0,0"/>
-      <property name="MultiBlockDim" value="1,1,1"/>
-      <property name="Model" value="#@modfolder:Resources/Cannabis.unity3d?CannabisPrefab_plant2.prefab"/>
-      <property name="PlantGrowing.Next" value="plantedCannabis3HarvestPlayer"/>
-      <property name="PlantGrowing.GrowthRate" value="32"/>
-      <property name="PlantGrowing.LightLevelGrow" value="4"/>
-      <drop event="Destroy" name="plantedCannabis1" count="1"/>
-    </block>
+		<block name="plantedCannabis2">
+			<property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="plantedCannabis1"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Model" value="#@modfolder:Resources/Cannabis.unity3d?CannabisPrefab_plant2.prefab"/>
+			<property name="PlantGrowing.Next" value="plantedCannabis3HarvestPlayer"/>
+			<property name="PlantGrowing.GrowthRate" value="32"/>
+			<property name="PlantGrowing.LightLevelGrow" value="4"/>
+			<drop event="Destroy" name="plantedCannabis1" count="1"/>
+		</block>
 
-    <block name="plantedCannabis3Harvest">
-      <property name="Extends" value="cropsHarvestableMaster" param1="Texture,CustomIcon,Mesh"/>
-      <property name="CustomIcon" value="plantedCannabis3Harvest"/>
-      <property name="DisplayType" value="blockMulti"/>
-      <property name="Shape" value="ModelEntity"/>
-      <property name="ModelOffset" value="0,0,0"/>
-      <property name="MultiBlockDim" value="1,2,1"/>
-      <property name="Model" value="#@modfolder:Resources/Cannabis.unity3d?CannabisPrefab_plant3.prefab"/>
-      <drop event="Harvest" name="resourceCropCannabisBud" count="1" tag="wildCropsHarvest"/>
-      <property name="ParticleOnDeath" value="treeGib_small_dust"/>
-    </block>
+		<block name="plantedCannabis3Harvest">
+			<property name="Extends" value="cropsHarvestableMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CustomIcon" value="plantedCannabis3Harvest"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Model" value="#@modfolder:Resources/Cannabis.unity3d?CannabisPrefab_plant3.prefab"/>
+			<drop event="Harvest" name="resourceCropCannabisBud" count="1" tag="wildCropsHarvest"/>
+			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+		</block>
 
-    <block name="plantedCannabisHarvestRandomHelper">
-      <property name="Extends" value="plantedCannabis3Harvest"/>
-      <property name="CreativeMode" value="Dev"/>
-      <property name="CustomIcon" value="plantedCannabis3Harvest"/> <property name="CustomIconTint" value="ff8080"/>
-      <property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
-      <property name="DisplayInfo" value="Name"/>
-      <property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
-    </block>
+		<block name="plantedCannabisHarvestRandomHelper">
+			<property name="Extends" value="plantedCannabis3Harvest"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="plantedCannabis3Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+		</block>
 
-    <block name="plantedCannabis3HarvestPlayer">
-      <property name="Extends" value="plantedCannabis3Harvest"/>
-      <property name="CreativeMode" value="Dev"/>
-      <drop event="Harvest" name="resourceCropCannabisBud" count="1" tag="cropHarvest"/>
-      <property name="DowngradeBlock" value="plantedCannabis1"/>
-    </block>
+		<block name="plantedCannabis3HarvestPlayer">
+			<property name="Extends" value="plantedCannabis3Harvest"/>
+			<property name="CreativeMode" value="Dev"/>
+			<drop event="Harvest" name="resourceCropCannabisBud" count="1" tag="cropHarvest"/>
+			<property name="DowngradeBlock" value="plantedCannabis1"/>
+			<!-- Credit to doughphungus: fix error reported by Gouki on forum thread.
+			      "PlantedCannabis3HarvestPlayer needs a deco shape assigned but has not" *none
+			      Its probably the Model, but just to be safe copy it all for now
+			-->
+			<property name="CustomIcon" value="plantedCannabis3Harvest"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Model" value="#@modfolder:Resources/Cannabis.unity3d?CannabisPrefab_plant3.prefab"/>
+			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+		</block>
 
-  </append>
+	</append>
 
 </MeanCloud_Cannabis>

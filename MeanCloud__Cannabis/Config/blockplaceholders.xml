@@ -1,18 +1,18 @@
 <MeanCloud_Cannabis>
 
-  <append xpath="/blockplaceholders">
+	<append xpath="/blockplaceholders">
 
-    <placeholder name="plantedCannabisHarvestRandomHelper">
-      <block name="plantedCannabis3Harvest" prob="0.086" randomrotation="true"/>
-      <block name="air" prob="0.1"/>
-      <block name="treeSnowyGrassDiagonal" prob="0.431" biome="snow" randomrotation="true"/>
-      <block name="treeTallGrassDiagonal" prob="0.431" biome="pine_forest" randomrotation="true"/>
-      <block name="treeBrownGrassDiagonal" prob="0.431" biome="desert" randomrotation="true"/>
-      <block name="treeBrownGrassDiagonal" prob="0.431" biome="water" randomrotation="true"/>
-      <block name="treeBrownGrassDiagonal" prob="0.431" biome="wasteland" randomrotation="true"/>
-      <block name="treeBrownGrassDiagonal" prob="0.431" biome="burnt_forest" randomrotation="true"/>
-    </placeholder>
+		<placeholder name="plantedCannabisHarvestRandomHelper">
+			<block name="plantedCannabis3Harvest" prob="0.086" randomrotation="true"/>
+			<block name="air" prob="0.1"/>
+			<block name="treeSnowyGrassDiagonal" prob="0.431" biome="snow" randomrotation="true"/>
+			<block name="treeTallGrassDiagonal" prob="0.431" biome="pine_forest" randomrotation="true"/>
+			<block name="treeBrownGrassDiagonal" prob="0.431" biome="desert" randomrotation="true"/>
+			<block name="treeBrownGrassDiagonal" prob="0.431" biome="water" randomrotation="true"/>
+			<block name="treeBrownGrassDiagonal" prob="0.431" biome="wasteland" randomrotation="true"/>
+			<block name="treeBrownGrassDiagonal" prob="0.431" biome="burnt_forest" randomrotation="true"/>
+		</placeholder>
 
-  </append>
+	</append>
 
 </MeanCloud_Cannabis>

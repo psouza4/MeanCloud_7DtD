@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="MeanCloud's Fishing and Supplemental Pumpkins"/>
+		<Description value="Adds fishing to the world using a fishing tools.  Also includes recipes to cook and prepare fish and other seafood as well as the Supplemental Pumpkins mod."/>
+		<Author value="Mean.Cloud"/>
+		<!-- Thanks to Clockwork Orange for his A16 fishing modlet, where I drew some inspiration from -->
+		<!-- Thanks to Telrics, who provided permission to use his fishing pole Unity asset -->
+		<!-- Thanks to doughphungus, who provided some A19 fixes and the Spanish localizations -->
+		<Version value="A19 1.05"/>
+		<Website value="http://mean.cloud/" />
+		
+		<!-- Copyright and licensing/usage notice:
+			FREE: the fishing pole asset was generously provided by Telrics directly.  Thank you!
+			LICENSED:  the three audio sounds were purchased with an individual commercial license from pond5.com
+		-->
+	</ModInfo>
+</xml>

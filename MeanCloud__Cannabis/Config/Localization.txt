@@ -1,28 +1,30 @@
-Key,Source,Context,Changes,English
-perkYeahScienceRank3LongDesc,progression,Perk,New,"Your friends call you the chemist and your enemies go boom. Craft first aid kits, blood draw kits, bongs, steroids, military fiber and hub cap mines."
-plantedCannabis1,blocks,Farming,New,Cannabis (Seed)
-plantedCannabis1Desc,blocks,Farming,New,"Plant Cannabis seeds in fertilized dirt to grow Cannabis plants."
-plantedCannabis1Schematic,blocks,Farming,New,Cannabis (Seed) Recipe
-plantedCannabis2,blocks,Farming,New,Cannabis (Growing)
-plantedCannabis3Harvest,blocks,Farming,New,Cannabis Plant 3 (POI)
-plantedCannabis3HarvestDesc,blocks,Farming,New,"Cannabis Plant"
-plantedCannabis3HarvestPlayerDesc,blocks,Farming,New,"Cannabis Plant"
-plantedCannabisHarvestRandomHelper,blocks,Farming,New,= Cannabis = Random Helper
-buffDrugSmokedJointDesc,buffs,Buff,New,"You got high on cannabis and it made you feel better and also pretty hungry. Gained 15% damage reduction, +1 to Fortitude, and -1 to Perception."
-buffDrugSmokedJointName,buffs,Buff,New,[9acc8b]Smoked Joint[-]
-buffDrugSmokedJointTooltip,buffs,Buff,New,You got high.
-buffDrugRippedBongDesc,buffs,Buff,New,"You got really high on cannabis and it made you feel better and also really hungry. Gained 25% damage reduction, +2 to Fortitude, and -2 to Perception."
-buffDrugRippedBongName,buffs,Buff,New,[9acc8b]Ripped Bong[-]
-buffDrugRippedBongTooltip,buffs,Buff,New,You got really high.
-resourceCropCannabisBud,items,Farming,New,Cannabis Bud
-resourceCropCannabisBudDesc,items,Farming,New,"Useful in a variety of 'medicinal' applications from rolling joints to filling bongs."
-drugCannabisJointUnrolled,items,Medical,New,Cannabis Joint [ccba8b](Unrolled)[-]
-drugCannabisJointUnrolledDesc,items,Medical,New,"You'll need to spend some time rolling this into a smokable joint. Until then, it's going to take up some space so you don't ruin it."
-drugCannabisJointRolled,items,Medical,New,Cannabis Joint [9acc8b](Rolled)[-]
-drugCannabisJointRolledDesc,items,Medical,New,"Smoking this cannabis joint will immediately improve your health and allow you to ignore some pain, but you'll become unfocused and a hungry hungry."
-toolBong,items,Medical,New,Bong
-toolBongDesc,items,Medical,New,"You can combine this with some cannabis buds to fill it up."
-toolBongDirty,items,Medical,New,Bong [ccba8b](Dirty)[-]
-toolBongDirtyDesc,items,Medical,New,"Gross! This needs to be cleaned out before you can use it. Take it to a river or lake?"
-toolBongFilled,items,Medical,New,Bong [9acc8b](Filled)[-]
-toolBongFilledDesc,items,Medical,New,"Ripping this bong will immediately improve your health and allow you to ignore a lot of pain, but you'll become quite unfocused and really hungry."
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+perkPhysicianRank2LongDesc,progression,perk Int,,,"Medical healing items heal 40% more health over time. Gain 60% more XP using bandages, first aid bandages, first aid kits and splints. Craft items 20% faster at chemistry stations. Can craft bongs.",,"Heilmittel stellen 40 % mehr Gesundheit über Zeit wieder her. Erhalte 60 % mehr EP, wenn du Verbände, Erste-Hilfe-Verbände, Verbandskästen oder Schienen verwendest. Fertige Gegenstände an Chemiestationen 20 % schneller.","Los artículos de curación curan un 40 % más de salud con el tiempo. Obtienes un 60 % más de EXP usando vendas, vendas de primeros auxilios, botiquines de primeros auxilios y tablillas. Fabrica objetos un 20 % más rápido en las estaciones de química.","Les objets de guérison médicale soignent 40 % de santé supplémentaire sur la durée. Utiliser des bandages, des bandages médicaux, des trousses de premiers soins et des attelles vous octroie 60 % d'EXP supplémentaire. Vous fabriquez des objets 20 % plus rapidement aux ateliers de chimie.","Gli oggetti di cura guariscono il 40% di salute in più. Ottieni il 60% di PE in più usando bende, bende di pronto soccorso, cassette del pronto soccorso e stecche. Crea gli oggetti il 20% più velocemente nei laboratori chimici.",医療回復アイテムの回復量が時間の経過とともに40%増加します。包帯、救急包帯、応急処置キット、副木使用時の経験値が60%増加。化学実験ステーションでのアイテムのクラフトが20%速くなります。,"치료 아이템 사용 시 지속 체력 회복이 40% 증가합니다. 붕대, 응급 치료 붕대, 응급 치료 키트와 부목 사용 시 60% 더 많은 XP를 획득합니다. 화학 실험대에서 제작 시간이 20% 빨라집니다.","Medyczne przedmioty leczące przywracają stopniowo 40% więcej zdrowia. Zdobywaj 60% więcej PD za używanie bandaży, bandaży pierwszej pomocy, apteczek pierwszej pomocy i szyn. Wytwarzasz w laboratorium chemicznym 20% szybciej.","Os itens medicinais de cura restauram +40% de vida ao longo do tempo. Ganhe +60% de EXP usando curativos, curativos de primeiros socorros, kits de primeiros socorros e talas. Fabrica itens 20% mais rápido nas estações de química.","Медицинские предметы восстанавливают на 40% больше здоровья за то же время. Получайте на 60% больше опыта, используя бинты, бинты для оказания первой помощи, аптечки и шины. Изготовление предметов в химлаборатории проходит на 20% быстрее.","Medikal iyileştirme öğeleri %40 daha fazla sağlık verir. Bandajlar, ilk yardım bandajları, ilk yardım kitleri ve ateller kullandığında %60 daha fazla DP kazan. Kimya istasyonlarında öğeleri %20 daha hızlı üret.",医疗物品治疗的生命值增加 40%。使用绷带、急救绷带、急救包及夹板时，获得的经验值增加 60%。在化学工作站制作物品速度加快 20%。,療傷物品隨時間治療額外 40% 的生命值。使用繃帶、急救繃帶、急救箱和夾板增加 60% 的經驗值。在化學工作站製作物品的速度快 20%。,"Los artículos de curación curan un 40 % más de salud con el tiempo. Obtienes un 60 % más de EXP usando vendas, vendas de primeros auxilios, botiquines de primeros auxilios y tablillas. Fabrica objetos un 20 % más rápido en las estaciones de química."
+plantedCannabis1,blocks,Farming,,,Cannabis (Seed),,Cannabis (Semilla)
+plantedCannabis1Desc,blocks,Farming,,,"Plant Cannabis seeds in fertilized dirt to grow Cannabis plants.",,"Planta semillas de Canabis en tierra fertilizada para que crezca una planta de canabis."
+plantedCannabis1Schematic,blocks,Farming,,,Cannabis (Seed) Recipe,,Recipe de Cannabis (Semilla)
+plantedCannabis2,blocks,Farming,,,Cannabis (Growing),,Cannabis (Creciendo)
+plantedCannabis3Harvest,blocks,Farming,,,Cannabis Plant 3 (POI),,Planta de Cannabis 3 (POI)
+plantedCannabis3HarvestDesc,blocks,Farming,,,"Cannabis Plant",,"Planta de Cannabis"
+plantedCannabis3HarvestPlayerDesc,blocks,Farming,,,"Cannabis Plant",,"Planta de Cannabis"
+plantedCannabisHarvestRandomHelper,blocks,Farming,,,= Cannabis = Random Helper,
+buffDrugSmokedJointDesc,buffs,Buff,,x,"You got high on cannabis and it made you feel better and also pretty hungry. Gained 15% damage reduction, +1 to Fortitude, and -1 to Perception.",,"Te has drogado, te sientes mejor y muy ambriento. Obtienes un 15% de reducción de daño, +1 de Fortaleza y -1 de Percepción."
+buffDrugSmokedJointName,buffs,Buff,,x,"[9acc8b]Smoked Joint[-]",,"[9acc8b]Porro Fumado[-]"
+buffDrugSmokedJointTooltip,buffs,Buff,,x,You got high.,,Te has drogado.
+buffDrugRippedBongDesc,buffs,Buff,,x,"You got really high on cannabis and it made you feel better and also really hungry. Gained 25% damage reduction, +2 to Fortitude, and -2 to Perception.",,"Te has drogado mucho con el cannabis y te sientes mejor y mucho más hambriento. Obtienes un 25% de reducción de daño, +2 de Fortaleza y -2 en Percepción"
+buffDrugRippedBongName,buffs,Buff,,x,"[9acc8b]Ripped Bong[-]",,"[9acc8b]Cachimba Rasgada[-]"
+buffDrugRippedBongTooltip,buffs,Buff,,x,You got really high.,,Estás muy drogado.
+resourceCropCannabisBud,items,Farming,,,Cannabis Bud,,Brote de Cannabis
+resourceCropCannabisBudDesc,items,Farming,,,"Useful in a variety of 'medicinal' applications from rolling joints to filling bongs.",,"Útil en una variedad de aplicaciones 'medicinales', desde liar porros hasta llenar cachimbas."
+drugCannabisJointUnrolled,items,Medical,,,"Cannabis Joint [ccba8b](Unrolled)[-]",,"Porro de cannabis [ccba8b](Sin liar)[-]"
+drugCannabisJointUnrolledDesc,items,Medical,,,"You'll need to spend some time rolling this into a smokable joint. Until then, it's going to take up some space so you don't ruin it.",,"Tendrás que pasar un tiempo liandote esto en un porro fumable. Hasta entonces, ocupará algo de espacio para que no lo arruines."
+drugCannabisJointRolled,items,Medical,,,"Cannabis Joint [9acc8b](Rolled)[-]",,"Porro de cannabis [9acc8b](Liado)[-]"
+drugCannabisJointRolledDesc,items,Medical,,,"Smoking this cannabis joint will immediately improve your health and allow you to ignore some pain, but you'll become unfocused and a hungry hungry.",,"Fumarte el porro de cannabis mejorará inmediatamente tu salud y te permitirá ignorar un poco el dolor, pero perderás la concentración y tendrás hambre."
+toolBong,items,Medical,,,Bong,,Cachimba
+toolBongDesc,items,Medical,,,"You can combine this with some cannabis buds to fill it up.",,"Puedes combinar esto con algunos cogollos de cannabis para llenarlo."
+toolBongDirty,items,Medical,,,"Bong [ccba8b](Dirty)[-]",,"Cachimba [ccba8b](Sucia)[-]"
+toolBongDirtyDesc,items,Medical,,,"Gross! This needs to be cleaned out before you can use it. Take it to a river or lake?",,"¡Qué puto asco! Esto necesita ser limpiado antes de que puedas usarlo. ¿Podría ser en un río o lago?"
+toolBongFilled,items,Medical,,,"Bong [9acc8b](Filled)[-]",,"Cachimba [9acc8b](Llena)[-]"
+toolBongFilledDesc,items,Medical,,,"Ripping this bong will immediately improve your health and allow you to ignore a lot of pain, but you'll become quite unfocused and really hungry.",,"Romper esta Cachimba mejorará inmediatamente tu salud y te permitirá ignorar mucho dolor, pero perderás la concentración y tendrás mucha hambre."
+toolBongSchematic,items,Medical,,,Bong Schematic,,Esquema de Cachimba
+toolBongSchematicDesc,items,Medical,,,"Learn how to craft bongs from existing glassware.",,"Aprende cómo elaborar cachimbas con cristales."

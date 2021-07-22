@@ -1,57 +1,58 @@
 <MeanCloud_Cannabis>
 
-  <append xpath="/buffs">
+	<append xpath="/buffs">
 
-    <buff name="buffDrugSmokedJoint" name_key="buffDrugSmokedJointName" description_key="buffDrugSmokedJointDesc" icon="ui_game_symbol_crops">
-      <stack_type value="replace"/><duration value="0"/>
-      <display_value value=".buffDrugSmokedJointDisplay"/><display_value_format value="time"/>
-      <effect_group>
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugSmokedJointDuration" operation="subtract" value="@$MetabolismDuration"/>
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrugSmokedJointDisplay" operation="set" value="@$buffDrugSmokedJointDuration"/>
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrugSmokedJointDisplay" operation="divide" value="@$MetabolismDuration"/>
-      </effect_group>
-      <effect_group>
-        <requirement name="CVarCompare" cvar="$buffDrugSmokedJointDuration" operation="LTE" value="0"/>
-          <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffDrugSmokedJointDisplay" operation="set" value="0"/>
-          <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugSmokedJointDuration" operation="set" value="0"/>
-          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffDrugSmokedJoint"/>
-      </effect_group>
+		<buff name="buffDrugSmokedJoint" name_key="buffDrugSmokedJointName" description_key="buffDrugSmokedJointDesc" icon="ui_game_symbol_crops">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value value=".buffDrugSmokedJointDisplay"/>
+			<display_value_format value="time"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugSmokedJointDuration" operation="subtract" value="@$MetabolismDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrugSmokedJointDisplay" operation="set" value="@$buffDrugSmokedJointDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrugSmokedJointDisplay" operation="divide" value="@$MetabolismDuration"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$buffDrugSmokedJointDuration" operation="LTE" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffDrugSmokedJointDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugSmokedJointDuration" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffDrugSmokedJoint"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="StaminaChangeOT" operation="base_subtract" value="0.100"/> <!-- FoodChangeOT has literally no code in the game engine and can't be used -->
+				<passive_effect name="AttributeLevel" operation="base_add" value="1" tags="attFortitude"/>
+				<passive_effect name="AttributeLevel" operation="base_subtract" value="1" tags="attPerception"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="15" tags="coredamageresist"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="20"/>
+			</effect_group>
+		</buff>
 
-      <effect_group>
-        <passive_effect name="StaminaChangeOT" operation="base_subtract" value="0.100"/> <!-- FoodChangeOT has literally no code in the game engine and can't be used -->
-        <passive_effect name="AttributeLevel" operation="base_add" value="1" tags="attFortitude"/>
-        <passive_effect name="AttributeLevel" operation="base_subtract" value="1" tags="attPerception"/>
-        <passive_effect name="PhysicalDamageResist" operation="base_add" value="15" tags="coredamageresist"/>
+		<buff name="buffDrugRippedBong" name_key="buffDrugRippedBongName" description_key="buffDrugRippedBongDesc" icon="ui_game_symbol_crops">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value value=".buffDrugRippedBongDisplay"/>
+			<display_value_format value="time"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugRippedBongDuration" operation="subtract" value="@$MetabolismDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrugRippedBongDisplay" operation="set" value="@$buffDrugRippedBongDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrugRippedBongDisplay" operation="divide" value="@$MetabolismDuration"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$buffDrugRippedBongDuration" operation="LTE" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffDrugRippedBongDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugRippedBongDuration" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffDrugRippedBong"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="StaminaChangeOT" operation="base_subtract" value="0.150"/> <!-- FoodChangeOT has literally no code in the game engine and can't be used -->
+				<passive_effect name="AttributeLevel" operation="base_add" value="2" tags="attFortitude"/>
+				<passive_effect name="AttributeLevel" operation="base_subtract" value="2" tags="attPerception"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="25" tags="coredamageresist"/>
 
-        <triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="20"/>
-      </effect_group>
-    </buff>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="30"/>
+			</effect_group>
+		</buff>
 
-    <buff name="buffDrugRippedBong" name_key="buffDrugRippedBongName" description_key="buffDrugRippedBongDesc" icon="ui_game_symbol_crops">
-      <stack_type value="replace"/><duration value="0"/>
-      <display_value value=".buffDrugRippedBongDisplay"/><display_value_format value="time"/>
-      <effect_group>
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugRippedBongDuration" operation="subtract" value="@$MetabolismDuration"/>
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrugRippedBongDisplay" operation="set" value="@$buffDrugRippedBongDuration"/>
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrugRippedBongDisplay" operation="divide" value="@$MetabolismDuration"/>
-      </effect_group>
-      <effect_group>
-        <requirement name="CVarCompare" cvar="$buffDrugRippedBongDuration" operation="LTE" value="0"/>
-          <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffDrugRippedBongDisplay" operation="set" value="0"/>
-          <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugRippedBongDuration" operation="set" value="0"/>
-          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffDrugRippedBong"/>
-      </effect_group>
-
-      <effect_group>
-        <passive_effect name="StaminaChangeOT" operation="base_subtract" value="0.150"/> <!-- FoodChangeOT has literally no code in the game engine and can't be used -->
-        <passive_effect name="AttributeLevel" operation="base_add" value="2" tags="attFortitude"/>
-        <passive_effect name="AttributeLevel" operation="base_subtract" value="2" tags="attPerception"/>
-        <passive_effect name="PhysicalDamageResist" operation="base_add" value="25" tags="coredamageresist"/>
-
-        <triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="30"/>
-      </effect_group>
-    </buff>
-
-  </append>
+	</append>
 
 </MeanCloud_Cannabis>

@@ -1,250 +1,54 @@
 <MeanCloud_Pumpkins>
 
-  <remove xpath="/Ignore_Warnings_In_This_Modelet[@modname='MeanCloud_Pumpkins'][@filename='\Config\items.xml']" />
-  <remove xpath="/items/item[@name='foodPumpkinPie']" />
-  <remove xpath="/items/item[@name='foodPumpkinCheesecake']" />
-  <remove xpath="/items/item[@name='foodPumpkinBread']" />
-  <remove xpath="/items/item[@name='foodCropPumpkin']" />
-  <remove xpath="/items/item[@name='foodPumpkinPieSchematic']" />
-  <remove xpath="/items/item[@name='foodPumpkinCheesecakeSchematic']" />
-  <remove xpath="/items/item[@name='foodPumpkinBreadSchematic']" />
-  <remove xpath="/items/item[@name='plantedPumpkin1Schematic']" />
-
-  <append xpath="/items">
-
-    <item name="foodPumpkinPie">
-      <property name="CustomIcon" value="foodPumpkinPie"/>
-      <property name="Tags" value="food"/>
-      <property name="HoldType" value="31"/>
-      <property name="DisplayType" value="food"/>
-      <property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="Material" value="Morganic"/>
-      <property name="Stacknumber" value="10"/> <!-- STK food -->
-      <property name="EconomicValue" value="124"/>
-      <property name="UnlockedBy" value="perkMasterChef,foodPumpkinPieSchematic"/>
-      <property class="Action0">
-        <property name="Class" value="Eat"/>
-        <property name="Delay" value="1.0"/>
-        <property name="Use_time" value="..."/>
-        <property name="Sound_start" value="player_eating"/>
-        <!-- jar from cooking food <property name="Create_item" value="drinkJarEmpty"/> -->
-      </property>
-      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="45"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="22"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value=".04"/> <!-- FP cooked -->
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
-          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
-        </triggered_effect>
-      </effect_group>
-      
-      <property name="DescriptionKey" value="foodPumpkinPieDesc"/>
-    </item>
-
-    <item name="foodPumpkinCheesecake">
-      <property name="CustomIcon" value="foodPumpkinCheesecake"/>
-      <property name="Tags" value="food"/>
-      <property name="HoldType" value="31"/>
-      <property name="DisplayType" value="food"/>
-      <property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="Material" value="Morganic"/>
-      <property name="Stacknumber" value="10"/> <!-- STK food -->
-      <property name="EconomicValue" value="124"/>
-      <property name="UnlockedBy" value="perkMasterChef,foodPumpkinCheesecakeSchematic"/>
-      <property class="Action0">
-        <property name="Class" value="Eat"/>
-        <property name="Delay" value="1.0"/>
-        <property name="Use_time" value="..."/>
-        <property name="Sound_start" value="player_eating"/>
-        <!-- jar from cooking food <property name="Create_item" value="drinkJarEmpty"/> -->
-      </property>
-      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="45"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="22"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value=".04"/> <!-- FP cooked -->
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
-          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
-        </triggered_effect>
-      </effect_group>
-      
-      <property name="DescriptionKey" value="foodPumpkinCheesecakeDesc"/>
-    </item>
-
-    <item name="foodPumpkinBread">
-      <property name="CustomIcon" value="foodPumpkinBread"/>
-      <property name="Tags" value="food"/>
-      <property name="HoldType" value="31"/>
-      <property name="DisplayType" value="food"/>
-      <property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="Material" value="Morganic"/>
-      <property name="Stacknumber" value="10"/> <!-- STK food -->
-      <property name="EconomicValue" value="124"/>
-      <property name="UnlockedBy" value="perkMasterChef,foodPumpkinBreadSchematic"/>
-      <property class="Action0">
-        <property name="Class" value="Eat"/>
-        <property name="Delay" value="1.0"/>
-        <property name="Use_time" value="..."/>
-        <property name="Sound_start" value="player_eating"/>
-        <!-- jar from cooking food <property name="Create_item" value="drinkJarEmpty"/> -->
-      </property>
-      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="45"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="22"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value=".04"/> <!-- FP cooked -->
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
-          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
-        </triggered_effect>
-      </effect_group>
-      
-      <property name="DescriptionKey" value="foodPumpkinBreadDesc"/>
-    </item>
-
-    <item name="foodCropPumpkin">
-      <property name="CustomIcon" value="plantedPumpkin3Harvest"/>
-      <property name="Tags" value="food"/>
-      <property name="DisplayType" value="foodWaterOnly"/>
-      <property name="HoldType" value="31"/>
-      <property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="Material" value="MresourceCrop"/>
-      <property name="Stacknumber" value="125"/> <!-- STK food -->
-      <property name="EconomicValue" value="6"/>
-      <property name="EconomicBundleSize" value="1"/>
-      <property name="SellableToTrader" value="false"/>
-      <property class="Action0">
-        <property name="Class" value="Eat"/>
-        <property name="Delay" value="1.0"/>
-        <property name="Use_time" value="..."/>
-        <property name="Sound_start" value="player_eating"/>
-      </property>
-      <property name="Group" value="Food/Cooking,CFFood/Cooking"/> <!-- ,Medicine -->
-
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="2"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="7"/><display_value name="dFoodPoisoningRisk" value=".07"/> <!-- raw2 -->
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
-          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
-        </triggered_effect>
-      </effect_group>
-    </item>
-
-    <item name="foodPumpkinPieSchematic">
-      <property name="Extends" value="schematicNoQualityRecipeMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="foodPumpkinPie"/>
-      <property name="Unlocks" value="foodPumpkinPie"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPumpkinPie" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-      </effect_group>
-    </item>
-
-    <item name="foodPumpkinCheesecakeSchematic">
-      <property name="Extends" value="schematicNoQualityRecipeMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="foodPumpkinCheesecake"/>
-      <property name="Unlocks" value="foodPumpkinCheesecake"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPumpkinCheesecake" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-      </effect_group>
-    </item>
-
-    <item name="foodPumpkinBreadSchematic">
-      <property name="Extends" value="schematicNoQualityRecipeMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="foodPumpkinBread"/>
-      <property name="Unlocks" value="foodPumpkinBread"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPumpkinBread" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-      </effect_group>
-    </item>
-
-    <item name="plantedPumpkin1Schematic">
-      <property name="Extends" value="schematicNoQualityRecipeMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="plantedPumpkin1"/>
-      <property name="Unlocks" value="plantedPumpkin1"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedPumpkin1" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-      </effect_group>
-    </item>
-
-  </append>
-
   <append xpath="/items">
     
-    <item name="drinkJarPumpkinSpiceLatte">
-      <property name="HoldType" value="3"/>
-      <property name="DisplayType" value="waterCoffee"/>
-      <property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="Material" value="Morganic"/>
-      <property name="Weight" value="10"/>
-      <property name="Stacknumber" value="10"/> <!-- STK drink -->
-      <property name="EconomicValue" value="96"/>
-      <property name="UnlockedBy" value="perkMasterChef,drinkJarPumpkinSpiceLatteSchematic"/>
-      <property class="Action0">
-        <property name="Class" value="Eat"/>
-        <property name="Delay" value="1.0"/>
-        <property name="Use_time" value="..."/>
-        <property name="Sound_start" value="player_drinking"/>
-        <property name="Create_item" value="drinkJarEmpty"/>
-      </property>
-      <property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
-      <effect_group tiered="false">
-        <requirement name="NotHasBuff" buff="buffIsOnFire"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="24"/>
-        <display_value name="dStaminaRegen" value=".25"/>
-        <display_value name="dHypothermalResist" value="5"/>
-        <display_value name="dDuration" value="183"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="add" value="183"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="set" value="543">
-          <requirement name="CVarCompare" cvar="$buffCoffeeDuration" operation="GT" value="543"/></triggered_effect>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffCoffee"/>
-      </effect_group>
+		<item name="drinkJarPumpkinSpiceLatte">
+			<property name="HoldType" value="3"/>
+			<property name="DisplayType" value="waterCoffee"/>
+			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="10"/> <!-- STK drink -->
+			<property name="EconomicValue" value="96"/>
+			<property name="UnlockedBy" value="perkMasterChef,drinkJarPumpkinSpiceLatteSchematic"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+				<property name="Create_item" value="drinkJarEmpty"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+			<effect_group tiered="false">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="24"/>
+				<display_value name="dStaminaRegen" value=".25"/>
+				<display_value name="dHypothermalResist" value="5"/>
+				<display_value name="dDuration" value="183"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="add" value="183"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="set" value="543">
+					<requirement name="CVarCompare" cvar="$buffCoffeeDuration" operation="GT" value="543"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffCoffee"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
 
-      <effect_group tiered="false">
-        <requirement name="HasBuff" buff="buffIsOnFire"/>
-          <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
-      </effect_group>
-    </item>
+		<item name="drinkJarPumpkinSpiceLatteSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="drinkJarPumpkinSpiceLatte"/>
+			<property name="Unlocks" value="drinkJarPumpkinSpiceLatte"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarPumpkinSpiceLatte" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
 
-    <item name="drinkJarPumpkinSpiceLatteSchematic">
-      <property name="Extends" value="schematicNoQualityRecipeMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="drinkJarPumpkinSpiceLatte"/>
-      <property name="Unlocks" value="drinkJarPumpkinSpiceLatte"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarPumpkinSpiceLatte" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-      </effect_group>
-    </item>
-
-  </append>
+	</append>
 
 </MeanCloud_Pumpkins>

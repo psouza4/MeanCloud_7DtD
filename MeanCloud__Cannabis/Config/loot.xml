@@ -1,52 +1,56 @@
 <MeanCloud_Cannabis>
 
-  <append xpath="/lootcontainers/lootgroup[@name='seeds']">
-    <item name="plantedCannabis1" prob="0.1"/>
-  </append>
+	<append xpath="/lootcontainers/lootgroup[@name='seeds']">
+		<item name="plantedCannabis1" prob="0.1"/>
+	</append>
 
-  <append xpath="/lootcontainers/lootgroup[@name='cupboard']">
-    <item name="toolBongDirty" count="1" prob="0.05" />
-    <item name="resourceCropCannabisBud" count="1,6" prob="0.2" />
-  </append>
+	<append xpath="/lootcontainers/lootgroup[@name='cupboard']">
+		<item name="toolBongDirty" count="1" prob="0.05" />
+		<item name="resourceCropCannabisBud" count="1,6" prob="0.2" />
+	</append>
 
-  <append xpath="/lootcontainers/lootgroup[@name='tools']">
-    <item name="toolBongDirty" count="1" prob="0.01" />
-  </append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupToolsT0']">
+		<item name="toolBongDirty" count="1" prob="0.01" />
+	</append>
 
-  <append xpath="/lootcontainers/lootgroup[@name='junk']">
-    <item name="resourceCropCannabisBud" count="1,2" prob="0.05" />
-  </append>
+	<append xpath="/lootcontainers/lootgroup[@name='junk']">
+		<item name="resourceCropCannabisBud" count="1,2" prob="0.05" />
+	</append>
 
-  <append xpath="/lootcontainers/lootgroup[@name='labEquipment']">
-    <item name="toolBongDirty" count="1" prob="0.1" />
-    <item name="resourceCropCannabisBud" count="1,4" prob="0.4" />
-  </append>
+	<append xpath="/lootcontainers/lootgroup[@name='labEquipment']">
+		<item name="toolBongDirty" count="1" prob="0.1" />
+		<item name="resourceCropCannabisBud" count="1,4" prob="0.4" />
+	</append>
 
-  <append xpath="/lootcontainers/lootgroup[@name='medicine']">
-    <item name="toolBongDirty" count="1" prob="0.1" />
-    <item name="resourceCropCannabisBud" count="1,6" prob="0.5" />
-  </append>
+	<append xpath="/lootcontainers/lootgroup[@name='medicine']">
+		<item name="toolBongDirty" count="1" prob="0.1" />
+		<item name="resourceCropCannabisBud" count="1,6" prob="0.5" />
+	</append>
 
-  <append xpath="/lootcontainers/lootgroup[@name='schematicsToolsCommon']">
-    <item name="toolBongSchematic" prob="0.8" />
-  </append>
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsCommon']">
+		<item name="toolBongSchematic" prob="0.8" />
+	</append>
 
-  <append xpath="/lootcontainers/lootgroup[@name='schematicsToolsRare']">
-    <item name="toolBongSchematic" prob="1.4" />
-  </append>
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsRare']">
+		<item name="toolBongSchematic" prob="1.4" />
+	</append>
 
-  <append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipes']">
-    <item name="plantedCannabis1Schematic" />
-  </append>
+	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT0']">
+		<item name="plantedCannabis1Schematic" />
+	</append>
 
-  <!-- cars -->
-  <append xpath="/lootcontainers/lootcontainer[@id='19']">
-    <item name="toolBongDirty" count="1" prob="0.05" />
-  </append>
+	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT1']">
+		<item name="plantedCannabis1Schematic" />
+	</append>
 
-  <!-- garage stuff -->
-  <append xpath="/lootcontainers/lootcontainer[@id='22']">
-    <item name="toolBongDirty" count="1" prob="0.01" />
-  </append>
+	<!-- cars -->
+	<append xpath="/lootcontainers/lootcontainer[@id='19']">
+		<item name="toolBongDirty" count="1" prob="0.05" />
+	</append>
+
+	<!-- garage stuff -->
+	<append xpath="/lootcontainers/lootcontainer[@id='22']">
+		<item name="toolBongDirty" count="1" prob="0.01" />
+	</append>
 
 </MeanCloud_Cannabis>

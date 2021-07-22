@@ -1,165 +1,167 @@
 <MeanCloud_Cannabis>
 
-  <append xpath="/items">
+	<append xpath="/items">
 
-    <item name="resourceCropCannabisBud">
-      <property name="HoldType" value="45"/>
-      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="CustomIcon" value="resourceCropCannabisBud"/>
-      <property name="Material" value="MresourceCrop"/>
-      <property name="Stacknumber" value="500"/> <!-- STK resource -->
-      <property name="EconomicValue" value="5"/>
-      <property name="EconomicBundleSize" value="1"/>
-      <property name="SellableToTrader" value="false"/>
-      <property name="CraftingIngredientTime" value="20"/>
-      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-      <property name="DescriptionKey" value="resourceCropCannabisBudDesc"/>
-    </item>
+		<item name="resourceCropCannabisBud">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="resourceCropCannabisBud"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> <!-- STK resource -->
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<property name="DescriptionKey" value="resourceCropCannabisBudDesc"/>
+		</item>
 
-    <item name="drugCannabisJointUnrolled">
-      <property name="Tags" value="medical"/>
-      <property name="HoldType" value="16"/>
-      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="CustomIcon" value="drugCannabisJointUnrolled"/>
-      <property name="Material" value="MresourceCrop"/>
-      <property name="EconomicValue" value="80"/>
-      <property name="Stacknumber" value="1"/>
-      <property name="Group" value="Science,CFChemicals,Medical"/>
-      <property name="DescriptionKey" value="drugCannabisJointUnrolledDesc"/>
-    </item>
+		<item name="drugCannabisJointUnrolled">
+			<property name="Tags" value="medical"/>
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="drugCannabisJointUnrolled"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="EconomicValue" value="80"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Science,CFChemicals,Medical"/>
+			<property name="DescriptionKey" value="drugCannabisJointUnrolledDesc"/>
+		</item>
 
-    <item name="drugCannabisJointRolled">
-      <property name="Tags" value="medical"/>
-      <property name="DisplayType" value="drugCannabis"/>
-      <property name="HoldType" value="16"/>
-      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="CustomIcon" value="drugCannabisJointRolled"/>
-      <property name="Material" value="MresourceCrop"/>
-      <property name="EconomicValue" value="80"/>
-      <property name="Stacknumber" value="25"/>
-      <property name="Group" value="Science,CFChemicals,Medical"/>
-      <property class="Action0">
-        <property name="Class" value="Eat"/>
-        <property name="Delay" value="1.0"/>
-        <property name="Use_time" value="..."/>
-        <property name="Sound_start" value="torch_swoosh"/>
-        <requirement name="NotHasBuff" buff="buffDrugSmokedJoint"/>
-        <requirement name="NotHasBuff" buff="buffDrugRippedBong"/>
-      </property>
-      <effect_group tiered="false">
-        <display_value name="dInstantHealth" value="20"/>
-        <display_value name="$foodAmountAdd" value="-10"/>
-        <display_value name="dFortitude" value="1"/>
-        <display_value name="dPerception" value="1"/>
-        <display_value name="dPhysicalDamageResist" value="15"/>
-        <display_value name="dDuration" value="123"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSmokedJointDuration" operation="add" value="63"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSmokedJointDuration" operation="set" value="183">
-          <requirement name="CVarCompare" cvar="$buffDrugSmokedJointDuration" operation="GT" value="183"/></triggered_effect>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugSmokedJoint"/>
-      </effect_group>
-      <property name="DescriptionKey" value="drugCannabisJointRolledDesc"/>
-    </item>
+		<item name="drugCannabisJointRolled">
+			<property name="Tags" value="medical"/>
+			<property name="DisplayType" value="drugCannabis"/>
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="drugCannabisJointRolled"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="EconomicValue" value="80"/>
+			<property name="Stacknumber" value="25"/>
+			<property name="Group" value="Science,CFChemicals,Medical"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="torch_swoosh"/>
+				<requirement name="NotHasBuff" buff="buffDrugSmokedJoint"/>
+				<requirement name="NotHasBuff" buff="buffDrugRippedBong"/>
+			</property>
+			<effect_group tiered="false">
+				<display_value name="dInstantHealth" value="20"/>
+				<display_value name="$foodAmountAdd" value="-10"/>
+				<display_value name="dFortitude" value="1"/>
+				<display_value name="dPerception" value="1"/>
+				<display_value name="dPhysicalDamageResist" value="15"/>
+				<display_value name="dDuration" value="123"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSmokedJointDuration" operation="add" value="63"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSmokedJointDuration" operation="set" value="183">
+					<requirement name="CVarCompare" cvar="$buffDrugSmokedJointDuration" operation="GT" value="183"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugSmokedJoint"/>
+			</effect_group>
+			<property name="DescriptionKey" value="drugCannabisJointRolledDesc"/>
+		</item>
 
-    <item name="toolBong">
-      <property name="HoldType" value="3"/>
-      <property name="Tags" value="junk"/>
-      <property name="UnlockedBy" value="perkYeahScience,toolBongSchematic"/>
-      <property name="Meshfile" value="#Other/Items?Food/emptyJarPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="Material" value="Mglass"/>
-      <property name="Stacknumber" value="10"/>
-      <property name="Weight" value="15"/>
-      <property name="EconomicValue" value="250"/>
-      <property name="Group" value="Tools/Traps"/>
-      <property name="DescriptionKey" value="toolBongDesc"/>
-    </item>
+		<item name="toolBong">
+			<property name="HoldType" value="3"/>
+			<property name="Tags" value="junk"/>
+			<property name="UnlockedBy" value="perkPhysician,toolBongSchematic"/>
+			<property name="Meshfile" value="#Other/Items?Food/emptyJarPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Weight" value="15"/>
+			<property name="EconomicValue" value="250"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="DescriptionKey" value="toolBongDesc"/>
+		</item>
 
-    <item name="toolBongDirty">
-      <property name="HoldType" value="3"/>
-      <property name="Tags" value="junk"/>
-      <property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="Material" value="Mglass"/>
-      <property name="Stacknumber" value="10"/>
-      <property name="Weight" value="15"/>
-      <property name="EconomicValue" value="250"/>
-      <property class="Action0">
-        <property name="Class" value="ExchangeItem"/>
-        <property name="Delay" value="1.0"/>
-        <property name="Change_item_to" value="toolBong"/>
-        <property name="Focused_blockname_1" value="water"/>
-        <property name="Focused_blockname_2" value="waterMoving"/>
-        <property name="Focused_blockname_3" value="waterStaticBucket"/>
-        <property name="Focused_blockname_4" value="waterMovingBucket"/>
-        <property name="Focused_blockname_5" value="terrWaterPOI"/>
-        <property name="Sound_start" value="swoosh"/>
-      </property>
-      <property name="Group" value="Tools/Traps"/>
-      <property name="DescriptionKey" value="toolBongDirtyDesc"/>
-    </item>
+		<item name="toolBongDirty">
+			<property name="HoldType" value="3"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Weight" value="15"/>
+			<property name="EconomicValue" value="250"/>
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Change_item_to" value="toolBong"/>
+				<property name="Focused_blockname_1" value="water"/>
+				<property name="Focused_blockname_2" value="waterMoving"/>
+				<property name="Focused_blockname_3" value="waterStaticBucket"/>
+				<property name="Focused_blockname_4" value="waterMovingBucket"/>
+				<property name="Focused_blockname_5" value="terrWaterPOI"/>
+				<property name="Sound_start" value="swoosh"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="DescriptionKey" value="toolBongDirtyDesc"/>
+		</item>
 
-    <item name="toolBongFilled">
-      <property name="Tags" value="medical"/>
-      <property name="DisplayType" value="drugCannabis"/>
-      <property name="HoldType" value="3"/>
-      <property name="Meshfile" value="#Other/Items?Food/emptyJarPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="Material" value="Mglass"/>
-      <property name="Stacknumber" value="1"/>
-      <property name="Weight" value="15"/>
-      <property name="EconomicValue" value="250"/>
-      <property class="Action0">
-        <property name="Class" value="Eat"/>
-        <property name="Delay" value="15"/>
-        <property name="Use_time" value="..."/>
-        <property name="Sound_start" value="chem_station_mix_click"/>
-        <property name="Create_item" value="toolBongDirty"/>
-        <requirement name="NotHasBuff" buff="buffDrugSmokedJoint"/>
-        <requirement name="NotHasBuff" buff="buffDrugRippedBong"/>
-      </property>
-      <property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
-      <effect_group tiered="false">
-        <display_value name="dInstantHealth" value="30"/>
-        <display_value name="$foodAmountAdd" value="-15"/>
-        <display_value name="dFortitude" value="2"/>
-        <display_value name="dPerception" value="2"/>
-        <display_value name="dPhysicalDamageResist" value="25"/>
-        <display_value name="dDuration" value="183"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugRippedBongDuration" operation="add" value="183"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugRippedBongDuration" operation="set" value="543">
-          <requirement name="CVarCompare" cvar="$buffDrugRippedBongDuration" operation="GT" value="543"/></triggered_effect>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugRippedBong"/>
-      </effect_group>
-      <property name="DescriptionKey" value="toolBongFilledDesc"/>
-    </item>
+		<item name="toolBongFilled">
+			<property name="Tags" value="medical"/>
+			<property name="DisplayType" value="drugCannabis"/>
+			<property name="HoldType" value="3"/>
+			<property name="Meshfile" value="#Other/Items?Food/emptyJarPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="15"/>
+			<property name="EconomicValue" value="250"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="15"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="chem_station_mix_click"/>
+				<property name="Create_item" value="toolBongDirty"/>
+				<requirement name="NotHasBuff" buff="buffDrugSmokedJoint"/>
+				<requirement name="NotHasBuff" buff="buffDrugRippedBong"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+			<effect_group tiered="false">
+				<display_value name="dInstantHealth" value="30"/>
+				<display_value name="$foodAmountAdd" value="-15"/>
+				<display_value name="dFortitude" value="2"/>
+				<display_value name="dPerception" value="2"/>
+				<display_value name="dPhysicalDamageResist" value="25"/>
+				<display_value name="dDuration" value="183"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugRippedBongDuration" operation="add" value="183"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugRippedBongDuration" operation="set" value="543">
+					<requirement name="CVarCompare" cvar="$buffDrugRippedBongDuration" operation="GT" value="543"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugRippedBong"/>
+			</effect_group>
+			<property name="DescriptionKey" value="toolBongFilledDesc"/>
+		</item>
 
-    <item name="plantedCannabis1Schematic">
-      <property name="Extends" value="schematicNoQualityRecipeMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="plantedCannabis1"/>
-      <property name="Unlocks" value="plantedCannabis1"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedCannabis1" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-      </effect_group>
-    </item>
+		<item name="plantedCannabis1Schematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="plantedCannabis1"/>
+			<property name="Unlocks" value="plantedCannabis1"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedCannabis1" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
 
-    <item name="toolBongSchematic">
-      <property name="Extends" value="schematicNoQualityRecipeMaster"/>
-      <property name="EconomicValue" value="600"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="toolBong"/>
-      <property name="Unlocks" value="toolBong"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="toolBong" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-      </effect_group>
-    </item>
+		<item name="toolBongSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="600"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="toolBong"/>
+			<property name="Unlocks" value="toolBong"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="toolBong" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
 
-  </append>
+	</append>
 
 </MeanCloud_Cannabis>

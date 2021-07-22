@@ -1,0 +1,261 @@
+<MeanCloud_Fishing_And_Pumpkins>
+
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']">
+		
+		<!-- If the player has between >0.00 and 1.00 'wetness' and has 0.2 shelter, they are standing in water (but are not
+		submerged).  With these conditions, the player will be allowed to spear-fish and place nets (forces placement
+		near water).  For fishing rod conditions, the player need only be looking at a natural-water block and does not
+		need to be standing in it.  This is handled by the items.xml code for the rods directly and not affected by
+		this buff. -->
+		<effect_group name="fishingWater">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="fishingWater">
+				<requirement name="CVarCompare" cvar="_wetness" operation="GT" value="0"/>
+				<requirement name="CVarCompare" cvar="_sheltered" operation="GT" value="0.19"/>
+				<requirement name="CVarCompare" cvar="_sheltered" operation="LT" value="0.21"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="fishingWater">
+				<requirement name="CVarCompare" cvar="_wetness" operation="LT" value="0.001"/>
+			</triggered_effect>
+			<!--
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="fishingWater">
+				<requirement name="CVarCompare" cvar="_sheltered" operation="LTE" value="0.19"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="fishingWater">
+				<requirement name="CVarCompare" cvar="_sheltered" operation="GTE" value="0.21"/>
+			</triggered_effect>
+			-->
+		</effect_group>
+
+	</append>
+	
+	<append xpath="/buffs">
+
+		<buff name="fishingWater" duration="2" name_key="fishingWater" description_key="fishingWaterDesc" icon="ui_game_symbol_water" icon_color="148,247,229">
+			<display_value_key value="fishingWater"/> <display_value value="xxx"/>
+			<update_rate value="0.5"/>
+			<stack_type value="replace"/>
+		</buff>
+		
+		<buff name="fishingSpearCaught" duration="5" name_key="fishingSpearCaught" description_key="fishingSpearCaughtDesc" icon="ui_game_symbol_quest" icon_color="148,247,229">
+			<display_value_key value="fishingSpearCaught"/> <display_value value="xxx"/>
+			<display_value value=".fishingSpearCaughtDescDisplay"/>
+			<display_value_format value="time"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fishingSpearCaughtDescDuration" operation="set" value="5">
+					<requirement name="NotHasBuff" buff="fishingSpearCaughtClear"/>
+				</triggered_effect>
+				<!-- <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fishingSpearCacheTier" operation="set" value="randomint(1,3)"/> --> <!-- can't use because @$fishingSpearCacheTier doesn't get tokenized in items 'Create_item' -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$fishingSpearCaughtDescDuration" operation="subtract" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".fishingSpearCaughtDescDisplay" operation="set" value="@$fishingSpearCaughtDescDuration"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$fishingSpearCaughtDescDuration" operation="LTE" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".fishingSpearCaughtDescDisplay" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$fishingSpearCaughtDescDuration" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="fishingSpearCaught"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="fishingSpearCaughtClear"/>
+			</effect_group>
+		</buff>
+
+		<buff name="fishingSpearCaughtClear" duration="0" name_key="fishingSpearCaughtClear" description_key="fishingSpearCaughtClearDesc">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".fishingSpearCaughtDescDisplay" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fishingSpearCaughtDescDuration" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="fishingSpearCaught"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="fishingSpearCaughtClear"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="fishingRod1Caught" duration="3" name_key="fishingRodCaught" description_key="fishingRodCaughtDesc" icon="ui_game_symbol_quest" icon_color="148,247,229">
+			<stack_type value="ignore"/>
+			<display_value_key value="fishingRodCaught"/> <display_value value="xxx"/>
+			<display_value value=".fishingRod1CaughtDescDisplay"/>
+			<display_value_format value="time"/>
+
+			<effect_group name="Start Buff: Set CVars">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fishingRod1Caught2Trigger" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="$fishingRod1Caught2Trigger" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$fishingRod1Caught2Trigger" operation="set" value="0"/>
+			</effect_group>
+
+			<effect_group name="Start Buff: Set Duration and Tooltip">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fishingRod1CaughtDescDuration" operation="set" value="3">
+					<requirement name="NotHasBuff" buff="fishingRod1CaughtClear"/>
+				</triggered_effect>
+				<!-- <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fishingRod1CacheTier" operation="set" value="randomint(1,3)"/> --> <!-- can't use because @$fishingRod1CacheTier doesn't get tokenized in items 'Create_item' -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$fishingRod1CaughtDescDuration" operation="subtract" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".fishingRod1CaughtDescDisplay" operation="set" value="@$fishingRod1CaughtDescDuration"/>
+			</effect_group>
+
+			<effect_group name="Stop Buff">
+				<requirement name="CVarCompare" cvar="$fishingRod1CaughtDescDuration" operation="LTE" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".fishingRod1CaughtDescDisplay" operation="set" value="3"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$fishingRod1CaughtDescDuration" operation="set" value="3"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="fishingRod1Caught"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="fishingRod1CaughtClear"/>
+			</effect_group>
+			
+			<effect_group name="Shake Camera During Buff">
+				<triggered_effect trigger="onSelfBuffStart" action="ShakeCamera" shake_speed="0.75" shake_amplitude="30" shake_time="5"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="1"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="1"/>
+			</effect_group>
+			
+			<effect_group name="Start Buff Sound and Instructions">
+				<!-- <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="fishNeedsReelingTooltip"/> -->
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="FishingPoleCatch"/>
+			</effect_group>
+
+			<effect_group name="Play Sound When Reeling">
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="FishWasCaughtCaught"/>
+			</effect_group>
+
+			<effect_group name="Fish Caught Trigger">
+				<requirement name="CVarCompare" cvar="$fishingRod1Caught2Trigger" operation="GTE" value="72"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="fishingRod1Caught2" target="self"/>
+			</effect_group>
+			
+			<effect_group name="Fish Got Away Trigger">
+				<requirement name="NotHasBuff" buff="fishingRod1Caught2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ShowToolbeltMessage" message_key="fishGotAwayTooltip"/>
+			</effect_group>
+			
+		</buff>
+		
+		<buff name="fishingRod1Caught2" name_key="fishingRodCaught2" description_key="fishingRodCaughtDesc2" icon="ui_game_symbol_quest" icon_color="148,247,229">
+			<stack_type value="ignore"/>
+			<display_value_key value="fishingRodCaught2"/> <display_value value="xxx"/>
+			<display_value value=".fishingRod1Caught2DescDisplay"/>
+			<effect_group name="Remove Prior Buff">
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="fishingRod1Caught"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="fishingRod1Caught"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="fishingRod1Caught"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="fishingRod1CaughtClear" duration="0" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".fishingRod1CaughtDescDisplay" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fishingRod1CaughtDescDuration" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="fishingRod1Caught"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="fishingRod1Caught2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="fishingRod1CaughtClear"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="fishingRod2Caught" duration="4" name_key="fishingRodCaught" description_key="fishingRodCaughtDesc" icon="ui_game_symbol_quest" icon_color="148,247,229">
+			<stack_type value="ignore"/>
+			<display_value_key value="fishingRodCaught"/> <display_value value="xxx"/>
+			<display_value value=".fishingRod2CaughtDescDisplay"/>
+			<display_value_format value="time"/>
+			
+			<effect_group name="Start Buff: Set CVars">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fishingRod2Caught2Trigger" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="$fishingRod2Caught2Trigger" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$fishingRod2Caught2Trigger" operation="set" value="0"/>
+			</effect_group>
+			
+			<effect_group name="Start Buff: Set Duration and Tooltip">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fishingRod2CaughtDescDuration" operation="set" value="4">
+					<requirement name="NotHasBuff" buff="fishingRod2CaughtClear"/>
+				</triggered_effect>
+				<!-- <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fishingRod2CacheTier" operation="set" value="randomint(1,3)"/> --> <!-- can't use because @$fishingRod2CacheTier doesn't get tokenized in items 'Create_item' -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$fishingRod2CaughtDescDuration" operation="subtract" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".fishingRod2CaughtDescDisplay" operation="set" value="@$fishingRod2CaughtDescDuration"/>
+			</effect_group>
+			
+			<effect_group name="Stop Buff">
+				<requirement name="CVarCompare" cvar="$fishingRod2CaughtDescDuration" operation="LTE" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".fishingRod2CaughtDescDisplay" operation="set" value="4"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$fishingRod2CaughtDescDuration" operation="set" value="4"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="fishingRod2Caught"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="fishingRod2CaughtClear"/>
+			</effect_group>
+
+			<effect_group name="Shake Camera During Buff">
+				<triggered_effect trigger="onSelfBuffStart" action="ShakeCamera" shake_speed="0.65" shake_amplitude="22" shake_time="5"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="1"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="1"/>
+			</effect_group>
+			
+			<effect_group name="Start Buff Sound and Instructions">
+				<!-- <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="fishNeedsReelingTooltip"/> -->
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="FishingPoleCatch"/>
+			</effect_group>
+
+			<effect_group name="Play Sound When Reeling">
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="FishWasCaughtCaught"/>
+			</effect_group>
+
+			<effect_group name="Fish Caught Trigger">
+				<requirement name="CVarCompare" cvar="$fishingRod2Caught2Trigger" operation="GTE" value="65"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="fishingRod2Caught2" target="self"/>
+			</effect_group>
+			
+			<effect_group name="Fish Got Away Trigger">
+				<requirement name="NotHasBuff" buff="fishingRod2Caught2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ShowToolbeltMessage" message_key="fishGotAwayTooltip"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="fishingRod2Caught2" name_key="fishingRodCaught2" description_key="fishingRodCaughtDesc2" icon="ui_game_symbol_quest" icon_color="148,247,229">
+			<stack_type value="ignore"/>
+			<display_value_key value="fishingRodCaught2"/> <display_value value="xxx"/>
+			<display_value value=".fishingRod2Caught2DescDisplay"/>
+			<effect_group name="Remove Prior Buff">
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="fishingRod2Caught"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="fishingRod2Caught"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="fishingRod2Caught"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="fishingRod2CaughtClear" duration="0" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".fishingRod2CaughtDescDisplay" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fishingRod2CaughtDescDuration" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="fishingRod2Caught"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="fishingRod2Caught2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="fishingRod2CaughtClear"/>
+			</effect_group>
+		</buff>
+
+	</append>
+	
+	<!-- Debug buff to display _sheltered CVar value -->
+	<!--
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']">
+		<effect_group name="buffPlayerShelteredDisplay">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffPlayerShelteredDisplay">
+				<requirement name="CVarCompare" cvar="_sheltered" operation="GT" value="0.00001"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffPlayerShelteredDisplay">
+				<requirement name="CVarCompare" cvar="_sheltered" operation="LTE" value="0.00001"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="buffPlayerUnderwaterDisplay">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffPlayerUnderwaterDisplay">
+				<requirement name="CVarCompare" cvar="_underwater" operation="GT" value="0.00001"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffPlayerUnderwaterDisplay">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LTE" value="0.00001"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/buffs">
+		<buff name="buffPlayerShelteredDisplay" icon="ui_game_symbol_talk" duration="0" >
+			<stack_type value="replace"/>
+			<update_rate value=".5"/>
+			<display_value value="_sheltered"/>
+			<display_value_key value="Sheltered {0:0.000}%"/>
+		</buff>
+		<buff name="buffPlayerUnderwaterDisplay" icon="ui_game_symbol_talk" duration="0" >
+			<stack_type value="replace"/>
+			<update_rate value=".5"/>
+			<display_value value="_underwater"/>
+			<display_value_key value="Underwater {0:0.000}%"/>
+		</buff>
+	</append>
+	-->
+	
+</MeanCloud_Fishing_And_Pumpkins>

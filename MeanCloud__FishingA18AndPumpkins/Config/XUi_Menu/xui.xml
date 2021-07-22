@@ -1,0 +1,11 @@
+<MeanCloud_Fishing_And_Pumpkins>
+
+  <append xpath="/xui/ruleset[@name='default']/window_group[@name='mainMenuLogo']">
+    <window name="MeanCloud_Logo" anchor="LeftTop" />
+  </append>
+
+  <append xpath="/xui/ruleset[@name='default']/window_group[@name='mainMenuLogo']">
+    <window name="MeanCloud_Fishing_And_Pumpkins" anchor="LeftTop" />
+  </append>
+
+</MeanCloud_Fishing_And_Pumpkins>

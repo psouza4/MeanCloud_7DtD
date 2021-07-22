@@ -1,92 +1,92 @@
 <MeanCloud_Mining>
 
-  <!-- This was going to update the wire tool to degrade over time and require copper wiring to
-       'refill' (repair), but the actions of connecting and disconnecting power don't refresh the
-       damage to durability properly.  Subsequently, the tool can actually be destroyed even if
-       the 'DegradataionBreaksAfter' property is set to 'false'.  Oh well. -->
+	<!-- This was going to update the wire tool to degrade over time and require copper wiring to
+		'refill' (repair), but the actions of connecting and disconnecting power don't refresh the
+		damage to durability properly.  Subsequently, the tool can actually be destroyed even if
+		the 'DegradataionBreaksAfter' property is set to 'false'.  Oh well. -->
 
-  <!--
-  <append xpath="/items/item[@name='meleeToolWireTool']">
-    <property name="RepairTools" value="copperSpool"/>
-    <property name="Degradation" value="20" param1="true"/>
-    <property name="DegradationBreaksAfter" value="false"/>
-    <property name="ShowQuality" value="true"/>
-    <property name="Weight" value="10"/>
-    <effect_group name="meleeToolWireTool" tiered="false"> --> <!-- tiered="false" prevents tiered quality levels from applying to this item -->
-  <!-- 
-      <passive_effect name="DegradationMax" operation="base_set" value="20"/>
-      <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
-      <passive_effect name="ModSlots" operation="base_set" value="0"/>
-    </effect_group>
-  </append>
-  -->
-  <append xpath="/items">
+	<!--
+	<append xpath="/items/item[@name='meleeToolWireTool']">
+		<property name="RepairTools" value="copperSpool"/>
+		<property name="Degradation" value="20" param1="true"/>
+		<property name="DegradationBreaksAfter" value="false"/>
+		<property name="ShowQuality" value="true"/>
+		<property name="Weight" value="10"/>
+		<effect_group name="meleeToolWireTool" tiered="false"> --> <!-- tiered="false" prevents tiered quality levels from applying to this item --> <!--
+			<passive_effect name="DegradationMax" operation="base_set" value="20"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+			<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		</effect_group>
+	</append>
+	-->
 
-    <item name="resourceCopper">
-      <property name="Tags" value="copper"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="Material" value="MresourceCopperFragment"/>
-      <property name="HoldType" value="45" />
-      <property name="Stacknumber" value="6000"/>
-      <property name="Weight" value="5"/>
-      <property name="EconomicValue" value="20"/>
-      <property name="EconomicBundleSize" value="10"/>
-      <property name="CraftingIngredientExp" value="2"/>
-      <property name="CraftingIngredientTime" value="20"/>
-      <property name="Group" value="Resources"/>
-      <property name="DescriptionKey" value="resourceCopperDesc"/>
-    </item>
+	<append xpath="/items">
 
-    <item name="copperSpool">
-      <property name="HoldType" value="45"/>
-      <property name="Tags" value="junk"/>
-      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="Material" value="Mcopper"/>
-      <property name="Stacknumber" value="25"/>
-      <property name="Weight" value="75"/>
-      <property name="EconomicValue" value="48"/>
-      <property name="Group" value="Resources"/>
-      <property name="DescriptionKey" value="copperSpoolDesc"/>
-      <property name="RepairTime" value="3"/>
-      <property name="RepairAmount" value="32000"/>
-    </item>
+		<item name="resourceCopper">
+			<property name="Tags" value="copper"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceCopperFragment"/>
+			<property name="HoldType" value="45" />
+			<property name="Stacknumber" value="6000"/>
+			<property name="Weight" value="5"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="CraftingIngredientExp" value="2"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Resources"/>
+			<property name="DescriptionKey" value="resourceCopperDesc"/>
+		</item>
 
-    <item name="unit_copper">
-      <property name="Extends" value="unit_iron"/>
-      <property name="CustomIcon" value="resourceCopper"/>
-      <property name="Material" value="Mcopper"/>
-      <property name="CreativeMode" value="None"/>
-      <property name="DescriptionKey" value="resourceCopperDesc"/>
-    </item>
+		<item name="copperSpool">
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mcopper"/>
+			<property name="Stacknumber" value="25"/>
+			<property name="Weight" value="75"/>
+			<property name="EconomicValue" value="48"/>
+			<property name="Group" value="Resources"/>
+			<property name="DescriptionKey" value="copperSpoolDesc"/>
+			<property name="RepairTime" value="3"/>
+			<property name="RepairAmount" value="32000"/>
+		</item>
 
-    <item name="resourceZinc">
-      <property name="Tags" value="zinc"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="Material" value="MresourceZincFragment"/>
-      <property name="HoldType" value="45" />
-      <property name="Stacknumber" value="6000"/>
-      <property name="Weight" value="5"/>
-      <property name="EconomicValue" value="20"/>
-      <property name="EconomicBundleSize" value="10"/>
-      <property name="CraftingIngredientExp" value="2"/>
-      <property name="CraftingIngredientTime" value="20"/>
-      <property name="Group" value="Resources"/>
-      <property name="DescriptionKey" value="resourceZincDesc"/>
-    </item>
+		<item name="unit_copper">
+			<property name="Extends" value="unit_iron"/>
+			<property name="CustomIcon" value="resourceCopper"/>
+			<property name="Material" value="Mcopper"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="DescriptionKey" value="resourceCopperDesc"/>
+		</item>
 
-    <item name="unit_zinc">
-      <property name="Extends" value="unit_iron"/>
-      <property name="CustomIcon" value="resourceZinc"/>
-      <property name="Material" value="Mzinc"/>
-      <property name="CreativeMode" value="None"/>
-      <property name="DescriptionKey" value="resourceZincDesc"/>
-    </item>
+		<item name="resourceZinc">
+			<property name="Tags" value="zinc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceZincFragment"/>
+			<property name="HoldType" value="45" />
+			<property name="Stacknumber" value="6000"/>
+			<property name="Weight" value="5"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="CraftingIngredientExp" value="2"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Resources"/>
+			<property name="DescriptionKey" value="resourceZincDesc"/>
+		</item>
 
-  </append>
+		<item name="unit_zinc">
+			<property name="Extends" value="unit_iron"/>
+			<property name="CustomIcon" value="resourceZinc"/>
+			<property name="Material" value="Mzinc"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="DescriptionKey" value="resourceZincDesc"/>
+		</item>
+
+	</append>
 
 </MeanCloud_Mining>

@@ -4,7 +4,7 @@
 		<Name value="MeanCloud's Regenerating Boulders (Copper &amp; Zinc)" />
 		<Description value="When boulders are destroyed, they leave behind a stone (you can't pick it up, but you can destroy it).  This stone will eventually regenerate back into a boulder.  This version is for copper and zinc boulders added by my MeanCloud's Mining modlet." />
 		<Author value="Mean.Cloud" />
-		<Version value="A18 1.03" />
+		<Version value="A19 1.04" />
 		<Website value="http://mean.cloud/" />
 	</ModInfo>
 </xml>

@@ -1,25 +1,7 @@
-Key,Source,Context,Changes,English
-plantedPumpkin1,blocks,Farming,New,Pumpkin (Seed)
-plantedPumpkin1Desc,blocks,Farming,New,Plant Pumpkin seeds in fertilized dirt to grow Pumpkin plants.
-plantedPumpkin1Schematic,blocks,Farming,New,Pumpkin (Seed) Recipe
-plantedPumpkin2,blocks,Farming,New,Pumpkin (Growing)
-plantedPumpkin3Harvest,blocks,Farming,New,Pumpkin Plant 3 (POI)
-plantedPumpkin3HarvestDesc,blocks,Farming,New,Pumpkin Plant
-plantedPumpkin3HarvestPlayerDesc,blocks,Farming,New,Pumpkin Plant
-plantedPumpkin3HarvestRandomHelper,blocks,Farming,New,= Pumpkin = Random Helper
-foodCropPumpkin,items,Farming,New,Pumpkin
-foodCropPumpkinDesc,items,Farming,New,Many don't know what to do with a pumpkin in the kitchen but it is indispensable for Helloween decorations.
-decoPumpkinJackOLantern,blocks,Block,New,Jack o' Lantern
-decoPumpkinJackOLanternDesc,blocks,Block,New,A must-have for scaring those zombies right back.
-foodPumpkinPie,items,Food,New,Pumpkin Pie
-foodPumpkinPieDesc,items,Food,New,Pumpkin pie is a delicious seasonal treat.
-foodPumpkinCheesecake,items,Food,New,Pumpkin Cheesecake
-foodPumpkinCheesecakeDesc,items,Food,New,Pumpkin cheesecake is a delicious seasonal treat.
-foodPumpkinBread,items,Food,New,Pumpkin Bread
-foodPumpkinBreadDesc,items,Food,New,Pumpkin bread is a delicious seasonal treat.
-foodPumpkinPieSchematic,items,Food,New,Pumpkin Pie Recipe
-foodPumpkinCheesecakeSchematic,items,Food,New,Pumpkin Cheesecake Recipe
-foodPumpkinBreadSchematic,items,Food,New,Pumpkin Bread Recipe
-drinkJarPumpkinSpiceLatte,items,Food,New,Pumpkin Spice Latte
-drinkJarPumpkinSpiceLatteDesc,items,Food,New,Pumpkin spice latte is a delicious seasonal treat.
-drinkJarPumpkinSpiceLatteSchematic,items,Food,New,Pumpkin Spice Latte Recipe
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+perkMasterChefRank4LongDesc,progression,perk Str,,,"Cook for an army by making Gumbo Stew, Shepards Pie, Spaghetti, Tuna Gravy on Toast, and Pumpkin Spice Late. Cook 40% faster. Use 20% less of a recipe's main ingredients.",,"Koche für eine Armee Gumbo-Eintopf, Shepards Pie, Spaghetti und Toast mit Thunfischsoße. Koche 40 % schneller. Verwende 20 % weniger von den Hauptzutaten eines Rezeptes.","Cocina para un ejército haciendo estofado de gumbo, pastel de pastores, espaguetis y salsa de atún en pan tostado. Cocina un 40 % más rápido. Usa un 20 % menos de los ingredientes principales de una receta.","Cuisinez pour toute une armée des plats tels que le gombo, la shepherd's pie, les spaghettis, et la terrine de thon sur pain grillé. Vous cuisinez 40 % plus rapidement. Vous utilisez 20 % de moins des ingrédients principaux dans les compositions.","Cucina per un esercito intero e crea stufato gumbo, pasticcio del pastore, spaghetti e pane tostato con salsa tonnata. Cucina il 40% più velocemente. Usa il 20% in meno degli ingredienti della ricetta originale.",ガンボシチュー、シェパーズパイ、スパゲッティ、ツナグレービートーストを大量に料理しましょう。40%料理速度。レシピの主な栄養素を20%減らして使用する,"군인을 위한 검보 스튜, 셰퍼드 파이, 스파게티, 참치 그레이비를 끼얹은 토스트를 요리합니다. 40% 빠른 속도로 요리합니다. 레시피의 재료를 20% 덜 사용합니다.","Wiesz jak gotować dla wielu osób i znacz przepisy na potrawkę gumbo, placek pasterski, spaghetti czy tosty z tuńczykiem i sosem. Gotuj o 40% szybciej. Zużywaj 20% mniej głównych składników przepisu.","Cozinhe para um exército e faça guisados de gumbo, pastelões de carne, espaguete e torrada com molho de atum. Cozinhe 40% mais rápido. Use 20% menos ingredientes principais da receita.","Готовьте на целую армию: рагу «Гамбо», пастуший пирог, спагетти и тост с паштетом из тунца. Готовьте на 40% быстрее. Используйте на 20% меньше основных ингредиентов из рецепта.","Gumbo Yahnisi, Etli Turta, Spagetti ve Ton Balığı Soslu Tost üreterek bir orduyu besle. %40 daha hızlı pişir. Tarifteki ana malzemeleri %20 daha az kullan.",能制作秋葵汤、牧羊人派、意大利面和金枪鱼肉汁吐司。烹饪速度加快 40%。菜谱中主要食材的用量减少 20%。,為軍隊做飯，製作秋葵濃湯、牧羊人派、義大利細麵和金槍魚肉鬆吐司。做飯加快 40%。菜譜主要素材用量減少 20%。,"Cocina para un ejército haciendo estofado de gumbo, pastel de pastores, espaguetis y salsa de atún en pan tostado. Cocina un 40 % más rápido. Usa un 20 % menos de los ingredientes principales de una receta."
+plantedPumpkin1Desc,blocks,Farming,,,Plant Pumpkin seeds in fertilized dirt to grow Pumpkin plants.
+plantedPumpkin3HarvestPlayerDesc,blocks,Farming,,,Pumpkin Plant
+drinkJarPumpkinSpiceLatte,items,Food,,,Pumpkin Spice Latte
+drinkJarPumpkinSpiceLatteDesc,items,Food,,,Pumpkin spice latte is a delicious seasonal treat.
+drinkJarPumpkinSpiceLatteSchematic,items,Food,,,Pumpkin Spice Latte Recipe

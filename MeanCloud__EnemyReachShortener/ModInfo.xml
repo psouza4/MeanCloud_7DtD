@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-  <ModInfo>
-    <Name value="MeanCloud's Enemy Reach Shortener"/>
-    <Description value="Reduces enemy's reach to a more reasonable distance."/>
-    <Author value="Mean.Cloud"/> <!-- credit to JaxTeller718's version: this is a copy of his but with an even shorter reach, and fixes to falloff damage, and forward-compatible with new or custom enemies -->
-    <Version value="A18 1.01"/>
-    <Website value="http://mean.cloud/" /> <!-- JaxTeller718's website https://ravenhearst.enjin.com/ -->
-  </ModInfo>
+	<ModInfo>
+		<Name value="MeanCloud's Enemy Health"/>
+		<Description value="Adds a visible health bar to enemies to the top of the screen under the compass."/>
+		<Author value="Mean.Cloud"/>
+		<!-- Credit to KhaineGB's version, where this mod is adapted from -->
+		<Version value="A19 1.00"/>
+		<Website value="http://mean.cloud/" />
+	</ModInfo>
 </xml>

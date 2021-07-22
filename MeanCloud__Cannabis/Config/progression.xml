@@ -1,15 +1,15 @@
 <MeanCloud_Cannabis>
 
-  <append xpath="/progression/perks/perk[@name='perkYeahScience']">
-    <effect_group>
-      <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="toolBong"/>
-    </effect_group>
-  </append>
+	<append xpath="/progression/perks/perk[@name='perkPhysician']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,4" value="1" tags="toolBong"/>
+		</effect_group>
+	</append>
 
-  <append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']">
-    <effect_group>
-      <passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1" tags="plantedCannabis1"/>
-    </effect_group>
-  </append>
+	<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,3" value="1" tags="plantedCannabis1"/>
+		</effect_group>
+	</append>
 
 </MeanCloud_Cannabis>

@@ -1,35 +1,35 @@
-Key,Source,Context,Changes,English
-lblContextActionCrush,UI,Item Context Menu,New,Crush
-lbliron,UI,XUI,New,[A6A09E]Iron[-]
-lblbrass,UI,XUI,New,[EDD079]Brass[-]
-lbllead,UI,XUI,New,[AEACA8]Lead[-]
-lblglass,UI,XUI,New,[E5EDEC]Glass[-]
-lblstone,UI,XUI,New,[BBC2CB]Stone[-]
-lblclay,UI,XUI,New,[B8C5BE]Clay[-]
-lblcopper,UI,XUI,New,[E89267]Copper[-]
-lblzinc,UI,XUI,New,[B3B6BB]Zinc[-]
-forgeInputCopper,UI,Menu,KgNone,Copper
-forgeInputZinc,UI,Menu,KgNone,Zinc
-terrOreCopper,blocks,Terrain,New,Copper Ore
-terrOreZinc,blocks,Terrain,New,Zinc Ore
-terrOreStoneCopperRandom,blocks,Terrain,New,= Copper Vein = Helper
-terrOreStoneCopperRandomDesc,blocks,Terrain,New,Copper / Stone / Sandstone
-terrOreStoneZincRandom,blocks,Terrain,New,= Zinc Vein = Helper
-terrOreStoneZincRandomDesc,blocks,Terrain,New,Zinc / Stone / Sandstone
-oreCopperBoulder,blocks,Block,New,Copper Ore Boulder
-oreZincBoulder,blocks,Block,New,Zinc Ore Boulder
-scrapCopperPile,blocks,Block,KgNone,Scrap Copper Pile
-rockCrusher,blocks,Workstation,KgNone,Rock Crusher
-rockCrusherDesc,blocks,Workstation,EnChanged,"Made from an industrial washing machine, this can break up ores into usable resources."
-Excavator,blocks,Block,KgNone,Excavator [ccba8b](Empty)[-]
-ExcavatorV2,blocks,Block,KgNone,Excavator [ccba8b](Mining)[-]
-MiningTruck,blocks,Block,KgNone,Excavator
-resourceCopper,items,Item,KgNone,Copper
-resourceCopperDesc,items,Item,KgNone,"Copper is a metal that can be combined with zinc in a forge to produce brass.  As a fantastic conductor of heat, it's often found in air conditioning parts, plumbing, electrical components, and various appliances."
-copperSpool,items,Item,KgNone,Copper Spool
-copperSpoolDesc,items,Item,KgNone,"A wound spool of unshielded copper wire."
-resourceZinc,items,Item,KgNone,Zinc
-resourceZincDesc,items,Item,KgNone,"Zinc is a metal that can be combined with copper in a forge to produce brass.  As galvanized protection against rusting metals, it's often found in air conditioning parts, vehicles, chainlink fences, washing machines, and street lights."
-terrOreSilver,blocks,Terrain,New,Silver Ore
-terrOreGold,blocks,Terrain,New,Gold Ore
-terrOreDiamond,blocks,Terrain,New,Diamond Ore
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+lblContextActionCrush,UI,Item Context Menu,,,Crush,,Zerquetschen,Aplastar,Broyer,Frantumare,打ち砕く,과즙,Miażdżyć,Esmagamento,Pаздавить,Ezme,压碎,壓碎,Aplastar
+lbliron,UI,XUI Forge,,,[A6A09E]Iron[-],,[A6A09E]Eisen[-],[A6A09E]Hierro[-],[A6A09E]Fer[-],[A6A09E]Ferro[-],[A6A09E]鉄[-],[A6A09E]철제[-],[A6A09E]Żelazo[-],[A6A09E]Ferro[-],[A6A09E]Железо[-],[A6A09E]Demir[-],[A6A09E]铁[-],[A6A09E]鐵[-],[A6A09E]Hierro[-]
+lblbrass,UI,XUI Forge,,,[EDD079]Brass[-],,[EDD079]Messing[-],[EDD079]Latón[-],[EDD079]Laiton[-],[EDD079]Ottone[-],[EDD079]真ちゅう[-],[EDD079]놋쇠[-],[EDD079]Mosiądz[-],[EDD079]Latão[-],[EDD079]Латунь[-],[EDD079]Pirinç[-],[EDD079]黄铜[-],[EDD079]黃銅[-],[EDD079]Latón[-]
+lbllead,UI,XUI Forge,,,[AEACA8]Lead[-],,[AEACA8]Blei[-],[AEACA8]Plomo[-],[AEACA8]Plomb[-],[AEACA8]Piombo[-],[AEACA8]鉛[-],[AEACA8]납[-],[AEACA8]Ołów[-],[AEACA8]Chumbo[-],[AEACA8]Свинец[-],[AEACA8]Kurşun[-],[AEACA8]铅[-],[AEACA8]鉛[-],[AEACA8]Plomo[-]
+lblsand,UI,XUI Forge,,,[E5EDEC]Sand[-],,[E5EDEC]Sand[-],[E5EDEC]Arena[-],[E5EDEC]Sable[-],[E5EDEC]Sabbia[-],[E5EDEC]砂[-],[E5EDEC]모래[-],[E5EDEC]Piasek[-],[E5EDEC]Areia[-],[E5EDEC]Песок[-],[E5EDEC]Kum[-],[E5EDEC]沙子[-],[E5EDEC]砂子[-],[E5EDEC]Arena[-]
+lblstone,UI,XUI Forge,,,[BBC2CB]Stone[-],,[BBC2CB]Stein[-],[BBC2CB]Piedra[-],[BBC2CB]Pierre[-],[BBC2CB]Pietra[-],[BBC2CB]石[-],[BBC2CB]돌[-],[BBC2CB]Kamień[-],[BBC2CB]Pedra[-],[BBC2CB]Камень[-],[BBC2CB]Taş[-],[BBC2CB]石头[-],[BBC2CB]石頭[-],[BBC2CB]Piedra[-]
+lblclay,UI,XUI Forge,,,[B8C5BE]Clay[-],,[B8C5BE]Lehm[-],[B8C5BE]Arcilla[-],[B8C5BE]Argile[-],[B8C5BE]Argilla[-],[B8C5BE]粘土[-],[B8C5BE]진흙[-],[B8C5BE]Glina[-],[B8C5BE]Argila[-],[B8C5BE]Глина[-],[B8C5BE]Kil[-],[B8C5BE]粘土[-],[B8C5BE]黏土[-],[B8C5BE]Arcilla[-]
+lblcopper,UI,XUI Forge,,,[E89267]Copper[-],,[E89267]Kupfer[-],[E89267]Cobre[-],[E89267]Cuivre[-],[E89267]Rame[-],[E89267]銅[-],[E89267]구리[-],[E89267]Miedź[-],[E89267]Cobre[-],[E89267]Медь[-],[E89267]Bakır[-],[E89267]铜[-],[E89267]铜[-],[E89267]Cobre[-]
+lblzinc,UI,XUI Forge,,,[B3B6BB]Zinc[-],,[B3B6BB]Zink[-],[B3B6BB]Zink[-],[B3B6BB]Zinc[-],[B3B6BB]Zinco[-],[B3B6BB]亜鉛[-],[B3B6BB]아연[-],[B3B6BB]Cynk[-],[B3B6BB]Zinco[-],[B3B6BB]Цинк[-],[B3B6BB]Çinko[-],[B3B6BB]锌[-],[B3B6BB]鋅[-],[B3B6BB]Zinc[-]
+forgeInputCopper,UI,Menu,,,Copper,,Kupfer,Cobre,Cuivre,Rame,銅,구리,Miedź,Cobre,Медь,Bakır,铜,铜,Cobre
+forgeInputZinc,UI,Menu,,,Zinc,,Zink,Zink,Zinc,Zinco,亜鉛,아연,Cynk,Zinco,Цинк,Çinko,锌,鋅,Zinc
+terrOreCopper,blocks,Terrain,,,Copper Ore,,Kupfererz,Mina de Cobre,Minerai de Cuivre,Minerale di Rame,銅鉱石,구리 광석,Ruda Miedzi,Minério de Cobre,Медная Pуда,Bakır Cevheri,铜矿,銅礦,Mina de Cobre
+terrOreZinc,blocks,Terrain,,,Zinc Ore,,Zinkerz,Mineral de Zinc,Minerai de Zinc,Minerale di Zinco,亜鉛鉱石,아연 광석,Ruda Cynku,Minério de Zinco,Цинковая Pуда,Çinko Cevheri,锌矿,鋅礦,Mineral de Zinc
+terrOreStoneCopperRandom,blocks,Terrain,,,= Copper Vein = Helper
+terrOreStoneCopperRandomDesc,blocks,Terrain,,,Copper / Stone / Sandstone
+terrOreStoneZincRandom,blocks,Terrain,,,= Zinc Vein = Helper
+terrOreStoneZincRandomDesc,blocks,Terrain,,,Zinc / Stone / Sandstone
+oreCopperBoulder,blocks,Block,,,Copper Ore Boulder
+oreZincBoulder,blocks,Block,,,Zinc Ore Boulder
+scrapCopperPile,blocks,Block,,,Scrap Copper Pile
+rockCrusher,blocks,Workstation,,,Rock Crusher,,Rock Crusher,,Steinbrecher,Trituradora de Rocas,Concasseur de Pierres,Frantumatore di Rocce,ロッククラッシャー,암석 분쇄기,Kruszarka do Skał,Triturador de Rocha,Kамнедробилка,Kaya Kırıcı,碎石机,碎石機,Trituradora de Rocas
+rockCrusherDesc,blocks,Workstation,,,"Made from an industrial washing machine, this can break up ores into usable resources.",,"Hergestellt aus einer industriellen Waschmaschine, kann diese Erze in nutzbare Ressourcen aufbrechen.","Hecho de una lavadora industrial, esto puede romper los minerales en recursos utilizables.","Fabriqué à partir d'une machine à laver industrielle, cela peut décomposer les minerais en ressources utilisables.","Fatto da una lavatrice industriale, questo può rompere i minerali in risorse utilizzabili.","Fatto da una lavatrice industriale, questo può rompere i minerali in risorse utilizzabili.",산업용 세탁기로 만든 이 제품은 광석을 사용 가능한 자원으로 분해할 수 있습니다.,"Wykonany z pralki przemysłowej, może rozbijać rudy na użyteczne zasoby.","Feito a partir de uma máquina de lavar industrial, pode quebrar os minérios em recursos utilizáveis.","Сделанный из промышленной стиральной машины, он может разбивать руду на полезные ресурсы.","Endüstriyel bir çamaşır makinesinden yapılan bu, cevherleri kullanılabilir kaynaklara ayırabilir.",由工业洗衣机制成，可以将矿石分解成可用资源。,由工業洗衣機製成，可以將礦石分解成可用資源。,"Hecho de una lavadora industrial, esto puede romper los minerales en recursos utilizables."
+Excavator,blocks,Block,,,"Excavator [ccba8b](Empty)[-]",,Felsbrecher,Trituradora de Rocas,Concasseur de Roche,Frantumatore di Rocce,ロッククラッシャー,록 크러셔,Kruszarka do Skał,Triturador de Rocha,Каменная дробилка,Kaya Kırıcı,碎石机,碎石機,Trituradora de Rocas
+ExcavatorV2,blocks,Block,,,"Excavator [ccba8b](Mining)[-]",,Felsbrecher,Trituradora de Rocas,Concasseur de Roche,Frantumatore di Rocce,ロッククラッシャー,록 크러셔,Kruszarka do Skał,Triturador de Rocha,Каменная дробилка,Kaya Kırıcı,碎石机,碎石機,Trituradora de Rocas
+MiningTruck,blocks,Block,,,Excavator,,Felsbrecher,Trituradora de Rocas,Concasseur de Roche,Frantumatore di Rocce,ロッククラッシャー,록 크러셔,Kruszarka do Skał,Triturador de Rocha,Каменная дробилка,Kaya Kırıcı,碎石机,碎石機,Trituradora de Rocas
+resourceCopper,items,Item,,,Copper,,Kupfer,Cobre,Cuivre,Rame,銅,구리,Miedź,Cobre,Медь,Bakır,铜,铜,Cobre
+resourceCopperDesc,items,Item,,,"Copper is a metal that can be combined with zinc in a forge to produce brass.  As a fantastic conductor of heat, it's often found in air conditioning parts, plumbing, electrical components, and various appliances."
+copperSpool,items,Item,,,Copper Spool,,Kupferspule,Carrete de Cobre,Bobine de Cuivre,Bobina di Rame,銅スプール,구리 스풀,Miedziana Szpula,Carretel de Cobre,медная катушка,Bakır Makara,铜线轴,銅線軸,Carrete de Cobre
+copperSpoolDesc,items,Item,,,"A wound spool of unshielded copper wire.",,Eine gewickelte Spule aus ungeschirmtem Kupferdraht.,Un carrete enrollado de alambre de cobre sin blindaje.,Une bobine enroulée de fil de cuivre non blindé.,Una bobina avvolta di filo di rame non schermato.,シールドされていない銅線の巻きスプール。,차폐되지 않은 구리선의 감긴 스풀.,Nawinięta szpula nieekranowanego drutu miedzianego.,Um carretel enrolado de fio de cobre sem blindagem.,Намотанная катушка неэкранированной медной проволоки.,Korumasız bakır telden sarılmış bir makara.,缠绕的非屏蔽铜线线轴。,纏繞的非屏蔽銅線線軸。,Un carrete enrollado de alambre de cobre sin blindaje.
+resourceZinc,items,Item,,,Zinc,,Zink,Zink,Zinc,Zinco,亜鉛,아연,Cynk,Zinco,Цинк,Çinko,锌,鋅,Zinc
+resourceZincDesc,items,Item,,,"Zinc is a metal that can be combined with copper in a forge to produce brass.  As galvanized protection against rusting metals, it's often found in air conditioning parts, vehicles, chainlink fences, washing machines, and street lights."
+terrOreSilver,blocks,Terrain,,,Silver Ore,,Silber Erz,Mineral de Plata,Minerai D'argent,Minerale D'argento,銀鉱石,은광석,Ruda Srebra,Minério de Prata,Cеребряная Pуда,Gümüş Cevheri,银矿石,銀礦石,Mineral de Plata
+terrOreGold,blocks,Terrain,,,Gold Ore,,Golderz,Metal de Oro,Le Minerai D'or,Minerale D'oro,金鉱石,금 광석,Ruda Złota,Minério de Ouro,Золотая Pуда,Altın Cevheri,金矿,金礦,Metal de Oro
+terrOreDiamond,blocks,Terrain,,,Diamond Ore,,Diamanterz,Mineral de Diamante,Minerai de Diamant,Minerale di Diamante,ダイヤモンド鉱石,다이아몬드 광석,Diamentowa Ruda,Minério de Diamante,Aлмазная Pуда,Elmas Cevheri,钻石矿石,鑽石礦石,Mineral de Diamante

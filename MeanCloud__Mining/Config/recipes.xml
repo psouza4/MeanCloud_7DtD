@@ -2,20 +2,20 @@
 
 	<append xpath="/recipes">
 
-    <recipe name="resourceCopper" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
-      <wildcard_forge_category />
-    </recipe>
+		<recipe name="resourceCopper" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
+			<wildcard_forge_category />
+		</recipe>
 
-    <recipe name="resourceZinc" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
-      <wildcard_forge_category />
-    </recipe>
+		<recipe name="resourceZinc" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
+			<wildcard_forge_category />
+		</recipe>
 
-    <recipe name="rockCrusher" count="1" craft_area="workbench" always_unlocked="true" tags="workbenchCrafting">
-      <ingredient name="resourceForgedIron" count="25"/>
-      <ingredient name="resourceSpring" count="4"/>
-      <ingredient name="smallEngine" count="1"/>
-      <ingredient name="resourceMechanicalParts" count="10"/>
-    </recipe>
+		<recipe name="rockCrusher" count="1" craft_area="workbench" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="25"/>
+			<ingredient name="resourceSpring" count="4"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+		</recipe>
 
 		<recipe name="Excavator" count="1" craft_area="workbench" always_unlocked="true" tags="workbenchCrafting">
 			<ingredient name="resourceMechanicalParts" count="25"/>
@@ -29,71 +29,80 @@
 			<ingredient name="resourceCopper" count="15"/>
 		</recipe>
 
-    <recipe name="resourceScrapBrass" count="2" material_based="true" craft_area="forge" craft_time="2" craft_exp_gain="0" craft_tool="toolForgeCrucible" always_unlocked="true" use_ingredient_modifier="false">
-      <ingredient name="unit_copper" count="7"/>
-      <ingredient name="unit_zinc" count="3"/>
-    </recipe>
+		<!-- ironically, I had added this in a private server before I saw any suggestions for it -->
+		<recipe name="resourceCopper" count="1" material_based="true" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_copper" count="5"/>
+		</recipe>
 
-    <recipe name="resourceBulletCasing" count="1" material_based="true" craft_area="forge" craft_time="1" tags="forgeCrafting">
-      <ingredient name="unit_copper" count="7"/>
-      <ingredient name="unit_zinc" count="3"/>
-      <ingredient name="unit_clay" count="1"/>
-    </recipe>
+		<recipe name="resourceZinc" count="1" material_based="true" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_zinc" count="5"/>
+		</recipe>
 
-    <recipe name="resourceCrushedSand" count="1" craft_area="rockCrusher" always_unlocked="true" tags="cementMixerCrafting">
-      <ingredient name="resourceRockSmall" count="1"/>
-    </recipe>
+		<recipe name="resourceScrapBrass" count="2" material_based="true" craft_area="forge" craft_time="2" craft_exp_gain="0" craft_tool="toolForgeCrucible" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_copper" count="7"/>
+			<ingredient name="unit_zinc" count="3"/>
+		</recipe>
 
-    <recipe name="resourceIronFragment" count="32" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
-      <ingredient name="resourceCrushedSand" count="5"/>
-      <ingredient name="terrOreIron" count="1"/>
-    </recipe>
+		<recipe name="resourceBulletCasing" count="1" material_based="true" craft_area="forge" craft_time="1" tags="forgeCrafting">
+			<ingredient name="unit_copper" count="7"/>
+			<ingredient name="unit_zinc" count="3"/>
+			<ingredient name="unit_clay" count="1"/>
+		</recipe>
 
-    <recipe name="resourceScrapLead" count="70" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
-      <ingredient name="resourceCrushedSand" count="5"/>
-      <ingredient name="terrOreLead" count="1"/>
-    </recipe>
+		<recipe name="resourceCrushedSand" count="1" craft_area="rockCrusher" always_unlocked="true" tags="cementMixerCrafting">
+			<ingredient name="resourceRockSmall" count="1"/>
+		</recipe>
 
-    <recipe name="resourceCopper" count="70" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
-      <ingredient name="resourceCrushedSand" count="5"/>
-      <ingredient name="terrOreCopper" count="1"/>
-    </recipe>
+		<recipe name="resourceIronFragment" count="32" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
+			<ingredient name="resourceCrushedSand" count="5"/>
+			<ingredient name="terrOreIron" count="1"/>
+		</recipe>
 
-    <recipe name="resourceZinc" count="32" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
-      <ingredient name="resourceCrushedSand" count="10"/>
-      <ingredient name="terrOreZinc" count="1"/>
-    </recipe>
+		<recipe name="resourceScrapLead" count="70" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
+			<ingredient name="resourceCrushedSand" count="5"/>
+			<ingredient name="terrOreLead" count="1"/>
+		</recipe>
 
-    <recipe name="resourceOilShale" count="70" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
-      <ingredient name="resourceCrushedSand" count="5"/>
-      <ingredient name="terrOreOilDeposit" count="1"/>
-    </recipe>
+		<recipe name="resourceCopper" count="70" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
+			<ingredient name="resourceCrushedSand" count="5"/>
+			<ingredient name="terrOreCopper" count="1"/>
+		</recipe>
 
-    <recipe name="resourcePotassiumNitratePowder" count="70" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
-      <ingredient name="resourceCrushedSand" count="5"/>
-      <ingredient name="terrOrePotassiumNitrate" count="1"/>
-    </recipe>
+		<recipe name="resourceZinc" count="32" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
+			<ingredient name="resourceCrushedSand" count="10"/>
+			<ingredient name="terrOreZinc" count="1"/>
+		</recipe>
 
-    <recipe name="resourceCoal" count="70" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
-      <ingredient name="resourceCrushedSand" count="5"/>
-      <ingredient name="terrOreCoal" count="1"/>
-    </recipe>
+		<recipe name="resourceOilShale" count="70" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
+			<ingredient name="resourceCrushedSand" count="5"/>
+			<ingredient name="terrOreOilDeposit" count="1"/>
+		</recipe>
 
-    <recipe name="resourceSilverNugget" count="7" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
-      <ingredient name="resourceCrushedSand" count="10"/>
-      <ingredient name="terrOreSilver" count="1"/>
-    </recipe>
+		<recipe name="resourcePotassiumNitratePowder" count="70" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
+			<ingredient name="resourceCrushedSand" count="5"/>
+			<ingredient name="terrOrePotassiumNitrate" count="1"/>
+		</recipe>
 
-    <recipe name="resourceGoldNugget" count="5" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
-      <ingredient name="resourceCrushedSand" count="25"/>
-      <ingredient name="terrOreGold" count="1"/>
-    </recipe>
+		<recipe name="resourceCoal" count="70" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
+			<ingredient name="resourceCrushedSand" count="5"/>
+			<ingredient name="terrOreCoal" count="1"/>
+		</recipe>
 
-    <recipe name="resourceRawDiamond" count="4" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
-      <ingredient name="resourceCrushedSand" count="100"/>
-      <ingredient name="terrOreDiamond" count="1"/>
-    </recipe>
+		<recipe name="resourceSilverNugget" count="7" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
+			<ingredient name="resourceCrushedSand" count="10"/>
+			<ingredient name="terrOreSilver" count="1"/>
+		</recipe>
 
-  </append>
+		<recipe name="resourceGoldNugget" count="5" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
+			<ingredient name="resourceCrushedSand" count="25"/>
+			<ingredient name="terrOreGold" count="1"/>
+		</recipe>
+
+		<recipe name="resourceRawDiamond" count="4" craft_area="rockCrusher" always_unlocked="true" tags="rockCrusherCrafting">
+			<ingredient name="resourceCrushedSand" count="100"/>
+			<ingredient name="terrOreDiamond" count="1"/>
+		</recipe>
+
+	</append>
 
 </MeanCloud_Mining>
