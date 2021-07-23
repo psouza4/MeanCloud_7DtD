@@ -1,7 +1,0 @@
-﻿<MeanCloud_Enemy_Health>
-
-	<append xpath="/xui/ruleset[@name='default']/window_group[@name='compass']">
-		<window name="windowTargetBar" anchor="CenterTop" />
-	</append>
-
-</MeanCloud_Enemy_Health>
