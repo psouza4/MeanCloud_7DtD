@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="MeanCloud's Acid"/>
+		<Description value="Allows you to craft acid from grain alcohol."/>
+		<Author value="Mean.Cloud"/>
+		<Version value="A19 1.00"/>
+		<Website value="http://mean.cloud/" />
+	</ModInfo>
+</xml>

@@ -1,0 +1,39 @@
+<MeanCloud_Acid>
+
+	<!-- loot group: mid-grade cooking recipes -->
+	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT1']">
+		<item name="acidmodVinegarsSchematic" />
+	</append>
+
+	<!-- loot group: high-grade cooking recipes -->
+	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT2']">
+		<item name="acidmodVinegarsSchematic" />
+		<item name="acidmodAcidsSchematic" />
+	</append>
+
+	<!-- loot group: rare tools schematics -->
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsRare']">
+		<item name="acidmodAcidsSchematic" prob="0.5" />
+	</append>
+
+	<!-- loot container: garage stuff, tools, etc. -->
+	<append xpath="/lootcontainers/lootcontainer[@id='22']">
+		<item name="acidmodVinegarsSchematic" count="1" prob="0.01" />
+	</append>
+
+	<!-- loot container: construction supplies shipping crate -->
+	<append xpath="/lootcontainers/lootcontainer[@id='88']">
+		<item name="acidmodAcidsSchematic" count="1" prob="0.01" />
+	</append>
+
+	<!-- loot container: cntCollapsedChemistryStation -->
+	<append xpath="/lootcontainers/lootcontainer[@id='94']">
+		<item name="acidmodAcidsSchematic" count="1" loot_prob_template="ProbT3" />
+	</append>
+
+	<!-- loot container: cntLootCrateLabEquipment Lab equipment and medical items -->
+	<append xpath="/lootcontainers/lootcontainer[@id='96']">
+		<item name="acidmodAcidsSchematic" count="1" loot_prob_template="ProbT3" />
+	</append>
+
+</MeanCloud_Acid>

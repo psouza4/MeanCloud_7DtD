@@ -1,0 +1,61 @@
+<MeanCloud_Acid>
+
+	<append xpath="/recipes">
+
+		<!-- vinegar step 1: grain alcohol plus oxygen and time -->
+		<recipe name="acidmodCloudyAlcohol" count="1" tags="learnable" craft_time="3600">
+			<ingredient name="drinkJarGrainAlcohol" count="1"/>
+		</recipe>
+
+		<!-- vinegar step 2: more time -->
+		<recipe name="acidmodRoiledAlcohol" count="1" tags="learnable" craft_time="3600">
+			<ingredient name="acidmodCloudyAlcohol" count="1"/>
+		</recipe>
+
+		<!-- vinegar step 3: more time -->
+		<recipe name="acidmodUnfilteredVinegar" count="1" tags="learnable" craft_time="3600">
+			<ingredient name="acidmodRoiledAlcohol" count="1"/>
+		</recipe>
+
+		<!-- vinegar step 3, alternate: using the vinegar mother (mother of vinegar) to quick start another batch -->
+		<recipe name="acidmodUnfilteredVinegar" count="1" tags="learnable" craft_time="1800">
+			<ingredient name="acidmodVinegarMother" count="1"/>
+			<ingredient name="drinkJarGrainAlcohol" count="1"/>
+		</recipe>
+
+		<!-- vinegar step 4: is not a recipe, you [Open] or use the unfiltered vinegar item to collect
+				the filtered vinegar and the vinegar mother (mother of vinegar) -->
+
+		<!-- acid step 1: frozen vinegar -->
+		<recipe name="acidmodFrozenVinegar" count="1" craft_area="workbench" tags="learnable" craft_time="90">
+			<ingredient name="acidmodVinegar" count="1"/>
+			<ingredient name="resourceSnowBall" count="1"/>
+			<ingredient name="resourceYuccaFibers" count="10"/>
+		</recipe>
+
+		<!-- acid step 2: weak acid -->
+		<recipe name="acidmodWeakAcid" count="1" craft_area="chemistryStation" tags="learnable" craft_time="30">
+			<ingredient name="acidmodFrozenVinegar" count="1"/>
+		</recipe>
+
+		<!-- acid step 3: frozen weak acid -->
+		<recipe name="acidmodFrozenWeakAcid" count="1" craft_area="workbench" tags="learnable" craft_time="90">
+			<ingredient name="acidmodWeakAcid" count="1"/>
+			<ingredient name="resourceSnowBall" count="1"/>
+			<ingredient name="resourceYuccaFibers" count="10"/>
+		</recipe>
+
+		<!-- acid step 4: strong acid -->
+		<recipe name="acidmodStrongAcid" count="1" craft_area="chemistryStation" tags="learnable" craft_time="30">
+			<ingredient name="acidmodFrozenWeakAcid" count="1"/>
+		</recipe>
+
+		<!-- acid step 5: bottle of acid -->
+		<recipe name="resourceAcid" count="1" tags="learnable">
+			<ingredient name="acidmodStrongAcid" count="3"/>
+			<ingredient name="resourceScrapPolymers" count="15"/>
+		</recipe>
+
+	</append>
+
+</MeanCloud_Acid>

@@ -1,0 +1,13 @@
+<MeanCloud_Acid>
+
+	<!-- 'Master Chef' perk at levels 3+ give the player knowledge for the vinegar steps -->
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="acidmodCloudyAlcohol,acidmodRoiledAlcohol,acidmodUnfilteredVinegar"/>
+	</append>
+
+	<!-- 'Physician' perk at levels 2+ give the player knowledge for the acid steps -->
+	<append xpath="/progression/perks/perk[@name='perkPhysician']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,4" tags="acidmodFrozenVinegar,acidmodWeakAcid,acidmodFrozenWeakAcid,acidmodStrongAcid,resourceAcid"/>
+	</append>
+
+</MeanCloud_Acid>

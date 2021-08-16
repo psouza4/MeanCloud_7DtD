@@ -1,0 +1,152 @@
+<MeanCloud_Acid>
+
+	<append xpath="/items">
+
+		<!-- template for vinegars -->
+		<item name="acidmodVinegarBase">
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="3"/>
+			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="15"/>
+			<property name="EconomicValue" value="48"/>
+			<property name="UnlockedBy" value="perkMasterChef,acidmodVinegarsSchematic"/>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking,Chemicals,CFChemicals"/>
+		</item>
+
+		<!-- vinegar step 1: cloudy alcohol -->
+		<item name="acidmodCloudyAlcohol">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Extends" value="acidmodVinegarBase"/>
+			<property name="DescriptionKey" value="acidmodCloudyAlcoholDesc"/>
+		</item>
+
+		<!-- vinegar step 2: roiled alcohol -->
+		<item name="acidmodRoiledAlcohol">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Extends" value="acidmodVinegarBase"/>
+			<property name="DescriptionKey" value="acidmodRoiledAlcoholDesc"/>
+		</item>
+
+		<!-- vinegar step 3: unfiltered vinegar -->
+		<item name="acidmodUnfilteredVinegar">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Extends" value="acidmodVinegarBase"/>
+			<property name="DescriptionKey" value="acidmodUnfilteredVinegarDesc"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="2"/>
+				<property name="Use_time" value="2"/>
+				<property name="Sound_start" value="bucketplace_water"/>
+				<property name="Create_item" value="acidmodVinegarMother,acidmodVinegar"/>
+				<property name="Create_item_count" value="1,1"/>
+			</property>
+		</item>
+
+		<!-- vinegar step 4: filtered vinegar, suitable for cooking and containing a fair amount of acetic acid -->
+		<item name="acidmodVinegar">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Extends" value="acidmodVinegarBase"/>
+			<property name="DescriptionKey" value="acidmodVinegarDesc"/>
+		</item>
+
+		<!-- vinegar mother (mother of vinegar) -->
+		<item name="acidmodVinegarMother">
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="acidmodVinegarMotherDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="MresourceAnimalFat"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+		</item>
+
+		<!-- template for acids -->
+		<item name="acidmodAcidBase">
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="medical"/>
+			<property name="HoldType" value="3"/>
+			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="15"/>
+			<property name="EconomicValue" value="48"/>
+			<property name="UnlockedBy" value="perkPhysician,acidmodAcidsSchematic"/>
+			<property name="Group" value="Science,Food/Cooking,CFDrink/Cooking,Chemicals,CFChemicals,Medical"/>
+		</item>
+
+		<!-- acetic acid step 1: frozen vinegar -->
+		<item name="acidmodFrozenVinegar">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Extends" value="acidmodAcidBase"/>
+			<property name="DescriptionKey" value="acidmodFrozenVinegarDesc"/>
+		</item>
+
+		<!-- acetic acid step 2: weak acid -->
+		<item name="acidmodWeakAcid">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Extends" value="acidmodAcidBase"/>
+			<property name="DescriptionKey" value="acidmodWeakAcidDesc"/>
+		</item>
+
+		<!-- acetic acid step 3: frozen weak acid -->
+		<item name="acidmodFrozenWeakAcid">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Extends" value="acidmodAcidBase"/>
+			<property name="DescriptionKey" value="acidmodFrozenWeakAcidDesc"/>
+		</item>
+
+		<!-- acetic acid step 4: strong acid -->
+		<item name="acidmodStrongAcid">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Extends" value="acidmodAcidBase"/>
+			<property name="DescriptionKey" value="acidmodStrongAcidDesc"/>
+		</item>
+
+		<!-- acetic acid step 5: bottle of acid is the pre-existing game item we are crafting as a
+				final result and thus already exists in the games installed files -->
+
+		<!-- recipe/schematic for the vinegar steps -->
+		<item name="acidmodVinegarsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="DescriptionKey" value="acidmodVinegarsSchematicDesc"/>
+			<property name="EconomicValue" value="600"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="acidmodVinegar"/>
+			<property name="Unlocks" value="acidmodVinegar"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="acidmodCloudyAlcohol" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="acidmodRoiledAlcohol" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="acidmodUnfilteredVinegar" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="acidmodVinegarMother" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="acidmodVinegar" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<!-- recipe/schematic for the acid steps -->
+		<item name="acidmodAcidsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="DescriptionKey" value="acidmodAcidsSchematicDesc"/>
+			<property name="EconomicValue" value="600"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="resourceAcid"/>
+			<property name="Unlocks" value="resourceAcid"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="acidmodFrozenVinegar" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="acidmodWeakAcid" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="acidmodFrozenWeakAcid" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="acidmodStrongAcid" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceAcid" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+	</append>
+
+</MeanCloud_Acid>

@@ -1,0 +1,114 @@
+Some notes and reference information found about common acids I used when creating this mod:
+
+Acetic acid (HC2H3O2)  is found in vinegar as well as products that contain vinegar, such as ketchup
+Citric acid (H3C6H5O7) is found in citrus fruits. It is also used in jams and jellies and to add a tangy 
+                       flavor to other foods
+Lactic acid (C3H6O3)   is found in milk and other dairy products
+Ascorbic acid (C6H8O6) is vitamin C. It is found in citrus fruits as well as some other fruits and juices
+Sulfuric acid (H2SO4)  is found in car batteries and some drain cleaners
+
+(source: https://sciencing.com/list-household-bases-acids-7228196.html)
+
+In unmodded 7 Days to Die, we have:
+
+acetic acid:
+    beer (poor-grade grain alcholic) -- feeding oxygen to a grain alcohol can yield vinegar
+    grain alcohol (good-grade grain alcholic) -- feeding oxygen to a grain alcohol can yield vinegar
+
+citric acid:
+    blueberry (high)
+    snowberry (high)
+    can of pears (moderate)
+    coffee beans (moderate)
+    pumpkin (very low)
+
+lactic acid:
+    coffee beans (low)
+
+ascorbic acid:
+    none
+
+sufuric acid:
+    acid (from sinks, cars, etc., implying it's used as a cleaning and automotive agent: this is ALREADY
+        the acid we want)
+    coal (burning coal yields sulfur dioxide, a gas -- when combined with water makes sulfurous acid
+        but NOT sulfuric acid, which requires a catalyst such as nitric acid)
+
+other acids:
+    aloe vera leaf (small amounts of salicylic acid, amino acids, etc.)
+    jar of honey (moderate amount of gloconic acid)
+    coffee beans (chlorogenic, quinic, citric, acetic, lactic, malic, phosphoric, linoleic, and palmitic)
+    nitrate powder (adding another acid as a catalyst, we can extract nitric acid)
+
+This therefore leaves us essentially three pathways to making acid:
+
+    (1) creating vinegar from alcohol and concentrating the solution
+
+    (2) extracting and refining various acids from plants
+
+    (3) introducing an acid as a catalyst to process nitric acid from nitrate powder and using that
+        with sulfur dioxide we could get from burning coal
+
+Ideally, sulfuric acid is the preferred acid to use when producing batteries, however collecting a
+toxic gas seems dangerous and difficult to do in the wasteland to process coal and nitrate powder
+into sulfuric acid (and the entire process actually requires some acid as a catalyst anyway).  This
+mod will not be exploring acid production by this method.  It would not be impossible to do, but is
+not the easiest way to obtain acid in the wasteland (my opinion).
+
+Additionally, separating citric acid from plants also requires an acid catalyst and since it is not
+suitable as an acid for use as an industrial catalyst, this mod will not be exploring acid production
+by this method either.
+
+Therefore, this mod will only focus on this somewhat realistic game path to concentrating acetic acid
+from vinegar that has developed from grain alcohol.  Acetic acid is not usually preferable for
+manufacturing batteries (known to leak), but the process is feasible and the acid does work well as
+a cleaning agent and for other general uses 7 Days to Die has for acid.
+
+Here's the process:
+
+    (1) starting with grain alcohol, we introduce oxygen and bottle it in a dark, warm environment
+
+    (2) after 3 weeks to 6 months, bacteria will cloud the liquid and form a congealed layer on or
+        near the top of the alcohol (this is mother of vinegar)
+
+    (3) after another 4 weeks, the contents should now be vinegar (with mother floating in it)
+
+    (4) the vinegar should be filtered through a coffee filter or cheesecloth and the mother kept
+
+    (5) fractional-freeze the vinegar (discard vinegar liquid, keep acid solids) until it's a high
+        concentration of acetic acid
+
+Given this process, the mod will add the following:
+
+[item]    cloudy alcohol
+[item]    roiled alcohol
+[item]    vinegar (unfiltered)
+[item]    vinegar mother
+[item]    vinegar (filtered)
+[item]    frozen vinegar
+[item]    weak acid
+[item]    frozen weak acid
+[item]    strong acid
+[recipe]  1x grain alcohol => cloudy alcohol
+[recipe]  * 1x cloudy alcohol => roiled alcohol [skip with mother]
+[recipe]  * 1x roiled alcohol => unfiltered vinegar [skip with mother]
+[recipe]  ** 1x vinegar mother + 1x grain alcohol => unfiltered vinegar
+[recipe]  *** 1x unfiltered vinegar => vinegar mother & vinegar
+[recipe]  1x vinegar => frozen vinegar
+[recipe]  1x frozen vinegar => weak acid
+[recipe]  1x weak acid => frozen weak acid
+[recipe]  1x frozen weak acid => strong acid
+[recipe]  3x strong acid => acid
+[progression]  learn vinegars from 'Master Chef' rank 3
+[progression]  learn acids from 'Physician' rank 2
+[loot]    one recipe that teaches the player all of the vinegars
+[loot]    one recipe that teaches the player all of the acids
+
+*   Note: this part of the process can be skipped by keeping and re-using the organic vinegar
+          mother for the next batch, vastly accellerating the process.
+
+**  Note: re-using the vinegar mother in the next batch skips over waiting for it to develop
+          naturally, saving lots of time on subsequent batches.
+
+*** Note: this isn't actually a recipe, since crafting can't yield 2 items.  Instead, you [Open]
+          the item from your inventory (or use it from your hotkey bar) to unpack ('filter') it.
