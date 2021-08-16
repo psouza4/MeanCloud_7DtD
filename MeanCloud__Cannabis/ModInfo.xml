@@ -5,7 +5,7 @@
 		<Description value="Adds usable cannabis to the game. Who says you can't enjoy the end of the world?"/>
 		<Author value="Mean.Cloud"/>
 		<!-- Thanks to doughphungus: he added Spanish localizations -->
-		<Version value="A19 1.02"/>
+		<Version value="A19 1.02.1"/>
 		<Website value="http://mean.cloud/" />
 	</ModInfo>
 </xml>
