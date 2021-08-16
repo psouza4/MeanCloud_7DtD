@@ -189,10 +189,10 @@
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="fishingRod1Caught" target="self"/>
 				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="[94f7e5]You might have found something...[-]"/> -->
-				<triggered_effect trigger="onSelfItemActivate" action="ModifyCVar" cvar="$fishingRod1Caught2Trigger" operation="add" value="randomint(1,7)">
+				<triggered_effect trigger="onSelfItemActivate" action="ModifyCVar" cvar="$fishingRod1Caught2Trigger" operation="add" value="randomint(2,9)">
 					<requirement name="HasBuff" buff="fishingRod1Caught"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfItemDeactivate" action="ModifyCVar" cvar="$fishingRod1Caught2Trigger" operation="add" value="randomint(1,7)">
+				<triggered_effect trigger="onSelfItemDeactivate" action="ModifyCVar" cvar="$fishingRod1Caught2Trigger" operation="add" value="randomint(2,9)">
 					<requirement name="HasBuff" buff="fishingRod1Caught"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfItemActivate" action="PlaySound" sound="FishingReelShort">
@@ -285,10 +285,10 @@
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="fishingRod2Caught" target="self"/>
 				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="[94f7e5]You might have found something...[-]"/> -->
-				<triggered_effect trigger="onSelfItemActivate" action="ModifyCVar" cvar="$fishingRod2Caught2Trigger" operation="add" value="randomint(1,7)">
+				<triggered_effect trigger="onSelfItemActivate" action="ModifyCVar" cvar="$fishingRod2Caught2Trigger" operation="add" value="randomint(3,11)">
 					<requirement name="HasBuff" buff="fishingRod2Caught"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfItemDeactivate" action="ModifyCVar" cvar="$fishingRod2Caught2Trigger" operation="add" value="randomint(1,7)">
+				<triggered_effect trigger="onSelfItemDeactivate" action="ModifyCVar" cvar="$fishingRod2Caught2Trigger" operation="add" value="randomint(3,11)">
 					<requirement name="HasBuff" buff="fishingRod2Caught"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfItemActivate" action="PlaySound" sound="FishingReelShort">

@@ -45,8 +45,8 @@ Boiled Prawns,items,Food,,,Boiled Prawns
 boiledPrawnsDesc,items,Food,,,"Boiled prawns.  It's not great, but it's not horrible either."
 Grilled Prawns,items,Food,,,Grilled Prawns
 grilledPrawnsDesc,items,Food,,,"Tasty grilled prawns, mmmm!"
-Vinegar,items,Food,,,Vinegar
-vinegarDesc,items,Food,,,"This vinegar is ideal for serving with fish and chips or even pickling fish."
+Vinegar,items,Food,,,Seasoning Vinegar
+vinegarDesc,items,Food,,,"This seasoning vinegar is ideal for serving with fish and chips or even pickling fish."
 Fish Tacos (Fresh),items,Food,,,Fish Tacos [a0ff94](Fresh)[-]
 fishTacosFreshDesc,items,Food,,,"Fresh fish tacos are a great meal, delicious and nutritious!"
 Surf and Turf,items,Food,,,Surf and Turf
