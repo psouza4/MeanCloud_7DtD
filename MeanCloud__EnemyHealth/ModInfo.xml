@@ -5,7 +5,7 @@
 		<Description value="Adds a visible health bar to enemies to the top of the screen under the compass."/>
 		<Author value="Mean.Cloud"/>
 		<!-- Credit to KhaineGB's version, where this mod is adapted from -->
-		<Version value="A19 1.00"/>
+		<Version value="1.00" compat="A19"/>
 		<Website value="http://mean.cloud/" />
 	</ModInfo>
 </xml>
