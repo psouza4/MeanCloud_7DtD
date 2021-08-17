@@ -2,9 +2,9 @@
 <xml>
 	<ModInfo>
 		<Name value="MeanCloud's Acid"/>
-		<Description value="Allows you to craft acid from grain alcohol."/>
+		<Description value="Allows you to realistically craft acid from grain alcohol. See 'references.txt' for nerd notes."/>
 		<Author value="Mean.Cloud"/>
-		<Version value="A19 1.00"/>
+		<Version value="1.00" compat="A19"/>
 		<Website value="http://mean.cloud/" />
 	</ModInfo>
 </xml>
