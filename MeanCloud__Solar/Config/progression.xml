@@ -1,0 +1,20 @@
+<MeanCloud_Solar>
+
+	<!-- use Advanced Engineering (ranks 2 through 5) to unlock silicon processing and solar crafting -->
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+
+		<!-- Advanced Engineering 2 -->
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="refinedSilicon,purifiedSilicon"/>
+
+		<!-- Advanced Engineering 3 -->
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="solarbankBasic,solarCellBasic,refinedSilicon,purifiedSilicon"/>
+
+		<!-- Advanced Engineering 4 -->
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="solarbank,solarCell"/>
+
+		<!-- Advanced Engineering 5 -->
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5"   tags="solarbankEnhanced,solarCellEnhanced"/>
+
+	</append>
+
+</MeanCloud_Solar>

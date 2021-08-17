@@ -1,0 +1,143 @@
+<MeanCloud_Solar>
+
+	<append xpath="/items">
+
+		<!-- refined silicon -->
+		<item name="refinedSilicon">
+			<property name="CustomIcon" value="refinedSilicon"/>
+			<property name="DescriptionKey" value="refinedSiliconDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="MresourceCrushedSand"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="15"/>
+			<property name="Group" value="Resources"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,allSiliconSchematic"/>
+			<property name="CraftingIngredientTime" value="2"/>
+		</item>
+
+		<!-- purified silicon -->
+		<item name="purifiedSilicon">
+			<property name="CustomIcon" value="purifiedSilicon"/>
+			<property name="DescriptionKey" value="purifiedSiliconDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="MresourceCrushedSand"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,allSiliconSchematic"/>
+			<property name="CraftingIngredientTime" value="2"/>
+		</item>
+
+		<!-- basic solar cell -->
+		<item name="solarCellBasic">
+			<property name="CustomIcon" value="solarCellBasic"/>
+			<property name="DescriptionKey" value="solarCellBasicDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="3"/>
+			<property name="EconomicValue" value="1000"/>
+			<property name="Group" value="Science,CFChemicals,Medical"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,allSolarBasicSchematic"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="ShowQuality" value="true"/>
+			<property class="Attributes">
+				<property name="DegradationMax" value="300,1200"/>
+			</property>
+			<effect_group>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+			</effect_group>
+		</item>
+
+		<!-- standard solar cell -->
+		<set xpath="/items/item[@name='solarCell']/property[@name='Group']/@value">Science,CFChemicals,Medical</set> <!-- fix crafting group -->
+		<append xpath="/items/item[@name='solarCell']">
+			<property name="UnlockedBy" value="perkAdvancedEngineering,allSolarStandardSchematic"/>
+		</append>
+
+		<!-- enhanced solar cell -->
+		<item name="solarCellEnhanced">
+			<property name="CustomIcon" value="solarCellEnhanced"/>
+			<property name="DescriptionKey" value="solarCellEnhancedDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="15"/>
+			<property name="EconomicValue" value="4000"/>
+			<property name="Group" value="Science,CFChemicals,Medical"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,allSolarEnhancedSchematic"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="ShowQuality" value="true"/>
+			<property class="Attributes">
+				<property name="DegradationMax" value="5000,10000"/>
+			</property>
+			<effect_group>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="5000,10000" tier="1,6"/>
+			</effect_group>
+		</item>
+
+		<!-- schematic: refined silicon, purified silicon -->
+		<item name="allSiliconSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="refinedSilicon"/>
+			<property name="Unlocks" value="refinedSilicon"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="refinedSilicon" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="purifiedSilicon" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<!-- schematic: basic solar cell, basic solar bank -->
+		<item name="allSolarBasicSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="solarCellBasic"/>
+			<property name="Unlocks" value="solarCellBasic"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="solarCellBasic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="solarbankBasic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<!-- schematic: standard solar cell, standard solar bank -->
+		<item name="allSolarStandardSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="solarbank"/>
+			<property name="Unlocks" value="solarbank"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="solarbank" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="solarCell" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<!-- schematic: enhanced solar cell, enhanced solar bank -->
+		<item name="allSolarEnhancedSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="solarbank"/>
+			<property name="Unlocks" value="solarbankEnhanced"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="solarbankEnhanced" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="solarCellEnhanced" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+	</append>
+
+</MeanCloud_Solar>

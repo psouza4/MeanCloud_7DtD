@@ -1,0 +1,21 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+solarbankBasic,blocks,Electricity,,,"Basic Solar Bank"
+solarbankBasicDesc,blocks,Electricity,,,"A small solar bank that requires basic solar cells to operate. Unlocked by Advanced Engineering rank 3 or schematic.\nUsed to generate power for your electrical components. See Journal Tip for more info."
+solarbank,blocks,Electricity,,,"Standard Solar Bank",,Solarpanel,Banco de paneles solares,Groupe solaire,Generatore solare,太陽充電バンク,태양광 저장고,Bateria słoneczna,Banco solar,Солнечная батарея,Güneş Enerjisi Bankası,太阳能组,太陽能電源,Banco de paneles solares
+solarbankDesc,blocks,Electricity,,,"A standard solar bank that requires basic solar cells to operate. Unlocked by Advanced Engineering rank 4 or schematic.\nUsed to generate power for your electrical components. See Journal Tip for more info."
+solarbankEnhanced,blocks,Electricity,,,"Enhanced Solar Bank"
+solarbankEnhancedDesc,blocks,Electricity,,,"An upgraded solar bank that increases the output of power per solar cell. Unlocked by Advanced Engineering rank 5 or schematic.\nRequires Enhanced Solar Cells to operate.\nUsed to generate power for your electrical components. See Journal Tip for more info."
+solarCellBasic,items,Part,,,"Basic Solar Cell"
+solarCellBasicDesc,items,Part,,,"Place basic solar cells into a basic solar cell bank to generate power. Unlocked by Advanced Engineering rank 3 or schematic."
+solarCell,items,Part,,,"Standard Solar Cell",,Solarzelle,Panel solar,Panneau solaire,Cella solare,太陽電池,태양광 전지,Ogniwo słoneczne,Células solares,Солнечный элемент,Güneş Hücresi,太阳能电池,太陽能電池,Panel solar
+solarCellDesc,items,Part,,,"Place standard solar cells into a solar cell bank to generate power. Unlocked by Advanced Engineering rank 4 or schematic.",,"Platziere Solarzellen in einem Solarpanel, um Strom zu erzeugen.",Coloca paneles solares en una parcela de paneles solares para generar electricidad.,Placez des panneaux solaires dans une batterie solaire pour générer de l'énergie.,Inserisci la cella solare in un pannello solare per generare elettricità.,太陽充電バンクに太陽電池をセットすると発電が可能です。,태양광 전지를 태양광 전지 뱅크에 넣어 동력을 생성합니다.,"Umieść ogniwa słoneczne w baterii ogniw słonecznych, aby generowała prąd.",Coloque células solares em um painel de células solares para gerar energia.,Поместите солнечные элементы в солнечную батарею для генерации электроэнергии.,Elektrik üretmek için güneş hücresi bankasına güneş hücresi koyabilirsin.,将太阳能电池放入太阳能电池组中，即可发电。,將太陽能電池放入太陽能電源堆中發電。,Coloca paneles solares en una parcela de paneles solares para generar electricidad.
+solarCellEnhanced,items,Part,,,"Enhanced Solar Cell"
+solarCellEnhancedDesc,items,Part,,,"Place enhanced solar cells into an enhanced solar cell bank to generate power. Unlocked by Advanced Engineering rank 5 or schematic."
+refinedSilicon,items,Part,,,"Refined Silicon"
+refinedSiliconDesc,items,Part,,,"Taking sand to a new level, refined silicon should be purified further to craft solar electronics. Unlocked by Advanced Engineering rank 2 or schematic."
+purifiedSilicon,items,Part,,,"Purified Silicon"
+purifiedSiliconDesc,items,Part,,,"Purified silicon is ready to be used to craft solar electronics. Unlocked by Advanced Engineering rank 2 or schematic."
+allSiliconSchematic,items,Resources,,,"Silicon Processing Instructions"
+allSolarBasicSchematic,items,Electricity,,,"Basic Solar Technology Schematic"
+allSolarStandardSchematic,items,Electricity,,,"Standard Solar Technology Schematic"
+allSolarEnhancedSchematic,items,Electricity,,,"Enhanced Solar Technology Schematic"

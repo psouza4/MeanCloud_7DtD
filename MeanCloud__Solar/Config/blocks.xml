@@ -1,0 +1,90 @@
+<MeanCloud_Solar>
+
+	<append xpath="/blocks">
+	
+		<block name="solarbankBasic">
+			<property name="CustomIcon" value="solarbankBasic"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="SolarPanel"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="#@modfolder:Resources/DrsSolarPanel.unity3d?DrsSolarPrefab"/>
+			<property name="DisplayType" value="blockElectricalMulti" />
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="ImposterExchange" value="imposterRamp" param1="18"/>
+			<property name="DescriptionKey" value="solarbankBasicDesc"/>
+			<property name="OutputPerStack" value="7"/>
+			<property name="SlotItem" value="solarCellBasic"/>
+			<property name="MaxPower" value="55"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,allSolarBasicSchematic"/>
+			<property name="Group" value="Science"/>
+			<property name="ActivationDistance" value="6"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/>
+				<property name="resourceElectricParts" value="3"/>
+				<property name="resourceElectricParts" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="EconomicValue" value="1000"/>
+			<property name="FilterTags" value="fdecor,felectrical"/>
+			<property name="SortOrder1" value="70a0"/>
+		</block>
+
+		<append xpath="/blocks/block[@name='solarbank']">
+			<property name="UnlockedBy" value="perkAdvancedEngineering,allSolarStandardSchematic"/>
+			<property name="DescriptionKey" value="solarbankDesc"/>
+		</append>
+
+		<block name="solarbankEnhanced">
+			<property name="CustomIcon" value="solarbankEnhanced"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="SolarPanel"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="Entities/Electrical/solar_panelPrefab"/>
+            <property name="ModelOffset" value=".5,.5,0"/>
+			<property name="DisplayType" value="blockElectricalMulti" />
+			<property name="MultiBlockDim" value="4,1,1"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="ImposterExchange" value="imposterRamp" param1="18"/>
+			<property name="DescriptionKey" value="solarbankEnhancedDesc"/>
+			<property name="OutputPerStack" value="60"/>
+			<property name="SlotItem" value="solarCellEnhanced"/>
+			<property name="MaxPower" value="550"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,allSolarEnhancedSchematic"/>
+			<property name="Group" value="Science"/>
+			<property name="ActivationDistance" value="6"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/>
+				<property name="resourceElectricParts" value="3"/>
+				<property name="resourceElectricParts" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="EconomicValue" value="4000"/>
+			<property name="FilterTags" value="fdecor,felectrical"/>
+			<property name="SortOrder1" value="70a0"/>
+		</block>
+
+	</append>
+
+</MeanCloud_Solar>
