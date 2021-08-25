@@ -1,0 +1,41 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+animalCoyote,entityclasses,Entity,,,Coyote
+animalDireWolf,entityclasses,Entity,,,Alpha Wolf
+animalMountainLion,entityclasses,Entity,,,Mountain Lion
+animalSnake,entityclasses,Entity,,,Snake
+animalWolf,entityclasses,Entity,,,Wolf
+animalZombieBear,entityclasses,Entity,,,Zombie Bear
+animalZombieVultureRadiated,entityclasses,Entity,,,Radiated Zombie Vulture
+junkTurretGun,entityclasses,Entity,,,Robotic Turret
+junkTurretSledge,entityclasses,Entity,,,Robotic Sledge
+legendaryZombieBusinessMan,entityclasses,Entity,,,Mutated Businessman
+legendaryZombieLab,entityclasses,Entity,,,Mutated Scientist
+legendaryZombieUtilityWorker,entityclasses,Entity,,,Mutated Utility Worker
+zombieArleneRadiated,entityclasses,Entity,,,Radiated Putrid Girl
+zombieBikerFeral,entityclasses,Entity,,,Feral Zombie Biker
+zombieBikerRadiated,entityclasses,Entity,,,Radiated Zombie Biker
+zombieBoeRadiated,entityclasses,Entity,,,Radiated Infected Survivor
+zombieCheerleaderRadiated,entityclasses,Entity,,,Radiated Zombie Cheerleader
+zombieDarlineRadiated,entityclasses,Entity,,,Radiated Zombie Mom
+zombieFemaleFatRadiated,entityclasses,Entity,,,Radiated Hungry Zombie
+zombieJanitor,entityclasses,Entity,,,Zombie Janitor
+zombieJanitorFeral,entityclasses,Entity,,,Feral Zombie Janitor
+zombieJanitorRadiated,entityclasses,Entity,,,Radiated Zombie Janitor
+zombieJoeRadiated,entityclasses,Entity,,,Radiated Cadaver
+zombieLab,entityclasses,Entity,,,Zombie Scientist
+zombieLabFeral,entityclasses,Entity,,,Feral Zombie Scientist
+zombieLabRadiated,entityclasses,Entity,,,Radiated Zombie Scientist
+zombieMarleneRadiated,entityclasses,Entity,,,Radiated Woman
+zombieMoeRadiated,entityclasses,Entity,,,Radiated Bloated Walker
+zombieNurseRadiated,entityclasses,Entity,,,Radiated Nurse
+zombieOldTimerRadiated,entityclasses,Entity,,,Radiated Zombie Cowboy
+zombieScreamerRadiated,entityclasses,Entity,,,Radiated Screamer
+zombieSkateboarderRadiated,entityclasses,Entity,,,Radiated Skater Zombie
+zombieSnowFeral,entityclasses,Entity,,,Radiated Frozen Lumberjack
+zombieSoldierRadiated,entityclasses,Entity,,,Radiated Soldier
+zombieSpiderRadiated,entityclasses,Entity,,,Radiated Spider Zombie
+zombieSteveFeral,entityclasses,Entity,,,Radiated Corpse
+zombieStripperRadiated,entityclasses,Entity,,,Radiated Stripper
+zombieUtilityWorkerRadiated,entityclasses,Entity,,,Radiated Utility Worker
+zombieWightRadiated,entityclasses,Entity,,,Radiated Wight
+zombieYoRadiated,entityclasses,Entity,,,Radiated Carcass
