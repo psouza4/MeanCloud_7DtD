@@ -7,7 +7,7 @@
 		<!-- Thanks to Clockwork Orange for his A16 fishing modlet, where I drew some inspiration from -->
 		<!-- Thanks to Telrics, who provided permission to use his fishing pole Unity asset -->
 		<!-- Thanks to doughphungus, who provided some A19 fixes and the Spanish localizations -->
-		<Version value="1.05.1" compat="A19"/>
+		<Version value="1.06" compat="A20"/>
 		<Website value="http://mean.cloud/" />
 		
 		<!-- Copyright and licensing/usage notice:

@@ -1,0 +1,80 @@
+<MeanCloud_NoHordeNights>
+
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=1]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=1]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=2]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=2]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=3]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=3]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=4]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=4]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=5]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=5]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=6]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=6]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=7]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=7]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=8]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=8]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=9]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=9]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=10]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=10]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=11]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=11]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=12]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=12]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=13]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=13]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=14]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=14]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=15]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=15]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=16]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=16]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=17]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=17]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=18]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=18]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=19]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=19]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=20]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=20]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=21]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=21]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=22]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=22]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=23]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=23]/property[@name='TotalPerWave']/@value">0</set>
+
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=7]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=7]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=14]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=14]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=21]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=21]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=28]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=28]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=35]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=35]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=42]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=42]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=49]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=49]/property[@name='TotalPerWave']/@value">0</set>
+
+	<set xpath="/spawning/entityspawner[@name='Scouts']/day/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='Scouts']/day/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='Scouts']/day[@value=*]/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='Scouts']/day[@value=*]/property[@name='TotalPerWave']/@value">0</set>
+
+	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnDay']/day/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnDay']/day/property[@name='TotalPerWave']/@value">0</set>
+
+	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnNight']/day/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnNight']/day/property[@name='TotalPerWave']/@value">0</set>
+
+</MeanCloud_NoHordeNights>

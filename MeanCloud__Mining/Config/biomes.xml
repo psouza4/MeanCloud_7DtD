@@ -1,25 +1,28 @@
 <MeanCloud_Mining>
 
-	<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[@prob='0.292']/@prob">0.185</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.292']/@prob">0.185</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='water']/subbiome[@prob='0.292']/@prob">0.185</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.302']/@prob">0.185</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[@prob='0.292']/@prob">0.185</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome[@prob='0.292']/@prob">0.185</set>
+  <!-- lower coal -->
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[@prob='0.392']/@prob">0.292</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.392']/@prob">0.292</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='water']/subbiome[@prob='0.392']/@prob">0.292</set>
+	<!-- <set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.302']/@prob">0.292</set> --> <!-- note: desert no longer has any coal -->
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[@prob='0.392']/@prob">0.292</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome[@prob='0.392']/@prob">0.292</set>
 
-	<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[@prob='0.312']/@prob">0.210</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.312']/@prob">0.210</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='water']/subbiome[@prob='0.312']/@prob">0.210</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.312']/@prob">0.210</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[@prob='0.312']/@prob">0.210</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome[@prob='0.312']/@prob">0.210</set>
+  <!-- lower potassium nitrate -->
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[@prob='0.412']/@prob">0.312</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.412']/@prob">0.312</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='water']/subbiome[@prob='0.412']/@prob">0.312</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.412']/@prob">0.312</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[@prob='0.412']/@prob">0.312</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome[@prob='0.412']/@prob">0.312</set>
 
-	<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[@prob='0.342']/@prob">0.235</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.342']/@prob">0.235</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='water']/subbiome[@prob='0.342']/@prob">0.235</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.342']/@prob">0.235</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[@prob='0.342']/@prob">0.235</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome[@prob='0.342']/@prob">0.235</set>
+  <!-- lower lead -->
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[@prob='0.442']/@prob">0.342</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.442']/@prob">0.342</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='water']/subbiome[@prob='0.442']/@prob">0.342</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.442']/@prob">0.342</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[@prob='0.442']/@prob">0.342</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome[@prob='0.442']/@prob">0.342</set>
 
 	<append xpath="/worldgeneration/biomes/biome[@name='snow']">
 
@@ -89,7 +92,7 @@
 				<decoration type="block" blockname="cntForestRandomLootHelper" prob="0.00025"/>
 				<decoration type="prefab" name="rock_form02" prob=".001" rotatemax="7"/>
 				<decoration type="prefab" name="rock_form01" prob=".001" rotatemax="7"/>
-				<decoration type="block" blockname="plantedCotton3Harvest" prob="0.001"/>
+				<decoration type="block" blockname="plantedCotton3Harvest" prob="0.001" rotatemax="7"/>
 				<decoration type="block" blockname="rock01" prob=".001"/>
 				<decoration type="block" blockname="rock02" prob=".001"/>
 				<decoration type="block" blockname="rock04" prob=".001"/>
@@ -102,16 +105,18 @@
 				<decoration type="block" blockname="treeMountainPine31m" prob="0.002" rotatemax="7"/>
 				<decoration type="block" blockname="treeMountainPineDry21m" prob="0.002" rotatemax="7"/>
 				<decoration type="block" blockname="treeMountainPine41m" prob="0.004" rotatemax="7"/>
-				<decoration type="block" blockname="plantedSnowberry3Harvest" prob=".001"/>
-				<decoration type="block" blockname="plantedChrysanthemum3Harvest" prob="0.001"/>
-				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".4"/>
+				<decoration type="block" blockname="plantedSnowberry3Harvest" prob=".001" rotatemax="7"/>
+				<decoration type="block" blockname="plantedChrysanthemum3Harvest" prob="0.001" rotatemax="7"/>
 				<decoration type="block" blockname="treeOakLrg01" prob="0.001" rotatemax="7"/>
 				<decoration type="block" blockname="treeOakMed01" prob="0.001" rotatemax="7"/>
 				<decoration type="block" blockname="treeOakMed02" prob="0.001" rotatemax="7"/>
 				<decoration type="block" blockname="treeOakSml01" prob="0.001" rotatemax="7"/>
 				<decoration type="block" blockname="treeFirLrg01" prob="0.0005" rotatemax="7"/>
 				<decoration type="block" blockname="treeMountainPine48m" prob="0.0005" rotatemax="7"/>
-				<decoration type="block" blockname="treeStump" prob=".0002" rotatemax="7"/></decorations>
+				<decoration type="block" blockname="treeStump" prob=".0002" rotatemax="7"/>
+				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".35"/>
+				<decoration type="block" blockname="treeShortGrass" prob=".6"/>
+			</decorations>
 		</subbiome>
 
 		<subbiome prob="0.195"> <!-- Ore Sub Biome: copperOre -->
@@ -126,7 +131,7 @@
 				<decoration type="block" blockname="cntForestRandomLootHelper" prob="0.00025"/>
 				<decoration type="prefab" name="rock_form02" prob=".001" rotatemax="7"/>
 				<decoration type="prefab" name="rock_form01" prob=".001" rotatemax="7"/>
-				<decoration type="block" blockname="plantedCotton3Harvest" prob="0.001"/>
+				<decoration type="block" blockname="plantedCotton3Harvest" prob="0.001" rotatemax="7"/>
 				<decoration type="block" blockname="rock01" prob=".001"/>
 				<decoration type="block" blockname="rock02" prob=".001"/>
 				<decoration type="block" blockname="rock04" prob=".001"/>
@@ -139,16 +144,18 @@
 				<decoration type="block" blockname="treeMountainPine31m" prob="0.002" rotatemax="7"/>
 				<decoration type="block" blockname="treeMountainPineDry21m" prob="0.002" rotatemax="7"/>
 				<decoration type="block" blockname="treeMountainPine41m" prob="0.004" rotatemax="7"/>
-				<decoration type="block" blockname="plantedSnowberry3Harvest" prob=".001"/>
-				<decoration type="block" blockname="plantedChrysanthemum3Harvest" prob="0.001"/>
-				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".4"/>
+				<decoration type="block" blockname="plantedSnowberry3Harvest" prob=".001" rotatemax="7"/>
+				<decoration type="block" blockname="plantedChrysanthemum3Harvest" prob="0.001" rotatemax="7"/>
 				<decoration type="block" blockname="treeOakLrg01" prob="0.001" rotatemax="7"/>
 				<decoration type="block" blockname="treeOakMed01" prob="0.001" rotatemax="7"/>
 				<decoration type="block" blockname="treeOakMed02" prob="0.001" rotatemax="7"/>
 				<decoration type="block" blockname="treeOakSml01" prob="0.001" rotatemax="7"/>
 				<decoration type="block" blockname="treeFirLrg01" prob="0.0005" rotatemax="7"/>
 				<decoration type="block" blockname="treeMountainPine48m" prob="0.0005" rotatemax="7"/>
-				<decoration type="block" blockname="treeStump" prob=".0002" rotatemax="7"/></decorations>
+				<decoration type="block" blockname="treeStump" prob=".0002" rotatemax="7"/>
+				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".35"/>
+				<decoration type="block" blockname="treeShortGrass" prob=".6"/>
+			</decorations>
 		</subbiome>
 
 	</append>
@@ -233,10 +240,10 @@
 				<decoration type="block" blockname="plantedYucca3Harvest" prob="0.002" rotatemax="3"/>
 				<decoration type="block" blockname="plantedAloe3Harvest" rotatemax="3" prob="0.003"/>
 				<decoration type="block" blockname="treeDesertShrub" prob="0.05" rotatemax="7"/>
-				<decoration type="block" blockname="driftwood" prob="0.002"/>
-				<decoration type="block" blockname="driftwood2" prob="0.002"/>
+				<decoration type="block" blockname="driftwood" prob="0.002" rotatemax="7"/>
+				<decoration type="block" blockname="driftwood2" prob="0.002" rotatemax="7"/>
 				<decoration type="block" blockname="cntBirdnest" prob="0.001"/>
-				<decoration type="block" blockname="decoCowSkull" prob="0.00025"/>
+				<decoration type="block" blockname="decoCowSkull" prob="0.00025" rotatemax="3"/>
 				<decoration type="block" blockname="treeCactus06" prob="0.0009" rotatemax="3"/>
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".00025"/>
 				<decoration type="block" blockname="treeOakMed01" prob="0.0003" rotatemax="7"/>
@@ -265,10 +272,10 @@
 				<decoration type="block" blockname="plantedYucca3Harvest" prob="0.002" rotatemax="3"/>
 				<decoration type="block" blockname="plantedAloe3Harvest" rotatemax="3" prob="0.003"/>
 				<decoration type="block" blockname="treeDesertShrub" prob="0.05" rotatemax="7"/>
-				<decoration type="block" blockname="driftwood" prob="0.002"/>
-				<decoration type="block" blockname="driftwood2" prob="0.002"/>
+				<decoration type="block" blockname="driftwood" prob="0.002" rotatemax="7"/>
+				<decoration type="block" blockname="driftwood2" prob="0.002" rotatemax="7"/>
 				<decoration type="block" blockname="cntBirdnest" prob="0.001"/>
-				<decoration type="block" blockname="decoCowSkull" prob="0.00025"/>
+				<decoration type="block" blockname="decoCowSkull" prob="0.00025" rotatemax="3"/>
 				<decoration type="block" blockname="treeCactus06" prob="0.0009" rotatemax="3"/>
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".00025"/>
 				<decoration type="block" blockname="treeOakMed01" prob="0.0003" rotatemax="7"/>
@@ -294,9 +301,9 @@
 				<decoration type="block" blockname="cntWastelandRandomLootHelper" prob="0.00025"/>
 				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.010" rotatemax="7"/>
 				<decoration type="block" blockname="scrapMetalPile" prob=".015" rotatemax="3"/>
-				<decoration type="block" blockname="brickDestroyedBlock01" prob=".0004" rotatemax="7"/>
-				<decoration type="block" blockname="brickDestroyedBlock02" prob=".0004" rotatemax="7"/>
-				<decoration type="block" blockname="brickDestroyedBlock03" prob=".0004" rotatemax="7"/>
+				<decoration type="block" blockname="brickShapes:brickDestroyed01" prob=".0004" rotatemax="7"/>
+				<decoration type="block" blockname="brickShapes:brickDestroyed02" prob=".0004" rotatemax="7"/>
+				<decoration type="block" blockname="brickShapes:brickDestroyed03" prob=".0004" rotatemax="7"/>
 				<decoration type="block" blockname="rock01" prob=".004" rotatemax="3"/>
 				<decoration type="block" blockname="rock02" prob=".004" rotatemax="3"/>
 				<decoration type="block" blockname="rock04" prob=".004" rotatemax="3"/>
@@ -315,16 +322,29 @@
 				<decoration type="prefab" name="deco_remnant_stone_02" prob=".003"/>
 				<decoration type="prefab" name="deco_remnant_stone_03" prob=".003"/>
 				<decoration type="prefab" name="deco_remnant_stone_04" prob=".002"/>
+				<decoration type="prefab" name="deco_remnant_stone_05" prob=".002"/>
 				<decoration type="prefab" name="deco_rubble_stone_01" prob=".0065"/>
 				<decoration type="prefab" name="deco_rubble_stone_02" prob=".0065"/>
 				<decoration type="prefab" name="deco_rubble_stone_03" prob=".005"/>
 				<decoration type="prefab" name="deco_rubble_stone_04" prob=".003"/>
 				<decoration type="prefab" name="deco_rubble_stone_05" prob=".003"/>
+				<decoration type="prefab" name="deco_rubble_stone_06" prob=".0065"/>
+				<decoration type="prefab" name="deco_rubble_stone_07" prob=".0065"/>
+				<decoration type="prefab" name="deco_rubble_stone_08" prob=".0065"/>
+				<decoration type="prefab" name="deco_rubble_stone_09" prob=".003"/>
+				<decoration type="prefab" name="deco_rubble_stone_10" prob=".003"/>
 				<decoration type="block" blockname="carWrecksRandomHelper" prob="0.0005" rotatemax="3"/>
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".05"/>
 				<decoration type="block" blockname="mineCandyTin" prob="0.00015"/>
 				<decoration type="block" blockname="mineHubcap" prob="0.0001"/>
-				<decoration type="block" blockname="hubcapNoMine" prob="0.0011"/></decorations>
+				<decoration type="block" blockname="hubcapNoMine" prob="0.0011"/>
+
+				<!-- *** New_Destruction_Blocks -->
+				<decoration type="block" blockname="rubblePileBricks" prob=".0004" rotatemax="7"/>
+				<decoration type="block" blockname="rubblePileBricksLong" prob=".0004" rotatemax="7"/>
+				<decoration type="block" blockname="rubblePileBricksSmall" prob=".0004" rotatemax="7"/>
+				<decoration type="block" blockname="rubblePileCement" prob=".0004" rotatemax="7"/>
+      </decorations>
 		</subbiome>
 
 		<subbiome prob="0.195"> <!-- Ore Sub Biome: copperOre -->
@@ -342,9 +362,9 @@
 				<decoration type="block" blockname="cntWastelandRandomLootHelper" prob="0.00025"/>
 				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.010" rotatemax="7"/>
 				<decoration type="block" blockname="scrapMetalPile" prob=".015" rotatemax="3"/>
-				<decoration type="block" blockname="brickDestroyedBlock01" prob=".0004" rotatemax="7"/>
-				<decoration type="block" blockname="brickDestroyedBlock02" prob=".0004" rotatemax="7"/>
-				<decoration type="block" blockname="brickDestroyedBlock03" prob=".0004" rotatemax="7"/>
+				<decoration type="block" blockname="brickShapes:brickDestroyed01" prob=".0004" rotatemax="7"/>
+				<decoration type="block" blockname="brickShapes:brickDestroyed02" prob=".0004" rotatemax="7"/>
+				<decoration type="block" blockname="brickShapes:brickDestroyed03" prob=".0004" rotatemax="7"/>
 				<decoration type="block" blockname="rock01" prob=".004" rotatemax="3"/>
 				<decoration type="block" blockname="rock02" prob=".004" rotatemax="3"/>
 				<decoration type="block" blockname="rock04" prob=".004" rotatemax="3"/>
@@ -363,16 +383,29 @@
 				<decoration type="prefab" name="deco_remnant_stone_02" prob=".003"/>
 				<decoration type="prefab" name="deco_remnant_stone_03" prob=".003"/>
 				<decoration type="prefab" name="deco_remnant_stone_04" prob=".002"/>
+				<decoration type="prefab" name="deco_remnant_stone_05" prob=".002"/>
 				<decoration type="prefab" name="deco_rubble_stone_01" prob=".0065"/>
 				<decoration type="prefab" name="deco_rubble_stone_02" prob=".0065"/>
 				<decoration type="prefab" name="deco_rubble_stone_03" prob=".005"/>
 				<decoration type="prefab" name="deco_rubble_stone_04" prob=".003"/>
 				<decoration type="prefab" name="deco_rubble_stone_05" prob=".003"/>
+				<decoration type="prefab" name="deco_rubble_stone_06" prob=".0065"/>
+				<decoration type="prefab" name="deco_rubble_stone_07" prob=".0065"/>
+				<decoration type="prefab" name="deco_rubble_stone_08" prob=".0065"/>
+				<decoration type="prefab" name="deco_rubble_stone_09" prob=".003"/>
+				<decoration type="prefab" name="deco_rubble_stone_10" prob=".003"/>
 				<decoration type="block" blockname="carWrecksRandomHelper" prob="0.0005" rotatemax="3"/>
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".05"/>
 				<decoration type="block" blockname="mineCandyTin" prob="0.00015"/>
 				<decoration type="block" blockname="mineHubcap" prob="0.0001"/>
-				<decoration type="block" blockname="hubcapNoMine" prob="0.0011"/></decorations>
+				<decoration type="block" blockname="hubcapNoMine" prob="0.0011"/>
+
+				<!-- *** New_Destruction_Blocks -->
+				<decoration type="block" blockname="rubblePileBricks" prob=".0004" rotatemax="7"/>
+				<decoration type="block" blockname="rubblePileBricksLong" prob=".0004" rotatemax="7"/>
+				<decoration type="block" blockname="rubblePileBricksSmall" prob=".0004" rotatemax="7"/>
+				<decoration type="block" blockname="rubblePileCement" prob=".0004" rotatemax="7"/>
+      </decorations>
 		</subbiome>
 
 	</append>
@@ -409,7 +442,12 @@
 				<decoration type="block" blockname="emberPileDeco3" prob="0.01" rotatemax="7"/>
 				<decoration type="block" blockname="emberPileDeco4" prob="0.01" rotatemax="7"/>
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".02"/>
-				<decoration type="block" blockname="treeStump" prob=".0002" rotatemax="7"/></decorations>
+				<decoration type="block" blockname="treeStump" prob=".0002" rotatemax="7"/>
+				
+				<!-- *** New_Destruction_Blocks -->
+				<decoration type="block" blockname="rubblePileWoodBurntLarge" prob=".0004" rotatemax="7"/>
+				<decoration type="block" blockname="rubblePileWoodBurntSmall" prob=".0004" rotatemax="7"/>
+      </decorations>
 		</subbiome>
 
 		<subbiome prob="0.195"> <!-- Ore Sub Biome: copperOre -->
@@ -442,7 +480,12 @@
 				<decoration type="block" blockname="emberPileDeco3" prob="0.01" rotatemax="7"/>
 				<decoration type="block" blockname="emberPileDeco4" prob="0.01" rotatemax="7"/>
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".02"/>
-				<decoration type="block" blockname="treeStump" prob=".0002" rotatemax="7"/></decorations>
+				<decoration type="block" blockname="treeStump" prob=".0002" rotatemax="7"/>
+				
+				<!-- *** New_Destruction_Blocks -->
+				<decoration type="block" blockname="rubblePileWoodBurntLarge" prob=".0004" rotatemax="7"/>
+				<decoration type="block" blockname="rubblePileWoodBurntSmall" prob=".0004" rotatemax="7"/>
+      </decorations>
 		</subbiome>
 
 	</append>

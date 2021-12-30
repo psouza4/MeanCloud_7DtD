@@ -31,9 +31,20 @@
 		<item name="acidmodAcidsSchematic" count="1" loot_prob_template="ProbT3" />
 	</append>
 
-	<!-- loot container: cntLootCrateLabEquipment Lab equipment and medical items -->
-	<append xpath="/lootcontainers/lootcontainer[@id='96']">
+	<!-- loot container: cntUtilityCartFull -->
+	<append xpath="/lootcontainers/lootcontainer[@id='117']">
 		<item name="acidmodAcidsSchematic" count="1" loot_prob_template="ProbT3" />
 	</append>
+
+  <!-- loot group: groupChem01 -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupChem01']">
+		<item name="drinkJarGrainAlcohol" loot_prob_template="low"/>
+	</append>
+
+  <!-- loot group: groupMedicalRare -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupMedicalRare']">
+		<item name="drinkJarGrainAlcohol" loot_prob_template="low"/>
+	</append>
+
 
 </MeanCloud_Acid>

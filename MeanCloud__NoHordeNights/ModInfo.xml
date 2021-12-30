@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="MeanCloud's No Horde Nights"/>
+		<Description value="Fully disables blood moon/horde nights from spawning anything."/>
+		<Author value="Mean.Cloud"/>
+		<Version value="1.01" compat="A19,A20"/>
+		<Website value="http://mean.cloud/" />
+	</ModInfo>
+</xml>

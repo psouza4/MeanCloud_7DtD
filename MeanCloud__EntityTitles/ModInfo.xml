@@ -4,7 +4,7 @@
 		<Name value="MeanCloud's Entity Titles"/>
 		<Description value="Adds missing names for entities."/>
 		<Author value="Mean.Cloud"/>
-		<Version value="1.00" compat="A19"/>
+		<Version value="1.01" compat="A20"/>
 		<Website value="http://mean.cloud/" />
 	</ModInfo>
 </xml>

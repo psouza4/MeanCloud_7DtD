@@ -2,6 +2,18 @@
 
 	<append xpath="/recipes">
 
+    <!-- base recipe removed from A19 into A20, so we need to add it back -->
+    <recipe name="drinkJarGrainAlcohol" count="1" craft_area="campfire" craft_tool="toolBeaker">
+      <ingredient name="foodCornMeal" count="3"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <!-- base recipe removed from A19 into A20, so we need to add it back -->
+    <recipe name="drinkJarGrainAlcohol" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+      <ingredient name="foodCornMeal" count="1"/>
+      <ingredient name="drinkJarRiverWater" count="1"/>
+    </recipe>
+
 		<!-- vinegar step 1: grain alcohol plus oxygen and time -->
 		<recipe name="acidmodCloudyAlcohol" count="1" tags="learnable" craft_time="3600">
 			<ingredient name="drinkJarGrainAlcohol" count="1"/>

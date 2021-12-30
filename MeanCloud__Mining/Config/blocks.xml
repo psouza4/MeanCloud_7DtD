@@ -114,7 +114,7 @@
 		</block>
 	</append>
 
-	<!-- add the function Excavator (Excavator / MiningTruck) machine -->
+	<!-- add the function Excavator (Excavator) machine -->
 	<append xpath="/blocks">
 
 		<block name="Excavator">
@@ -133,7 +133,7 @@
 			<property name="Weight" value="216" />
 			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
 			<property name="UpgradeRated.ToBlock" value="ExcavatorV2" />
-			<property name="UpgradeRated.Rate" value="3" /> <!-- 63 is max for the Rate, 2=fast-63=slow -->
+			<property name="UpgradeRated.Rate" value="6000" /> <!-- about 4-5 minutes -->
 		</block>
 
 		<block name="ExcavatorV2">
@@ -152,14 +152,14 @@
 			<property name="UseGlobalUV" value="Local"/>
 			<property name="Weight" value="216" />
 			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
-			<property name="UpgradeRated.ToBlock" value="MiningTruck" />
-			<property name="UpgradeRated.Rate" value="3" /> <!-- 63 is max for the Rate, 2=fast-63=slow -->
+			<property name="UpgradeRated.ToBlock" value="ExcavatorV3" />
+			<property name="UpgradeRated.Rate" value="14000" /> <!-- about 10-11 minutes -->
 			<drop event="Destroy" count="0"/>
 			<drop event="Harvest" count="0"/>
 			<property name="DowngradeBlock" value="Excavator"/> 
 		</block>
 
-		<block name="MiningTruck">
+		<block name="ExcavatorV3">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="machineExcavator" />
 			<property name="Class" value="Loot" />
@@ -174,7 +174,7 @@
 			<property name="UseGlobalUV" value="Local"/>		
 			<property name="Weight" value="216" />
 			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
-			<property name="LootList" value="217" />
+			<property name="LootList" value="cntMod_MeanCloudMining_Excavator" />
 			<drop event="Destroy" count="0"/>
 			<drop event="Harvest" count="0"/>
 			<property name="DowngradeBlock" value="Excavator"/> 
@@ -285,8 +285,8 @@
 	<remove xpath="/blocks/block[@name='pedestalSink']/drop[@event='Destroy']"/><append xpath="/blocks/block[@name='pedestalSink']"><drop event="Destroy" name="resourceCopper" count="2,10"/></append>
 	<remove xpath="/blocks/block[@name='cable1']/drop[@event='Destroy']"/><append xpath="/blocks/block[@name='cable1']"><drop event="Destroy" name="resourceCopper" count="2,10"/></append>
 	<set xpath="/blocks/block[@name='conduit01']/property[@name='Extends']/@value">corrugatedCopperNoUpgradeMaster</set>
-	<remove xpath="/blocks/block[@name='fountain']/drop[@event='Destroy']"/><append xpath="/blocks/block[@name='fountain']"><drop event="Destroy" name="resourceCopper" count="2,10"/></append>
-	<remove xpath="/blocks/block[@name='fountain']/drop[@event='Fall']"/><append xpath="/blocks/block[@name='fountain']"><drop event="Fall" name="scrapCopperPile" count="1" prob="0.75" stick_chance="1"/></append>
+	<remove xpath="/blocks/block[@name='drinkingfountainSingle']/drop[@event='Destroy']"/><append xpath="/blocks/block[@name='drinkingfountainSingle']"><drop event="Destroy" name="resourceCopper" count="2,10"/></append>
+	<remove xpath="/blocks/block[@name='drinkingfountainSingle']/drop[@event='Fall']"/><append xpath="/blocks/block[@name='drinkingfountainSingle']"><drop event="Fall" name="scrapCopperPile" count="1" prob="0.75" stick_chance="1"/></append>
 	<remove xpath="/blocks/block[@name='cntWaterCoolerFull']/drop[@event='Destroy']"/><append xpath="/blocks/block[@name='cntWaterCoolerFull']"><drop event="Destroy" name="resourceCopper" count="2,5"/></append>
 	<remove xpath="/blocks/block[@name='cntWaterCoolerFull']/drop[@event='Fall']"/><append xpath="/blocks/block[@name='cntWaterCoolerFull']"><drop event="Fall" name="scrapCopperPile" count="1" prob="0.75" stick_chance="1"/></append>
 	<remove xpath="/blocks/block[@name='decoComputerDeskTopPC']/drop[@event='Destroy']"/><append xpath="/blocks/block[@name='decoComputerDeskTopPC']"><drop event="Destroy" name="resourceCopper" count="3,6"/></append>
@@ -310,11 +310,9 @@
 	<append xpath="/blocks/block[@name='decoCarMotorFlipped']"><drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/></append> <!-- this must exist for an item to be flagged as salvagable with a wrench -->
 	<append xpath="/blocks/block[@name='decoCarMotorFlipped']"><drop event="Harvest" name="smallEngine" count="1" prob="1" tag="salvageHarvest"/></append>
 	<append xpath="/blocks/block[@name='decoCarMotorFlipped']"><drop event="Harvest" name="resourceZinc" count="1,8" prob="0.75" tag="salvageHarvest"/></append>
-	<append xpath="/blocks/block[@name='chainLink']"><drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/></append>	<!-- this must exist for an item to be flagged as salvagable with a wrench -->
-	<append xpath="/blocks/block[@name='chainLink']"><drop event="Harvest" name="resourceZinc" count="2,10" prob="0.75" tag="salvageHarvest"/></append>
-	<append xpath="/blocks/block[@name='chainLink']"><drop event="Harvest" name="resourceZinc" count="1,8" prob="0.60" tag="salvageHarvest"/></append>
-	<append xpath="/blocks/block[@name='cntWashingMachine']"><drop event="Harvest" name="resourceZinc" count="2,10" prob="0.75" tag="salvageHarvest"/></append>
-	<append xpath="/blocks/block[@name='cntWashingMachine']"><drop event="Harvest" name="resourceZinc" count="1,8" prob="0.60" tag="salvageHarvest"/></append>
+	<append xpath="/blocks/block[@name='chainlinkFencePole']"><drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/></append>	<!-- this must exist for an item to be flagged as salvagable with a wrench -->
+	<append xpath="/blocks/block[@name='chainlinkFencePole']"><drop event="Harvest" name="resourceZinc" count="2,10" prob="0.75" tag="salvageHarvest"/></append>
+	<append xpath="/blocks/block[@name='chainlinkFencePole']"><drop event="Harvest" name="resourceZinc" count="1,8" prob="0.60" tag="salvageHarvest"/></append>
 	<append xpath="/blocks/block[@name='cntWasherOpen']"><drop event="Harvest" name="resourceZinc" count="2,10" prob="0.75" tag="salvageHarvest"/></append>
 	<append xpath="/blocks/block[@name='cntWasherOpen']"><drop event="Harvest" name="resourceZinc" count="1,8" prob="0.60" tag="salvageHarvest"/></append>
 	<append xpath="/blocks/block[@name='streetLight01']"><drop event="Harvest" name="resourceZinc" count="2,10" prob="0.75" tag="salvageHarvest"/></append>

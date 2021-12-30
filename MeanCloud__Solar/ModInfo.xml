@@ -4,7 +4,7 @@
 		<Name value="MeanCloud's Solar"/>
 		<Description value="Adds craftable and lootable tiered solar components to power your electronics."/>
 		<Author value="Mean.Cloud"/> <!-- credit to DrConfused for use of his A17 Solar mod's asset, he was kind enough to grant express permission to use his 3D 1x1 mini solar bank Unity asset -->
-		<Version value="1.00" compat="A19"/>
+		<Version value="1.01" compat="A20"/>
 		<Website value="http://mean.cloud/" />
 	</ModInfo>
 </xml>

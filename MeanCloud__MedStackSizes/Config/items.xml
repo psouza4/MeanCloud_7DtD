@@ -8,7 +8,6 @@
 	<set xpath="/items/item[@name='drugHerbalAntibiotics']/property[@name='Stacknumber']/@value">15</set>
 	<!-- <set xpath="/items/item[@name='drugSteroids']/property[@name='Stacknumber']/@value">15</set> --> <!-- don't set directly because it extends 'drugPainkillers' -->
 	<set xpath="/items/item[@name='drugRecog']/property[@name='Stacknumber']/@value">15</set>
-	<set xpath="/items/item[@name='foodMoldyBread']/property[@name='Stacknumber']/@value">15</set>
 	<set xpath="/items/item[@name='foodShamSandwich']/property[@name='Stacknumber']/@value">15</set>
 	<!-- <set xpath="/items/item[@name='drugFortBites']/property[@name='Stacknumber']/@value">15</set> --> <!-- don't set directly because it extends 'drugRecog' -->
 	<set xpath="/items/item[@name='medicalFirstAidBandage']/property[@name='Stacknumber']/@value">10</set>

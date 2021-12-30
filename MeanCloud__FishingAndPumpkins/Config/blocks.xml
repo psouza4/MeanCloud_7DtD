@@ -19,8 +19,9 @@
 			<property name="UseGlobalUV" value="Local"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 			<property name="UpgradeRated.ToBlock" value="fishTrapCaught" />
-			<property name="UpgradeRated.Rate" value="8" />
+			<property name="UpgradeRated.Rate" value="12500" /> <!-- about 10-12 minutes average -->
 			<property name="CustomIcon" value="rebarFramePillar100" />
+			<!-- <property name="CustomIcon" value="fishTrap" /> -->
 			<property name="CanPickup" value="true" param1="fishTrapItem"/>
 		</block>
 
@@ -41,7 +42,7 @@
 			<property name="UseGlobalUV" value="Local"/>
 			<property name="Weight" value="216" />
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-			<property name="LootList" value="456" /> <!-- Credit to doughphungus: Changed from 361 as it conflicts with White River Tools of Citizenship packs, in A19 -->
+			<property name="LootList" value="cntMod_MeanCloudFishing_FishingTrap" />
 			<drop event="Destroy" count="0"/>
 			<drop event="Harvest" count="0"/>
 			<property name="DowngradeBlock" value="fishTrap"/>
@@ -71,7 +72,7 @@
 			<property name="Group" value="Food/Cooking"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="UpgradeRated.ToBlock" value="air"/>
-			<property name="UpgradeRated.Rate" value="4"/>
+			<property name="UpgradeRated.Rate" value="5000"/>
 		</block>
 
 		<block name="Fishing Cache (T1)">

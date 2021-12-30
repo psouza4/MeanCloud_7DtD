@@ -52,8 +52,8 @@
 		<item name="purifiedSilicon" count="1,4" loot_prob_template="ProbT3" />
 	</append>
 
-	<!-- loot container: cntLootCrateLabEquipment Lab equipment and medical items -->
-	<append xpath="/lootcontainers/lootcontainer[@id='96']">
+	<!-- loot group: groupMedicalRare -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupMedicalRare']">
 		<item name="refinedSilicon" count="1,3" />
 		<item name="refinedSilicon" count="1,3" loot_prob_template="ProbT1" />
 		<item name="purifiedSilicon" count="1,3" loot_prob_template="ProbT1" />

@@ -2,6 +2,18 @@
 
 	<append xpath="/items">
 
+    <!-- base item removed from A19 into A20, so we need to add it back -->
+    <item name="drinkJarGrainAlcohol">
+      <property name="HoldType" value="3"/>
+      <property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Mglass"/>
+      <property name="Weight" value="10"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="EconomicValue" value="48"/>
+      <property name="Group" value="Chemicals,CFChemicals"/>
+    </item>
+
 		<!-- template for vinegars -->
 		<item name="acidmodVinegarBase">
 			<property name="CreativeMode" value="None"/>
