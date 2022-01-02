@@ -1,5 +1,9 @@
 <MeanCloud_NoHordeNights>
 
+  <!-- very likely that nothing in this file matters, since this was move to dynamic spawners in gamestages.xml and spawning.xml
+       but kept for reference and in the event that TFP cause a regression and/or for compatibility with older alphas -->
+
+	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/@dynamic">false</set>
 	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day/property[@name='TotalAlive']/@value">0</set>
 	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day/property[@name='TotalPerWave']/@value">0</set>
 	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=1]/property[@name='TotalAlive']/@value">0</set>
@@ -49,8 +53,11 @@
 	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=23]/property[@name='TotalAlive']/@value">0</set>
 	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day[@value=23]/property[@name='TotalPerWave']/@value">0</set>
 
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/@dynamic">false</set>
 	<set xpath="/spawning/entityspawner[@name='NightHorde']/day/property[@name='TotalAlive']/@value">0</set>
 	<set xpath="/spawning/entityspawner[@name='NightHorde']/day/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value='*']/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value='*']/property[@name='TotalPerWave']/@value">0</set>
 	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=7]/property[@name='TotalAlive']/@value">0</set>
 	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=7]/property[@name='TotalPerWave']/@value">0</set>
 	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=14]/property[@name='TotalAlive']/@value">0</set>
@@ -66,15 +73,24 @@
 	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=49]/property[@name='TotalAlive']/@value">0</set>
 	<set xpath="/spawning/entityspawner[@name='NightHorde']/day[@value=49]/property[@name='TotalPerWave']/@value">0</set>
 
+	<set xpath="/spawning/entityspawner[@name='Scouts']/@dynamic">false</set>
 	<set xpath="/spawning/entityspawner[@name='Scouts']/day/property[@name='TotalAlive']/@value">0</set>
 	<set xpath="/spawning/entityspawner[@name='Scouts']/day/property[@name='TotalPerWave']/@value">0</set>
-	<set xpath="/spawning/entityspawner[@name='Scouts']/day[@value=*]/property[@name='TotalAlive']/@value">0</set>
-	<set xpath="/spawning/entityspawner[@name='Scouts']/day[@value=*]/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='Scouts']/day/property[@name='EntityGroupName']/@value">ZombiesNone</set>
+	<set xpath="/spawning/entityspawner[@name='Scouts']/day[@value='*']/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='Scouts']/day[@value='*']/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='Scouts']/day[@value='*']/property[@name='EntityGroupName']/@value">ZombiesNone</set>
 
+	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnDay']/@dynamic">false</set>
 	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnDay']/day/property[@name='TotalAlive']/@value">0</set>
-	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnDay']/day/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnDay']/day/property[@name='EntityGroupName']/@value">ZombiesNone</set>
+	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnDay']/day[@value='*']/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnDay']/day[@value='*']/property[@name='EntityGroupName']/@value">ZombiesNone</set>
 
+	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnNight']/@dynamic">false</set>
 	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnNight']/day/property[@name='TotalAlive']/@value">0</set>
-	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnNight']/day/property[@name='TotalPerWave']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnNight']/day/property[@name='EntityGroupName']/@value">ZombiesNone</set>
+	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnNight']/day[@value='*']/property[@name='TotalAlive']/@value">0</set>
+	<set xpath="/spawning/entityspawner[@name='HordeMeterDynamicSpawnNight']/day[@value='*']/property[@name='EntityGroupName']/@value">ZombiesNone</set>
 
 </MeanCloud_NoHordeNights>

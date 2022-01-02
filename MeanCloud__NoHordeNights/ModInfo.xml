@@ -2,7 +2,7 @@
 <xml>
 	<ModInfo>
 		<Name value="MeanCloud's No Horde Nights"/>
-		<Description value="Fully disables blood moon/horde nights from spawning anything."/>
+		<Description value="Fully disables screamers and all blood moon hordes from spawning anything."/>
 		<Author value="Mean.Cloud"/>
 		<Version value="1.01" compat="A19,A20"/>
 		<Website value="http://mean.cloud/" />
