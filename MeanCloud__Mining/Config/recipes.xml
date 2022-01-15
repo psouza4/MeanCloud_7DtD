@@ -18,10 +18,18 @@
 		</recipe>
 
 		<recipe name="Excavator" count="1" craft_area="workbench" always_unlocked="true" tags="workbenchCrafting">
-			<ingredient name="resourceMechanicalParts" count="25"/>
-			<ingredient name="resourceElectricParts" count="50"/>
+			<ingredient name="copperSpool" count="4"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
 			<ingredient name="resourceForgedIron" count="20"/>
-			<ingredient name="copperSpool" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="25"/>
+		</recipe>
+
+		<recipe name="ExcavatorV4" count="1" craft_area="workbench" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="copperSpool" count="8"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+			<ingredient name="resourceForgedSteel" count="25"/>
 			<ingredient name="resourceRawDiamond" count="1"/>
 		</recipe>
 
@@ -29,7 +37,6 @@
 			<ingredient name="resourceCopper" count="15"/>
 		</recipe>
 
-		<!-- ironically, I had added this in a private server before I saw any suggestions for it -->
 		<recipe name="resourceCopper" count="1" material_based="true" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
 			<ingredient name="unit_copper" count="5"/>
 		</recipe>

@@ -1,62 +1,74 @@
 <MeanCloud_Mining>
 
-	<append xpath="/lootcontainers/lootcontainer[@id='70']">
-		<item name="resourceCopper" count="10,30" prob="1.2"/>
-		<item name="resourceZinc" count="5,15" prob="0.8"/>
-	</append>
-
-	<append xpath="/lootcontainers/lootcontainer[@id='71']">
-		<item name="resourceCopper" count="10,30" prob="0.9"/>
-		<item name="resourceZinc" count="5,15" prob="0.6"/>
-	</append>
-
 	<append xpath="/lootcontainers/lootcontainer[@id='91']">
-		<item name="resourceCopper" count="30,120" prob="2"/>
-		<item name="resourceZinc" count="20,60" prob="2"/>
+		<item name="resourceCopper" count="30,120" loot_prob_template="low"/>
+		<item name="resourceZinc" count="20,60" loot_prob_template="low"/>
 	</append>
 
 	<append xpath="/lootcontainers/lootcontainer[@id='92']">
-		<item name="copperSpool" count="1" prob="0.1"/>
+		<item name="copperSpool" count="1" loot_prob_template="veryLow"/>
 	</append>
 
 	<append xpath="/lootcontainers/lootcontainer[@id='94']">
-		<item name="resourceCopper" count="30,120" prob="1.2"/>
-		<item name="resourceZinc" count="20,60" prob="1.2"/>
+		<item name="resourceCopper" count="30,120" loot_prob_template="low"/>
+		<item name="resourceZinc" count="20,60" loot_prob_template="low"/>
 	</append>
 
 	<append xpath="/lootcontainers/lootcontainer[@id='124']">
-		<item name="resourceCopper" count="30,120" prob="0.7"/>
-		<item name="resourceZinc" count="20,60" prob="0.7"/>
+		<item name="resourceCopper" count="30,120" loot_prob_template="low"/>
+		<item name="resourceZinc" count="20,60" loot_prob_template="low"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='125']">
+		<item name="resourceCopper" count="30,120" loot_prob_template="veryLow"/>
+		<item name="resourceZinc" count="20,60" loot_prob_template="veryLow"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='126']">
+		<item name="copperSpool" count="1" loot_prob_template="veryLow"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='140']">
+		<item name="copperSpool" count="1" loot_prob_template="medLow"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='144']">
+		<item name="copperSpool" count="1" loot_prob_template="low"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='148']">
+		<item name="copperSpool" count="1" loot_prob_template="medLow"/>
 	</append>
 
 	<insertAfter xpath="/lootcontainers/lootcontainer[@id='116']">
 
-		<!-- Excavator (Excavator / MiningTruck) loot -->
+		<!-- Excavator (low-grade) (aka "MiningTruck") loot -->
 		<lootcontainer id="725" name="cntMod_MeanCloudMining_Excavator" count="1,6" size="8,9" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualBaseTemplate">
+			
 			<!-- terrain blocks -->
 			<item name="terrStone" count="4,12" prob="0.1"/>
 			<item name="terrSand" count="3,9" prob="0.05"/>
 			<item name="terrDirt" count="3,9" prob="0.025"/>
 			<item name="terrForestGround" count="2,4" prob="0.01"/>
-			<item name="terrFertileDirt" count="2,4" prob="0.01"/>
+			<!-- <item name="terrFertileDirt" count="2,4" prob="0.01"/> -->
 			<item name="terrFertileGrass" count="2,4"  prob="0.01"/>
 			<item name="terrDesertGround" count="2,4" prob="0.01"/>
 			<item name="terrSandStone" count="2,4" prob="0.01"/>
 			<item name="terrGravel" count="2,4" prob="0.01"/>
 			<item name="terrAsphalt" count="2,4" prob="0.005"/>
-
+      
 			<!-- ore source blocks -->
-			<item name="terrOreIron" count="8,12" prob="0.01"/>
-			<item name="terrOreLead" count="8,12" prob="0.005"/>
-			<item name="terrOreCoal" count="8,12" prob="0.0025"/>
-			<item name="terrOrePotassiumNitrate" count="8,12" prob="0.0025"/>
-			<item name="terrOreOilDeposit" count="8,12" prob="0.005"/>
-			<item name="terrOreSilver" count="3,8" prob="0.001"/>
-			<item name="terrOreGold" count="2,6" prob="0.0005"/>
+			<item name="terrOreIron" count="5,11" prob="0.01"/>
+			<item name="terrOreLead" count="7,12" prob="0.005"/>
+			<item name="terrOreCoal" count="7,12" prob="0.0025"/>
+			<item name="terrOrePotassiumNitrate" count="7,12" prob="0.0025"/>
+			<item name="terrOreOilDeposit" count="7,12" prob="0.005"/>
+			<item name="terrOreSilver" count="3,7" prob="0.001"/>
+			<item name="terrOreGold" count="2,5" prob="0.0005"/>
 			<item name="terrOreDiamond" count="1,4" prob="0.0001"/>
 			<item name="terrOreCopper" count="4,6" prob="0.0025"/>
-			<item name="terrOreZinc" count="4,6" prob="0.001"/>
-
+			<item name="terrOreZinc" count="4,6" prob="0.0015"/>
+      
 			<!-- raw ore resources -->
 			<item name="resourceIronFragment" count="4,24" prob="0.001"/>
 			<item name="resourceScrapIron" count="4,24" prob="0.0005"/>
@@ -68,8 +80,8 @@
 			<item name="resourceGoldNugget" count="1,6" prob="0.00005"/>
 			<item name="resourceRawDiamond" count="1,6" prob="0.00001"/>
 			<item name="resourceCopper" count="3,24" prob="0.00025"/>
-			<item name="resourceZinc" count="2,12" prob="0.0001"/>
-
+			<item name="resourceZinc" count="2,12" prob="0.00018"/>
+      
 			<!-- various other items that can be mined up -->
 			<item name="resourceRockSmall" count="6,36" prob="0.015"/>
 			<item name="resourceCrushedSand" count="4,24" prob="0.015"/>
@@ -77,6 +89,54 @@
 			<item name="resourceCobblestones" count="1,8" prob="0.007"/>
 			<item name="resourceBone" count="1,2" prob="0.002"/>
 			<item name="resourceBrokenGlass" count="1,6" prob="0.001"/>
+		</lootcontainer>
+
+		<!-- Excavator (high-grade) loot -->
+		<lootcontainer id="726" name="cntMod_MeanCloudMining_Excavator2" count="1,6" size="8,9" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualBaseTemplate">
+			
+			<!-- terrain blocks -->
+			<item name="terrStone" count="4,12" prob="0.1"/>
+			<item name="terrSand" count="3,9" prob="0.05"/>
+			<item name="terrDirt" count="3,9" prob="0.025"/>
+			<item name="terrForestGround" count="2,4" prob="0.01"/>
+			<!-- <item name="terrFertileDirt" count="2,4" prob="0.01"/> -->
+			<item name="terrFertileGrass" count="2,4"  prob="0.01"/>
+			<item name="terrDesertGround" count="2,4" prob="0.01"/>
+			<item name="terrSandStone" count="2,4" prob="0.01"/>
+			<item name="terrGravel" count="2,4" prob="0.01"/>
+			<item name="terrAsphalt" count="2,4" prob="0.005"/>
+      
+			<!-- ore source blocks -->
+			<item name="terrOreIron" count="6,13" prob="0.03"/>
+			<item name="terrOreLead" count="8,14" prob="0.015"/>
+			<item name="terrOreCoal" count="8,14" prob="0.0075"/>
+			<item name="terrOrePotassiumNitrate" count="8,14" prob="0.0075"/>
+			<item name="terrOreOilDeposit" count="8,14" prob="0.015"/>
+			<item name="terrOreSilver" count="4,9" prob="0.003"/>
+			<item name="terrOreGold" count="3,7" prob="0.0015"/>
+			<item name="terrOreDiamond" count="2,6" prob="0.0006"/>
+			<item name="terrOreCopper" count="5,8" prob="0.0075"/>
+			<item name="terrOreZinc" count="5,8" prob="0.0045"/>
+      
+			<!-- raw ore resources -->
+			<item name="resourceIronFragment" count="4,24" prob="0.001"/>
+			<item name="resourceScrapIron" count="4,24" prob="0.0005"/>
+			<item name="resourceScrapLead" count="4,24" prob="0.00025"/>
+			<item name="resourceCoal" count="3,36" prob="0.00025"/>
+			<item name="resourcePotassiumNitratePowder" count="2,12" prob="0.00025"/>
+			<item name="resourceOilShale" count="2,12" prob="0.0005"/>
+			<item name="resourceSilverNugget" count="1,6" prob="0.0001"/>
+			<item name="resourceGoldNugget" count="1,6" prob="0.00005"/>
+			<item name="resourceRawDiamond" count="1,6" prob="0.00001"/>
+			<item name="resourceCopper" count="3,24" prob="0.00025"/>
+			<item name="resourceZinc" count="2,12" prob="0.00015"/>
+      
+			<!-- various other items that can be mined up -->
+			<item name="resourceRockSmall" count="9,48" prob="0.015"/>
+			<item name="resourceCrushedSand" count="6,32" prob="0.015"/>
+			<item name="resourceClayLump" count="6,32" prob="0.015"/>
+			<item name="resourceCobblestones" count="2,10" prob="0.007"/>
+      
 		</lootcontainer>
 
 	</insertAfter>

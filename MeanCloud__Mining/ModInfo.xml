@@ -6,7 +6,7 @@
 		<Author value="Mean.Cloud"/>
 		<!-- Original credit to stallionsden for A17 version of the basic mining machine concept -->
 		<!-- Thanks to doughphungus: he added some mining perk buff results for mining copper and zinc, per Eko's suggestions -->
-		<Version value="1.06" compat="A20"/>
+		<Version value="1.08" compat="A20"/>
 		<Website value="http://mean.cloud/" />
 		<!-- stallionsden's mining machine: https://github.com/stallionsden/StallionModlets/ -->
 	</ModInfo>

@@ -1,13 +1,15 @@
 <MeanCloud_Mining>
 
 	<append xpath="/xui/ruleset">
-		<window_group name="workstation_rockCrusher" controller="XUiC_WorkstationWindowGroup">
-			<window name="windowCraftingList"/>
+
+		<window_group name="workstation_rockCrusher" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingListShorter"/>
 			<window name="craftingInfoPanel"/>
 			<window name="queue10CraftingQueue"/>
-			<window name="windowOutput" />
+			<window name="windowOutputDouble" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-  </append>
-  
+
+	</append>
+
 </MeanCloud_Mining>

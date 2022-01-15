@@ -125,8 +125,8 @@
 			<property name="Shape" value="New"/>
 			<property name="LightOpacity" value="2"/>
 			<property name="Path" value="solid"/>
-			<property name="Model" value="Pole0.5m"/>
-			<property name="Texture" value="446,355,355"/>
+			<property name="Model" value="deco_pole_round_quarter_centered2"/>
+			<property name="Texture" value="352,352,340,352"/>
 			<property name="ImposterExclude" value="true"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="UseGlobalUV" value="Local"/>
@@ -146,7 +146,7 @@
 			<property name="LightOpacity" value="4"/>
 			<property name="Path" value="solid"/>
 			<property name="Model" value="Pole1m_cap"/>
-			<property name="Texture" value="352,355,355"/>
+			<property name="Texture" value="352,340,340"/>
 			<property name="ImposterExclude" value="true"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="UseGlobalUV" value="Local"/>
@@ -168,7 +168,7 @@
 			<property name="LightOpacity" value="6"/>
 			<property name="Path" value="solid"/>
 			<property name="Model" value="Pole1m"/>
-			<property name="Texture" value="352,355,355"/>
+			<property name="Texture" value="352,340,340"/>
 			<property name="ImposterExclude" value="true"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="UseGlobalUV" value="Local"/>		
@@ -178,6 +178,69 @@
 			<drop event="Destroy" count="0"/>
 			<drop event="Harvest" count="0"/>
 			<property name="DowngradeBlock" value="Excavator"/> 
+		</block>
+
+		<block name="ExcavatorV4">
+			<property name="CanPickup" value="true"/>
+			<property name="Class" value="UpgradeRated" />
+			<property name="Material" value="Mmetal"/>
+			<property name="CustomIcon" value="machineExcavator2" />
+			<property name="Shape" value="New"/>
+			<property name="LightOpacity" value="2"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="deco_pole_round_quarter_centered2"/>
+			<property name="Texture" value="446,446,355,446"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="UseGlobalUV" value="Local"/>
+			<property name="Weight" value="216" />
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
+			<property name="UpgradeRated.ToBlock" value="ExcavatorV5" />
+			<property name="UpgradeRated.Rate" value="6000" /> <!-- about 4-5 minutes -->
+		</block>
+
+		<block name="ExcavatorV5">
+			<property name="CanPickup" value="true" param1="ExcavatorV4"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Class" value="UpgradeRated" />
+			<property name="Material" value="Mmetal"/>
+			<property name="CustomIcon" value="machineExcavator2" />
+			<property name="Shape" value="New"/>
+			<property name="LightOpacity" value="4"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="Pole1m_cap"/>
+			<property name="Texture" value="446,355,355"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="UseGlobalUV" value="Local"/>
+			<property name="Weight" value="216" />
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
+			<property name="UpgradeRated.ToBlock" value="ExcavatorV6" />
+			<property name="UpgradeRated.Rate" value="14000" /> <!-- about 10-11 minutes -->
+			<drop event="Destroy" count="0"/>
+			<drop event="Harvest" count="0"/>
+			<property name="DowngradeBlock" value="ExcavatorV4"/> 
+		</block>
+
+		<block name="ExcavatorV6">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="machineExcavator2" />
+			<property name="Class" value="Loot" />
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="New"/>
+			<property name="LightOpacity" value="6"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="Pole1m"/>
+			<property name="Texture" value="446,355,355"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="UseGlobalUV" value="Local"/>		
+			<property name="Weight" value="216" />
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
+			<property name="LootList" value="cntMod_MeanCloudMining_Excavator2" />
+			<drop event="Destroy" count="0"/>
+			<drop event="Harvest" count="0"/>
+			<property name="DowngradeBlock" value="ExcavatorV4"/> 
 		</block>
 
 	</append>
