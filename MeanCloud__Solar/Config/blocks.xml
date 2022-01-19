@@ -55,7 +55,7 @@
 			<property name="Mesh" value="models"/>
 			<property name="Path" value="solid"/>
 			<property name="Model" value="Entities/Electrical/solar_panelPrefab"/>
-            <property name="ModelOffset" value=".5,.5,0"/>
+			<property name="ModelOffset" value=".5,.5,0"/>
 			<property name="DisplayType" value="blockElectricalMulti" />
 			<property name="MultiBlockDim" value="4,1,1"/>
 			<property name="Place" value="TowardsPlacerInverted"/>

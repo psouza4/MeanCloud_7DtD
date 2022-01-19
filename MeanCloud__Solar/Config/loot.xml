@@ -2,20 +2,20 @@
 
 	<!-- loot group: electrical-specific schematics -->
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsElectrical']">
-		<item name="allSiliconSchematic"/>
-		<item name="allSolarBasicSchematic"/>
-		<item name="allSolarStandardSchematic"/>
-		<item name="allSolarEnhancedSchematic"/>
+		<item name="allSiliconSchematic" loot_prob_template="low"/>
+		<item name="allSolarBasicSchematic" loot_prob_template="medLow"/>
+		<item name="allSolarStandardSchematic" loot_prob_template="medLow"/>
+		<item name="allSolarEnhancedSchematic" loot_prob_template="veryLow"/>
 	</append>
 
 	<!-- loot container: garage stuff, tools, etc. -->
-	<append xpath="/lootcontainers/lootcontainer[@id='22']">
-		<item name="solarCellBasic" count="1,2" prob="0.01" />
-		<item name="solarbankBasic" count="1" prob="0.005" />
-		<item name="solarCell" count="1,2" prob="0.002" />
-		<item name="solarbank" count="1" prob="0.001" />
-		<item name="solarCellEnhanced" count="1" prob="0.0005" />
-		<item name="solarbankEnhanced" count="1,2" prob="0.0002" />
+	<append xpath="/lootcontainers/lootgroup[@name='groupCarWeaponsTools']">
+		<item name="solarCellBasic" count="1,2" loot_prob_template="medLow" />
+		<item name="solarbankBasic" count="1" loot_prob_template="medLow" />
+		<item name="solarCell" count="1,2" loot_prob_template="low" />
+		<item name="solarbank" count="1" loot_prob_template="low" />
+		<item name="solarCellEnhanced" count="1" loot_prob_template="veryLow" />
+		<item name="solarbankEnhanced" count="1,2" loot_prob_template="veryLow" />
 	</append>
 
 	<!-- loot container: working stiffs -->
