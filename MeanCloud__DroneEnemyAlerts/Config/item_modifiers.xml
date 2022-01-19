@@ -1,0 +1,13 @@
+<MeanCloud_DroneEnemyAlerts>
+
+	<append xpath="/item_modifiers">
+
+		<item_modifier name="modRoboticDroneHostileSensorMod" installable_tags="drone" modifier_tags="droneHostileSensor" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="UnlockedBy" value="modRoboticDroneHostileSensorModSchematic"/>
+			<property name="CustomIcon" value="resourceElectronicParts"/>
+		</item_modifier>
+
+	</append>
+
+</MeanCloud_DroneEnemyAlerts>

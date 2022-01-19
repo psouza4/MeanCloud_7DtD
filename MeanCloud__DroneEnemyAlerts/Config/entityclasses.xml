@@ -1,0 +1,13 @@
+<MeanCloud_DroneEnemyAlerts>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group[@name='Base Effects']">
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="zombieAlertAuraNearby"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="zombieAlertAuraClose"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/effect_group[@name='Base Effects']">
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="animalAlertAuraNearby"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="animalAlertAuraClose"/>
+	</append>
+		
+</MeanCloud_DroneEnemyAlerts>

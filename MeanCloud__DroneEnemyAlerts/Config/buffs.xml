@@ -1,0 +1,109 @@
+<MeanCloud_DroneEnemyAlerts>
+
+	<append xpath="/buffs">
+
+		<!-- added by included Harmony mod: applied automatically when a drone mod matches the installed mod list -->
+		<buff name="buffJunkDroneHostileSensorModEffect" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffJunkDroneHostileSensorModEffect"/>
+				<triggered_effect trigger="onSelfLeaveGame" action="RemoveBuff" buff="buffJunkDroneHostileSensorModEffect"/>
+			</effect_group>
+		</buff>
+
+		<!-- projected effect (AoE/aura) for SOMEWHAT NEARBY ZOMBIES -->
+		<buff name="zombieAlertAuraNearby" hidden="true">
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="20" buff="zombieAlertAuraNearbyEffect"/>
+			</effect_group>
+		</buff>
+
+		<!-- projected effect (AoE/aura) for CLOSE ZOMBIES -->
+		<buff name="zombieAlertAuraClose" hidden="true">
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="7" buff="zombieAlertAuraCloseEffect"/>
+			</effect_group>
+		</buff>
+
+		<!-- visual handling of ZOMBIES alerts -->
+		<buff name="zombieAlertAuraNearbyEffect" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="zombieAlertAuraNearbyEffect2">
+					<requirement name="HasBuff" buff="buffJunkDroneHostileSensorModEffect"/>
+					<requirement name="!HasBuff" buff="zombieAlertAuraCloseEffect"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="zombieAlertAuraNearbyEffect2" name_key="zombieAlertAuraNearbyEffect" description_key="zombieAlertAuraNearbyEffectDesc" icon="ui_game_symbol_enemy_dot" icon_color="252,140,3" icon_blink="true">
+			<display_value_key value="zombieAlertAuraNearbyEffect"/>
+			<display_value value="xxx"/>
+			<stack_type value="replace"/>
+			<duration value="2"/>
+		</buff>
+		<buff name="zombieAlertAuraCloseEffect" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="zombieAlertAuraCloseEffect2">
+					<requirement name="HasBuff" buff="buffJunkDroneHostileSensorModEffect"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="zombieAlertAuraCloseEffect2" name_key="zombieAlertAuraCloseEffect" description_key="zombieAlertAuraCloseEffectDesc" icon="ui_game_symbol_skull" icon_color="255,0,0" icon_blink="true">
+			<display_value_key value="zombieAlertAuraCloseEffect"/>
+			<display_value value="xxx"/>
+			<stack_type value="replace"/>
+			<duration value="3"/>
+		</buff>
+
+		<!-- projected effect (AoE/aura) for SOMEWHAT NEARBY PREDATOR ANIMALS -->
+		<buff name="animalAlertAuraNearby" hidden="true">
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="20" buff="animalAlertAuraNearbyEffect"/>
+			</effect_group>
+		</buff>
+
+		<!-- projected effect (AoE/aura) for CLOSE PREDATOR ANIMALS -->
+		<buff name="animalAlertAuraClose" hidden="true">
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="7" buff="animalAlertAuraCloseEffect"/>
+			</effect_group>
+		</buff>
+
+		<!-- visual handling of PREDATOR ANIMALS alerts -->
+		<buff name="animalAlertAuraNearbyEffect" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="animalAlertAuraNearbyEffect2">
+					<requirement name="!HasBuff" buff="animalAlertAuraCloseEffect"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="animalAlertAuraNearbyEffect2" name_key="animalAlertAuraNearbyEffect" description_key="animalAlertAuraNearbyEffectDesc" icon="ui_game_symbol_enemy_dot" icon_color="252,140,3" icon_blink="true">
+			<display_value_key value="animalAlertAuraNearbyEffect"/>
+			<display_value value="xxx"/>
+			<stack_type value="replace"/>
+			<duration value="2"/>
+		</buff>
+		<buff name="animalAlertAuraCloseEffect" name_key="animalAlertAuraCloseEffect" description_key="animalAlertAuraCloseEffectDesc" icon="ui_game_symbol_tracking_bear" icon_color="255,0,0" icon_blink="true">
+			<display_value_key value="animalAlertAuraCloseEffect"/>
+			<display_value value="xxx"/>
+			<stack_type value="replace"/>
+			<duration value="3"/>
+		</buff>
+
+	</append>
+
+</MeanCloud_DroneEnemyAlerts>

@@ -1,0 +1,12 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+modRoboticDroneHostileSensorMod,item_modifiers,Mod,,,Robotic Drone Enemy Alerts Mod
+modRoboticDroneHostileSensorModDesc,item_modifiers,Mod,,,Will provide you with distance alerts to hostile zombies and predator animals when near the drone with this mod installed.
+modRoboticDroneHostileSensorModSchematic,items,item,,,Robotic Drone Enemy Alerts Mod Schematic
+zombieAlertAuraNearbyEffect,buffs,Buff,,x,[fc8c03]Zombies[-]
+zombieAlertAuraNearbyEffectDesc,buffs,Buff,,x,"!! ALERT: Zombies somewhat nearby !!"
+zombieAlertAuraCloseEffect,buffs,Buff,,x,[ff0000]Zombies[-]
+zombieAlertAuraCloseEffectDesc,buffs,Buff,,x,"!! ALERT: Zombies CLOSE !!"
+animalAlertAuraNearbyEffect,buffs,Buff,,x,[fc8c03]Predators[-]
+animalAlertAuraNearbyEffectDesc,buffs,Buff,,x,"!! ALERT: Predators somewhat nearby !!"
+animalAlertAuraCloseEffect,buffs,Buff,,x,[ff0000]Predators[-]
+animalAlertAuraCloseEffectDesc,buffs,Buff,,x,"!! ALERT: Predators CLOSE !!"

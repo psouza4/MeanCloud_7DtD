@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="MeanCloud's Drone Enemy Alerts" />
+		<Description value="Adds a new drone mod that will alert you to hostile zombies and predator animals." />
+		<Author value="Mean.Cloud" />
+		<Version value="1.00" compat="A20"/>
+		<Website value="http://mean.cloud/" />
+	</ModInfo>
+</xml>

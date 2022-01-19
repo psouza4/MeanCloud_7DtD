@@ -1,0 +1,18 @@
+<MeanCloud_DroneEnemyAlerts>
+
+	<append xpath="/items">
+
+		<item name="modRoboticDroneHostileSensorModSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="resourceElectronicParts"/>
+			<property name="Unlocks" value="modRoboticDroneHostileSensorMod"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modRoboticDroneHostileSensorMod" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+	</append>
+
+</MeanCloud_DroneEnemyAlerts>
