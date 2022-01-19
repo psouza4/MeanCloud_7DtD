@@ -4,7 +4,7 @@
 		<Name value="MeanCloud's Acid"/>
 		<Description value="Allows you to realistically craft acid from grain alcohol. See 'references.txt' for nerd notes."/>
 		<Author value="Mean.Cloud"/>
-		<Version value="1.01" compat="A20"/>
+		<Version value="1.02" compat="A20"/>
 		<Website value="http://mean.cloud/" />
 	</ModInfo>
 </xml>

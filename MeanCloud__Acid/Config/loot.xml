@@ -11,40 +11,39 @@
 		<item name="acidmodAcidsSchematic" />
 	</append>
 
-	<!-- loot group: rare tools schematics -->
-	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsRare']">
-		<item name="acidmodAcidsSchematic" prob="0.5" />
+	<!-- loot group: schematicsToolsT1 -->
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsT1']">
+		<item name="acidmodAcidsSchematic" />
 	</append>
 
-	<!-- loot container: garage stuff, tools, etc. -->
-	<append xpath="/lootcontainers/lootcontainer[@id='22']">
-		<item name="acidmodVinegarsSchematic" count="1" prob="0.01" />
+	<!-- loot group: groupCraftingUncommon -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupCraftingUncommon']">
+		<item name="acidmodAcidsSchematic" loot_prob_template="veryLow" />
 	</append>
 
-	<!-- loot container: construction supplies shipping crate -->
-	<append xpath="/lootcontainers/lootcontainer[@id='88']">
-		<item name="acidmodAcidsSchematic" count="1" prob="0.01" />
+	<!-- loot group: groupConstructionCrate02 -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupConstructionCrate02']">
+		<item name="acidmodAcidsSchematic" loot_prob_template="medLow" />
 	</append>
 
-	<!-- loot container: cntCollapsedChemistryStation -->
-	<append xpath="/lootcontainers/lootcontainer[@id='94']">
-		<item name="acidmodAcidsSchematic" count="1" loot_prob_template="ProbT3" />
+	<!-- loot group: groupChemistryStationLoot02 -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupChemistryStationLoot02']">
+		<item name="acidmodAcidsSchematic" />
 	</append>
 
-	<!-- loot container: cntUtilityCartFull -->
-	<append xpath="/lootcontainers/lootcontainer[@id='117']">
-		<item name="acidmodAcidsSchematic" count="1" loot_prob_template="ProbT3" />
+	<!-- loot group: groupUtilityCart -->
+		<append xpath="/lootcontainers/lootgroup[@name='groupChemistryStationLoot02']">
+	<item name="acidmodAcidsSchematic" loot_prob_template="medLow" force_prob="true"/>
 	</append>
 
-  <!-- loot group: groupChem01 -->
+	<!-- loot group: groupChem01 -->
 	<append xpath="/lootcontainers/lootgroup[@name='groupChem01']">
 		<item name="drinkJarGrainAlcohol" loot_prob_template="low"/>
 	</append>
 
-  <!-- loot group: groupMedicalRare -->
+	<!-- loot group: groupMedicalRare -->
 	<append xpath="/lootcontainers/lootgroup[@name='groupMedicalRare']">
 		<item name="drinkJarGrainAlcohol" loot_prob_template="low"/>
 	</append>
-
 
 </MeanCloud_Acid>

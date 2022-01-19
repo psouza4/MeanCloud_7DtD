@@ -2,35 +2,35 @@
 
 	<append xpath="/recipes">
 
-    <!-- base recipe removed from A19 into A20, so we need to add it back -->
-    <recipe name="drinkJarGrainAlcohol" count="1" craft_area="campfire" craft_tool="toolBeaker">
-      <ingredient name="foodCornMeal" count="3"/>
-      <ingredient name="drinkJarBoiledWater" count="1"/>
-    </recipe>
+		<!-- base recipe removed from A19 into A20, so we need to add it back -->
+		<recipe name="drinkJarGrainAlcohol" count="1" craft_area="campfire" craft_tool="toolBeaker">
+			<ingredient name="foodCornMeal" count="3"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
 
-    <!-- base recipe removed from A19 into A20, so we need to add it back -->
-    <recipe name="drinkJarGrainAlcohol" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
-      <ingredient name="foodCornMeal" count="1"/>
-      <ingredient name="drinkJarRiverWater" count="1"/>
-    </recipe>
+		<!-- base recipe removed from A19 into A20, so we need to add it back -->
+		<recipe name="drinkJarGrainAlcohol" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="foodCornMeal" count="1"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
 
 		<!-- vinegar step 1: grain alcohol plus oxygen and time -->
-		<recipe name="acidmodCloudyAlcohol" count="1" tags="learnable" craft_time="3600">
+		<recipe name="acidmodCloudyAlcohol" count="1" tags="learnable" craft_time="1800">
 			<ingredient name="drinkJarGrainAlcohol" count="1"/>
 		</recipe>
 
 		<!-- vinegar step 2: more time -->
-		<recipe name="acidmodRoiledAlcohol" count="1" tags="learnable" craft_time="3600">
+		<recipe name="acidmodRoiledAlcohol" count="1" tags="learnable" craft_time="1800">
 			<ingredient name="acidmodCloudyAlcohol" count="1"/>
 		</recipe>
 
 		<!-- vinegar step 3: more time -->
-		<recipe name="acidmodUnfilteredVinegar" count="1" tags="learnable" craft_time="3600">
+		<recipe name="acidmodUnfilteredVinegar" count="1" tags="learnable" craft_time="1800">
 			<ingredient name="acidmodRoiledAlcohol" count="1"/>
 		</recipe>
 
 		<!-- vinegar step 3, alternate: using the vinegar mother (mother of vinegar) to quick start another batch -->
-		<recipe name="acidmodUnfilteredVinegar" count="1" tags="learnable" craft_time="1800">
+		<recipe name="acidmodUnfilteredVinegar" count="1" tags="learnable" craft_time="300">
 			<ingredient name="acidmodVinegarMother" count="1"/>
 			<ingredient name="drinkJarGrainAlcohol" count="1"/>
 		</recipe>
