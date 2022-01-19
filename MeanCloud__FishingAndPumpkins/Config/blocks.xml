@@ -23,6 +23,7 @@
 			<property name="CustomIcon" value="rebarFramePillar100" />
 			<!-- <property name="CustomIcon" value="fishTrap" /> -->
 			<property name="CanPickup" value="true" param1="fishTrapItem"/>
+			<property name="PlaceEverywhere" value="true"/> <!-- I believe this lets us place it over grass to destroy it -->
 		</block>
 
 		<block name="fishTrapCaught">
