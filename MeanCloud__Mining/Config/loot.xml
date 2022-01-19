@@ -43,7 +43,7 @@
 	<insertAfter xpath="/lootcontainers/lootcontainer[@id='116']">
 
 		<!-- Excavator (low-grade) (aka "MiningTruck") loot -->
-		<lootcontainer id="725" name="cntMod_MeanCloudMining_Excavator" count="1,6" size="8,9" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualBaseTemplate">
+		<lootcontainer id="725" name="cntMod_MeanCloudMining_Excavator" count="1,5" size="6,2" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualBaseTemplate">
 			
 			<!-- terrain blocks -->
 			<item name="terrStone" count="4,12" prob="0.1"/>
@@ -92,7 +92,7 @@
 		</lootcontainer>
 
 		<!-- Excavator (high-grade) loot -->
-		<lootcontainer id="726" name="cntMod_MeanCloudMining_Excavator2" count="1,6" size="8,9" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualBaseTemplate">
+		<lootcontainer id="726" name="cntMod_MeanCloudMining_Excavator2" count="2,8" size="6,3" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualBaseTemplate">
 			
 			<!-- terrain blocks -->
 			<item name="terrStone" count="4,12" prob="0.1"/>

@@ -133,7 +133,7 @@
 			<property name="Weight" value="216" />
 			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
 			<property name="UpgradeRated.ToBlock" value="ExcavatorV2" />
-			<property name="UpgradeRated.Rate" value="6000" /> <!-- about 4-5 minutes -->
+			<property name="UpgradeRated.Rate" value="7000" /> <!-- about 4-5 minutes -->
 		</block>
 
 		<block name="ExcavatorV2">
@@ -153,7 +153,7 @@
 			<property name="Weight" value="216" />
 			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
 			<property name="UpgradeRated.ToBlock" value="ExcavatorV3" />
-			<property name="UpgradeRated.Rate" value="14000" /> <!-- about 10-11 minutes -->
+			<property name="UpgradeRated.Rate" value="21000" /> <!-- about 15-20 minutes -->
 			<drop event="Destroy" count="0"/>
 			<drop event="Harvest" count="0"/>
 			<property name="DowngradeBlock" value="Excavator"/> 
@@ -196,7 +196,7 @@
 			<property name="Weight" value="216" />
 			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
 			<property name="UpgradeRated.ToBlock" value="ExcavatorV5" />
-			<property name="UpgradeRated.Rate" value="6000" /> <!-- about 4-5 minutes -->
+			<property name="UpgradeRated.Rate" value="7000" /> <!-- about 4-5 minutes -->
 		</block>
 
 		<block name="ExcavatorV5">
