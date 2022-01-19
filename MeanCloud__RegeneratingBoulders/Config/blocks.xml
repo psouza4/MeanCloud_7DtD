@@ -101,7 +101,7 @@
 
 	</append>
 
-  <!-- Use these entries to: degrade into a single stone with high durability and 'regrow' from that -->
+	<!-- Use these entries to: degrade into a single stone with high durability and 'regrow' from that -->
 	<append xpath="/blocks/block[@name='rockResourceBroke2']">          <!-- Modify 'rockResourceBroke2', the default boulder that's been broken twice. -->
 		<property name="DowngradeBlock" value="Mini Boulder 1"/>        <!-- Instead of breaking entirely, let's downgrade the block into our mini-boulder instead. -->
 	</append>
