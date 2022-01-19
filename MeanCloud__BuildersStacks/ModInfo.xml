@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="MeanCloud's Builder's Stacks"/>
+		<Description value="Stacks cement, concrete mix, and cobblestone rocks to 6,000 like wood, stone, and other building/upgrade resources."/>
+		<Author value="Mean.Cloud"/>
+		<Version value="1.00" compat="A17,A18,A19,A20"/>
+		<Website value="http://mean.cloud/" />
+	</ModInfo>
+</xml>

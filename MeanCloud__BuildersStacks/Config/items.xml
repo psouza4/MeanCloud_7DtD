@@ -1,0 +1,7 @@
+<MeanCloud_BuildersStacks>
+
+	<set xpath="/items/item[@name='resourceCobblestones']/property[@name='Stacknumber']/@value">6000</set>
+	<set xpath="/items/item[@name='resourceCement']/property[@name='Stacknumber']/@value">6000</set>
+	<set xpath="/items/item[@name='resourceConcreteMix']/property[@name='Stacknumber']/@value">6000</set>
+
+</MeanCloud_BuildersStacks>
