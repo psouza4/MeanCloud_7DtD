@@ -13,6 +13,8 @@
 			<property name="ModelOffset" value="0,-0.25,0"/>
 			<property name="MultiBlockDim" value="1,1,1"/>
 			<property name="Model" value="#@modfolder:Resources/Cannabis.unity3d?CannabisPrefab_plant1.prefab"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="PlantGrowing.Next" value="plantedCannabis2"/>
 			<property name="PlantGrowing.GrowthRate" value="32"/>
 			<property name="PlantGrowing.LightLevelGrow" value="4"/>
@@ -28,6 +30,7 @@
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,1,1"/>
 			<property name="Model" value="#@modfolder:Resources/Cannabis.unity3d?CannabisPrefab_plant2.prefab"/>
+			<property name="OnlySimpleRotations" value="true"/>
 			<property name="PlantGrowing.Next" value="plantedCannabis3HarvestPlayer"/>
 			<property name="PlantGrowing.GrowthRate" value="32"/>
 			<property name="PlantGrowing.LightLevelGrow" value="4"/>
@@ -42,7 +45,9 @@
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,2,1"/>
 			<property name="Model" value="#@modfolder:Resources/Cannabis.unity3d?CannabisPrefab_plant3.prefab"/>
+			<property name="OnlySimpleRotations" value="true"/>
 			<drop event="Harvest" name="resourceCropCannabisBud" count="1" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="resourceCropCannabisBud" prob="0.5" count="1" tag="bonusCropHarvest"/>
 			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
 		</block>
 
@@ -53,24 +58,28 @@
 			<property name="CustomIconTint" value="ff8080"/>
 			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
 			<property name="DisplayInfo" value="Name"/>
-			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperOutdoor"/>
 		</block>
 
 		<block name="plantedCannabis3HarvestPlayer">
 			<property name="Extends" value="plantedCannabis3Harvest"/>
 			<property name="CreativeMode" value="Dev"/>
-			<drop event="Harvest" name="resourceCropCannabisBud" count="1" tag="cropHarvest"/>
-			<property name="DowngradeBlock" value="plantedCannabis1"/>
+			<drop event="Harvest" name="resourceCropCannabisBud" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="resourceCropCannabisBud" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<drop event="Destroy" name="plantedCannabis1" count="1" prob="0.5"/>
+			<!-- Beginning in A20, the original plant is no longer kept when harvested. -->
+			<!-- <property name="DowngradeBlock" value="plantedCannabis1"/> -->
 			<!-- Credit to doughphungus: fix error reported by Gouki on forum thread.
 			      "PlantedCannabis3HarvestPlayer needs a deco shape assigned but has not" *none
-			      Its probably the Model, but just to be safe copy it all for now
-			-->
+			      It's probably the Model, but just to be safe copy it all for now -->
 			<property name="CustomIcon" value="plantedCannabis3Harvest"/>
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,2,1"/>
 			<property name="Model" value="#@modfolder:Resources/Cannabis.unity3d?CannabisPrefab_plant3.prefab"/>
+			<property name="AllowAllRotations" value="true"/> <!-- enables the 45 degree rotations -->
+			<property name="OnlySimpleRotations" value="true"/>
 			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
 		</block>
 

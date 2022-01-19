@@ -19,7 +19,7 @@ resourceCropCannabisBudDesc,items,Farming,,,"Useful in a variety of 'medicinal' 
 drugCannabisJointUnrolled,items,Medical,,,"Cannabis Joint [ccba8b](Unrolled)[-]",,"Porro de cannabis [ccba8b](Sin liar)[-]"
 drugCannabisJointUnrolledDesc,items,Medical,,,"You'll need to spend some time rolling this into a smokable joint. Until then, it's going to take up some space so you don't ruin it.",,"Tendrás que pasar un tiempo liandote esto en un porro fumable. Hasta entonces, ocupará algo de espacio para que no lo arruines."
 drugCannabisJointRolled,items,Medical,,,"Cannabis Joint [9acc8b](Rolled)[-]",,"Porro de cannabis [9acc8b](Liado)[-]"
-drugCannabisJointRolledDesc,items,Medical,,,"Smoking this cannabis joint will immediately improve your health and allow you to ignore some pain, but you'll become unfocused and a hungry hungry.",,"Fumarte el porro de cannabis mejorará inmediatamente tu salud y te permitirá ignorar un poco el dolor, pero perderás la concentración y tendrás hambre."
+drugCannabisJointRolledDesc,items,Medical,,,"Smoking this cannabis joint will immediately improve your health and allow you to ignore some pain, but you'll become unfocused and a little hungry.",,"Fumarte el porro de cannabis mejorará inmediatamente tu salud y te permitirá ignorar un poco el dolor, pero perderás la concentración y tendrás hambre."
 toolBong,items,Medical,,,Bong,,Cachimba
 toolBongDesc,items,Medical,,,"You can combine this with some cannabis buds to fill it up.",,"Puedes combinar esto con algunos cogollos de cannabis para llenarlo."
 toolBongDirty,items,Medical,,,"Bong [ccba8b](Dirty)[-]",,"Cachimba [ccba8b](Sucia)[-]"

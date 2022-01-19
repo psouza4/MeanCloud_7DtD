@@ -1,19 +1,19 @@
 <MeanCloud_Cannabis>
 
 	<append xpath="/lootcontainers/lootgroup[@name='seeds']">
-		<item name="plantedCannabis1" prob="0.1"/>
+		<item name="plantedCannabis1" loot_prob_template="medLow"/>
 	</append>
 
 	<append xpath="/lootcontainers/lootgroup[@name='groupFoodTrash']">
-		<item name="resourceCropCannabisBud" count="1,6" prob="0.2" />
+		<item name="resourceCropCannabisBud" loot_prob_template="low" />
 	</append>
 
 	<append xpath="/lootcontainers/lootgroup[@name='groupCookingTools']">
-		<item name="toolBongDirty" count="1" prob="0.05" />
+		<item name="toolBongDirty" loot_prob_template="veryLow" />
 	</append>
 
 	<append xpath="/lootcontainers/lootgroup[@name='groupToolsT0']">
-		<item name="toolBongDirty" count="1" prob="0.01" />
+		<item name="toolBongDirty" loot_prob_template="veryLow" />
 	</append>
 
 	<append xpath="/lootcontainers/lootgroup[@name='groupChem01']">
@@ -22,29 +22,20 @@
 	</append>
 
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsCommon']">
-		<item name="toolBongSchematic" prob="0.8" />
+		<item name="toolBongSchematic" loot_prob_template="veryLow" />
 	</append>
 
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsRare']">
-		<item name="toolBongSchematic" prob="1.4" />
+		<item name="toolBongSchematic" loot_prob_template="medLow" />
 	</append>
 
 	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT0']">
-		<item name="plantedCannabis1Schematic" />
-	</append>
-
-	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT1']">
-		<item name="plantedCannabis1Schematic" />
+		<item name="plantedCannabis1Schematic" loot_prob_template="medLow" />
 	</append>
 
 	<!-- cars -->
-	<append xpath="/lootcontainers/lootcontainer[@id='19']">
-		<item name="toolBongDirty" count="1" prob="0.05" />
-	</append>
-
-	<!-- garage stuff -->
-	<append xpath="/lootcontainers/lootcontainer[@id='22']">
-		<item name="toolBongDirty" count="1" prob="0.01" />
+	<append xpath="/lootcontainers/lootgroup[@name='groupCarWeaponsTools']">
+		<item name="toolBongDirty" loot_prob_template="low" />
 	</append>
 
 </MeanCloud_Cannabis>

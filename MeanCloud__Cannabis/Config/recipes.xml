@@ -11,11 +11,11 @@
 			<ingredient name="resourcePaper" count="5"/>
 		</recipe>
 
-		<recipe name="drugCannabisJointRolled" count="1" craft_time="60" craft_exp_gain="0" always_unlocked="true">
+		<recipe name="drugCannabisJointRolled" count="1" craft_time="15" craft_exp_gain="0" always_unlocked="true">
 			<ingredient name="drugCannabisJointUnrolled" count="1"/>
 		</recipe>
 
-		<recipe name="toolBong" count="1" craft_area="forge" craft_time="120" tags="learnable">
+		<recipe name="toolBong" count="1" craft_area="workbench" craft_time="120" tags="learnable">
 			<ingredient name="toolBeaker" count="1"/>
 			<ingredient name="drinkJarEmpty" count="1"/>
 		</recipe>

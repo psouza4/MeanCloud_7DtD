@@ -25,7 +25,7 @@
 			<property name="CustomIcon" value="drugCannabisJointUnrolled"/>
 			<property name="Material" value="MresourceCrop"/>
 			<property name="EconomicValue" value="80"/>
-			<property name="Stacknumber" value="1"/>
+			<property name="Stacknumber" value="5"/>
 			<property name="Group" value="Science,CFChemicals,Medical"/>
 			<property name="DescriptionKey" value="drugCannabisJointUnrolledDesc"/>
 		</item>
