@@ -2,11 +2,11 @@
 
 	<append xpath="/entitygroups">
   
-    <entitygroup name="ZombiesNone">
-      <entity name="animalRabbit"/> <!-- entity groups can't be empty, so we fill it with a passive animal ... this entitygroup shouldn't get referenced anyway -->
-                                    <!-- note: we can't even have this to remove the entity later with a 'remove' rule as that will also throw an error -->
-	  </entitygroup>
-  
-  </append>
+		<entitygroup name="ZombiesNone">
+			<entity name="animalRabbit"/>	<!-- entitygroups can't be empty, so we fill it with a passive animal ... this entitygroup shouldn't get referenced anyway -->
+							<!-- NOTE: we can't even remove the entitygroup later with a 'remove' rule as that will also throw an error -->
+		  </entitygroup>
+
+	 </append>
 
 </MeanCloud_NoHordeNights>

@@ -1,7 +1,7 @@
 <MeanCloud_NoHordeNights>
 
-  <!-- very likely that nothing in this file matters, since this was move to dynamic spawners in gamestages.xml and spawning.xml
-       but kept for reference and in the event that TFP cause a regression and/or for compatibility with older alphas -->
+	<!-- It's very likely that nothing in this file matters, since this was moved to dynamic spawners in gamestages.xml and
+	spawning.xml but I kept for reference and in the event that TFP cause a regression and/or for compatibility with older alphas -->
 
 	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/@dynamic">false</set>
 	<set xpath="/spawning/entityspawner[@name='RoamingHordeSpawnNight']/day/property[@name='TotalAlive']/@value">0</set>

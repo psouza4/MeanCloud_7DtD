@@ -1,6 +1,6 @@
 <MeanCloud_NoHordeNights>
 
-  <!-- remove all spawns from screamer scout lists and blood moon horde lists -->
+	 <!-- remove all spawns from screamer scout lists and blood moon horde lists -->
 	<remove xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage/spawn" />
 	<remove xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage/spawn" />
 
