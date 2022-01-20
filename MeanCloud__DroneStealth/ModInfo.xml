@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xml>
+  <ModInfo>
+    <Name value="MeanCloud's Drone Stealth" />
+    <Description value="Adds personal zombie camouflage/stealth as a drone mod." />
+    <Author value="Mean.Cloud" />
+    <Version value="1.00" compat="A20"/>
+    <Website value="http://mean.cloud/" />
+  </ModInfo>
+</xml>

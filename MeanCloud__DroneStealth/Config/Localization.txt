@@ -1,0 +1,14 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+modRoboticDroneStealthMod,item_modifiers,Mod,,,Robotic Drone Stealth Mod
+modRoboticDroneStealthModDesc,item_modifiers,Mod,,,Masks the area you are in when near the drone with this mod installed so that enemy zombies believe you are also a zombie and will not be interested in you unless you get too close.  Consumes zombie perfume regularly to operate.
+modRoboticDroneStealthModSchematic,items,item,,,Robotic Drone Enemy Stealth Schematic
+buffJunkDroneStealthModEffect,buffs,Buff,,x,[6c8acc]Drone Stealth[-]
+buffJunkDroneStealthModEffectDesc,buffs,Buff,,x,Your drone is activating a zombie stealth mode for you.  Masks the area you are in when near the drone with this mod installed so that enemy zombies believe you are also a zombie and will not be interested in you unless you get too close.  Consumes zombie perfume regularly to operate.
+pungentMixture,items,item,,,"Pungent Mixture"
+pungentMixtureDesc,items,item,,,"Why would anyone make this?  It smells just like zombies.  Try not to wretch while you handle it, I suppose."
+soupyPaste,items,item,,,"Soupy Paste"
+soupyPasteDesc,items,item,,,"A stabilizing agent for distributing odors."
+zombiePerfume,items,item,,,"Zombie ""Perfume"""
+zombiePerfumeDesc,items,item,,,"Call it perfume if you want, but it absolutely reeks.  When added to the robotic drone's inventory and a stealth mod in the drone, it will be consumed to mask you from zombie detection.  Results may vary."
+stealthmodPerfumeRecipes,items,Item,,,"""Smells Like a Zombie"" Guide"
+stealthmodPerfumeRecipesDesc,items,Item,,,"Reading this guide book teach you how to create zombie perfume, a useful fuel for drones using a stealth mod."

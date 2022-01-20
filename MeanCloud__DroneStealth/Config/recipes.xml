@@ -1,0 +1,35 @@
+<MeanCloud_DroneStealth>
+
+	<append xpath="/recipes">
+
+		<recipe name="modRoboticDroneStealthMod" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+		</recipe>
+
+		<recipe name="pungentMixture" count="1" craft_area="chemistryStation" craft_time="18" tags="learnable,perkPhysician">
+			<ingredient name="drinkJarRiverWater" count="1"/>
+			<ingredient name="foodRottingFlesh" count="1"/>
+			<ingredient name="resourceCoal" count="1"/>
+		</recipe>
+
+		<recipe name="soupyPaste" count="2" craft_area="chemistryStation" craft_time="40" tags="learnable,perkPhysician">
+			<ingredient name="drinkJarRiverWater" count="1"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="resourceBone" count="1"/>
+		</recipe>
+
+		<!-- this recipe should yield around 6 minutes of stealth fuel -->
+		<recipe name="zombiePerfume" count="20" craft_area="chemistryStation" craft_time="60" tags="learnable,perkPhysician">
+			<ingredient name="pungentMixture" count="1"/>
+			<ingredient name="soupyPaste" count="1"/>
+			<ingredient name="foodCornMeal" count="1"/>
+			<ingredient name="resourceFeather" count="3"/>
+			<ingredient name="resourcePaper" count="5"/>
+		</recipe>
+
+	</append>
+
+</MeanCloud_DroneStealth>

@@ -1,0 +1,24 @@
+<MeanCloud_DroneStealth>
+
+	<append xpath="/buffs">
+
+		<!-- added by included Harmony mod: applied automatically when a drone mod matches the installed mod list -->
+		<buff name="buffJunkDroneStealthModEffect" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value=".5"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffJunkDroneStealthModEffect"/>
+				<triggered_effect trigger="onSelfLeaveGame" action="RemoveBuff" buff="buffJunkDroneStealthModEffect"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffJunkDroneStealthModEffectCheck"/>
+			</effect_group>
+		</buff>
+
+		<buff name="buffJunkDroneStealthModEffectCheck"  name_key="buffJunkDroneStealthModEffect" description_key="buffJunkDroneStealthModEffectDesc" icon="ui_game_symbol_enemy_dot" icon_color="55,88,124" icon_blink="true">
+			<display_value_key value="buffJunkDroneStealthModEffect"/> <display_value value="xxx"/>
+			<stack_type value="replace"/>
+			<duration value="3"/>
+		</buff>
+
+	</append>
+
+</MeanCloud_DroneStealth>

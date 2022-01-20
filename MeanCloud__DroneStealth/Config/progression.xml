@@ -1,0 +1,11 @@
+<MeanCloud_DroneStealth>
+
+	<!-- use Physician (ranks 2 through 4) to unlock zombie perfume crafting -->
+	<append xpath="/progression/perks/perk[@name='perkPhysician']/effect_group">
+
+		<!-- Physician 2 -->
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,4" tags="pungentMixture,soupyPaste,zombiePerfume"/>
+
+	</append>
+
+</MeanCloud_DroneStealth>

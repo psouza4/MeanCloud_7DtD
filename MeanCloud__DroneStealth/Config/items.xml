@@ -1,0 +1,79 @@
+<MeanCloud_DroneStealth>
+
+	<append xpath="/items">
+
+		<item name="modRoboticDroneStealthModSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="resourceElectronicParts"/>
+			<property name="Unlocks" value="modRoboticDroneStealthMod"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modRoboticDroneStealthMod" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<!-- recipe/schematic for the perfume components and final craft -->
+		<item name="stealthmodPerfumeRecipes">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="DescriptionKey" value="stealthmodPerfumeRecipesDesc"/>
+			<property name="EconomicValue" value="600"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="zombiePerfume"/>
+			<property name="Unlocks" value="zombiePerfume"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="pungentMixture" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="soupyPaste" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="zombiePerfume" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="pungentMixture">
+			<property name="CustomIcon" value="pungentMixture"/>
+			<property name="DescriptionKey" value="pungentMixtureDesc"/>
+			<property name="HoldType" value="3"/>
+			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="15"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="Group" value="Chemicals,CFChemicals"/>
+			<property name="CraftingIngredientTime" value="2"/>
+			<property name="UnlockedBy" value="perkPhysician,stealthmodPerfumeRecipes"/>
+		</item>
+
+		<item name="soupyPaste">
+			<property name="CustomIcon" value="soupyPaste"/>
+			<property name="DescriptionKey" value="soupyPasteDesc"/>
+			<property name="HoldType" value="3"/>
+			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="15"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="Group" value="Chemicals,CFChemicals"/>
+			<property name="CraftingIngredientTime" value="2"/>
+			<property name="UnlockedBy" value="perkPhysician,stealthmodPerfumeRecipes"/>
+		</item>
+
+		<item name="zombiePerfume">
+			<property name="CustomIcon" value="zombiePerfume"/>
+			<property name="DescriptionKey" value="zombiePerfumeDesc"/>
+			<property name="HoldType" value="3"/>
+			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="1000"/> <!-- 1000 = 5 hours real life time in daytime -->
+			<property name="EconomicValue" value="1"/>
+			<property name="Group" value="Chemicals,CFChemicals"/>
+			<property name="CraftingIngredientTime" value="2"/>
+			<property name="UnlockedBy" value="perkPhysician,stealthmodPerfumeRecipes"/>
+		</item>
+
+	</append>
+
+</MeanCloud_DroneStealth>

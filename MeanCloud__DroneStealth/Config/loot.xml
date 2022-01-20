@@ -1,0 +1,15 @@
+<MeanCloud_DroneStealth>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']">
+		<item name="modRoboticDroneStealthModSchematic" loot_prob_template="med"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupBotSchematics']">
+		<item name="modRoboticDroneStealthModSchematic" loot_prob_template="low"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupDrone']">
+		<item name="modRoboticDroneStealthMod" loot_prob_template="low"/>
+	</append>
+
+</MeanCloud_DroneStealth>
