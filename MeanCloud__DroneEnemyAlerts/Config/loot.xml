@@ -1,14 +1,14 @@
 <MeanCloud_DroneEnemyAlerts>
 
-	<append xpath="/lootgroups/lootgroup[@name='schematicsWeaponsArmorT2']">
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']">
 		<item name="modRoboticDroneHostileSensorModSchematic" loot_prob_template="med"/>
 	</append>
 
-	<append xpath="/lootgroups/lootgroup[@name='groupBotSchematics']">
+	<append xpath="/lootcontainers/lootgroup[@name='groupBotSchematics']">
 		<item name="modRoboticDroneHostileSensorModSchematic" loot_prob_template="low"/>
 	</append>
 
-	<append xpath="/lootgroups/lootgroup[@name='groupDrone']">
+	<append xpath="/lootcontainers/lootgroup[@name='groupDrone']">
 		<item name="modRoboticDroneHostileSensorMod" loot_prob_template="low"/>
 	</append>
 

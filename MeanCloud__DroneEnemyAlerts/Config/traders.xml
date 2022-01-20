@@ -1,7 +1,7 @@
 <MeanCloud_DroneEnemyAlerts>
 
-	<append xpath="/trader_item_groups/trader_item_group[@name='rareBooks']">
-		<item name="modRoboticDroneMoraleBoosterModSchematic"/>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']">
+		<item name="modRoboticDroneHostileSensorModSchematic"/>
 	</append>
 
 </MeanCloud_DroneEnemyAlerts>
