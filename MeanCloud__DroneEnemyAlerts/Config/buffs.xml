@@ -87,6 +87,7 @@
 			<duration value=".1"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="animalAlertAuraNearbyEffect2">
+					<requirement name="HasBuff" buff="buffJunkDroneHostileSensorModEffect"/>
 					<requirement name="!HasBuff" buff="animalAlertAuraCloseEffect"/>
 				</triggered_effect>
 			</effect_group>
@@ -97,7 +98,16 @@
 			<stack_type value="replace"/>
 			<duration value="2"/>
 		</buff>
-		<buff name="animalAlertAuraCloseEffect" name_key="animalAlertAuraCloseEffect" description_key="animalAlertAuraCloseEffectDesc" icon="ui_game_symbol_tracking_bear" icon_color="255,0,0" icon_blink="true">
+		<buff name="animalAlertAuraCloseEffect" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="animalAlertAuraCloseEffect2">
+					<requirement name="HasBuff" buff="buffJunkDroneHostileSensorModEffect"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="animalAlertAuraCloseEffect2" name_key="animalAlertAuraCloseEffect" description_key="animalAlertAuraCloseEffectDesc" icon="ui_game_symbol_tracking_bear" icon_color="255,0,0" icon_blink="true">
 			<display_value_key value="animalAlertAuraCloseEffect"/>
 			<display_value value="xxx"/>
 			<stack_type value="replace"/>
